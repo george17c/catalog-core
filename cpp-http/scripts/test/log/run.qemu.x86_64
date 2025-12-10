@@ -1,0 +1,38 @@
+Host and port unspecified.
+Using as remote 172.44.0.2:8080
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0078B340+006CB340 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..en1: Added
+en1: Interface is up
+Powered by
+o.   .o       _ _               __ _
+Oo   Oo  ___ (_) | __ __  __ _ ' _) :_
+oO   oO ' _ `| | |/ /  _)' _` | |_|  _)
+oOo oOO| | | | |   (| | | (_) |  _) :_
+ OoOoO ._, ._:_:_,\_._,  .__,_:_, \___)
+                    Pan 0.19.1~b6ef03c8
+Listening on port 8080
+Host and port unspecified.
+Using as remote 172.44.0.2:8080
+PING 172.44.0.2 (172.44.0.2) 56(84) bytes of data.
+64 bytes from 172.44.0.2: icmp_seq=1 ttl=255 time=6.67 ms
+
+--- 172.44.0.2 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 6.667/6.667/6.667/0.000 ms
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0S1en0t 0a  re pl y 2
+1  100    21    0     0   1005      0 --:--:-- --:--:-- --:--:--  1050
+Hello from Unikraft!
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0S10e0 n  t 21   a10 0 r  e 2p1 l  y 0     0   6690  
+    0 --:--:-- --:--:-- --:--:--  7000
+Hello from Unikraft!
+Killed

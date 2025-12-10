@@ -1,0 +1,122 @@
+Parsing config from xen.x86_64.cfg
+libxl: debug: libxl_create.c:2092:do_domain_create: ao 0x564ef4441930: create: how=(nil) callback=(nil) poller=0x564ef44409b0
+libxl: detail: libxl_create.c:623:libxl__domain_make: passthrough: disabled
+libxl: detail: libxl_create.c:632:libxl__domain_make: altp2m: disabled
+libxl: debug: libxl_create.c:1347:initiate_domain_create: Domain 60:running bootloader
+libxl: debug: libxl_bootloader.c:416:libxl__bootloader_run: Domain 60:no bootloader configured, using user supplied kernel
+libxl: debug: libxl_event.c:863:libxl__ev_xswatch_deregister: watch w=0x564ef44428b0: deregister unregistered
+domainbuilder: detail: xc_dom_allocate: cmdline="c-fs_qemu-x86_64 vfs.fstab=[ "initrd0:/:extract::ramfs=1:" ] -- /hello.txt", features=""
+libxl: debug: libxl_dom.c:628:libxl__build_pv: pv kernel mapped 0 path ./workdir/build/c-fs_xen-x86_64
+domainbuilder: detail: xc_dom_kernel_file: filename="./workdir/build/c-fs_xen-x86_64"
+domainbuilder: detail: xc_dom_malloc_filemap    : 303 kB
+domainbuilder: detail: xc_dom_module_file: filename="./initrd.cpio"
+domainbuilder: detail: xc_dom_boot_xen_init: ver 4.21, caps xen-3.0-x86_64 hvm-3.0-x86_32 hvm-3.0-x86_32p hvm-3.0-x86_64 
+domainbuilder: detail: xc_dom_parse_image: called
+domainbuilder: detail: xc_dom_find_loader: trying multiboot-binary loader ... 
+domainbuilder: detail: loader probe failed
+domainbuilder: detail: xc_dom_find_loader: trying HVM-generic loader ... 
+domainbuilder: detail: loader probe failed
+domainbuilder: detail: xc_dom_find_loader: trying Linux bzImage loader ... 
+domainbuilder: detail: xc_dom_probe_bzimage_kernel: kernel is not a bzImage
+domainbuilder: detail: loader probe failed
+domainbuilder: detail: xc_dom_find_loader: trying ELF-generic loader ... 
+domainbuilder: detail: loader probe OK
+xc: detail: ELF: phdr: paddr=0 memsz=0x2dd27
+xc: detail: ELF: phdr: paddr=0x2e000 memsz=0xa088
+xc: detail: ELF: phdr: paddr=0x39000 memsz=0x43000
+xc: detail: ELF: phdr: paddr=0x39000 memsz=0
+xc: detail: ELF: memory: 0 -> 0x7c000
+xc: detail: ELF: note: GUEST_OS = "Unikraft"
+xc: detail: ELF: note: LOADER = "generic"
+xc: detail: ELF: note: HYPERCALL_PAGE = 0x2000
+xc: detail: ELF: note: XEN_VERSION = "xen-3.0"
+xc: detail: ELF: using notes from SHT_NOTE section
+xc: detail: ELF: VIRT_BASE unset, using 0
+xc: detail: ELF_PADDR_OFFSET unset, using 0
+xc: detail: ELF: addresses:
+xc: detail:     virt_base        = 0x0
+xc: detail:     elf_paddr_offset = 0x0
+xc: detail:     virt_offset      = 0x0
+xc: detail:     virt_kstart      = 0x0
+xc: detail:     virt_kend        = 0x7c000
+xc: detail:     virt_entry       = 0x0
+xc: detail:     p2m_base         = 0xffffffffffffffff
+domainbuilder: detail: xc_dom_parse_elf_kernel: xen-3.0-x86_64: 0x0 -> 0x7c000
+domainbuilder: detail: xc_dom_compat_check: supported guest type: xen-3.0-x86_64 <= matches
+domainbuilder: detail: xc_dom_compat_check: supported guest type: hvm-3.0-x86_32
+domainbuilder: detail: xc_dom_compat_check: supported guest type: hvm-3.0-x86_32p
+domainbuilder: detail: xc_dom_compat_check: supported guest type: hvm-3.0-x86_64
+domainbuilder: detail: xc_dom_mem_init: mem 8 MB, pages 0x800 pages, 4k each
+domainbuilder: detail: xc_dom_mem_init: 0x800 pages
+domainbuilder: detail: xc_dom_boot_mem_init: called
+domainbuilder: detail: x86_compat: guest xen-3.0-x86_64, address size 64
+domainbuilder: detail: xc_dom_build_image: called
+domainbuilder: detail: xc_dom_pfn_to_ptr_retcount: domU mapping: pfn 0x0+0x7c at 0x7f1795d5d000
+domainbuilder: detail: xc_dom_alloc_segment:   kernel       : 0x0 -> 0x7c000  (pfn 0x0 + 0x7c pages)
+xc: detail: ELF: phdr 0 at 0x7f1795d5d000 -> 0x7f1795d8ad27
+xc: detail: ELF: phdr 1 at 0x7f1795d8b000 -> 0x7f1795d95088
+xc: detail: ELF: phdr 2 at 0x7f1795d96000 -> 0x7f1795d99db0
+xc: detail: ELF: phdr 4 at 0x7f1795d96000 -> 0x7f1795d96000
+domainbuilder: detail: xc_dom_pfn_to_ptr_retcount: domU mapping: pfn 0x7c+0x1 at 0x7f1796362000
+domainbuilder: detail: xc_dom_alloc_segment:   module0      : 0x7c000 -> 0x7c200  (pfn 0x7c + 0x1 pages)
+domainbuilder: detail: xc_dom_pfn_to_ptr_retcount: domU mapping: pfn 0x7d+0x4 at 0x7f179635e000
+domainbuilder: detail: xc_dom_alloc_segment:   phys2mach    : 0x7d000 -> 0x81000  (pfn 0x7d + 0x4 pages)
+domainbuilder: detail: xc_dom_alloc_page   :   start info   : 0x81000 (pfn 0x81)
+domainbuilder: detail: xc_dom_alloc_page   :   xenstore     : 0x82000 (pfn 0x82)
+domainbuilder: detail: xc_dom_alloc_page   :   console      : 0x83000 (pfn 0x83)
+domainbuilder: detail: count_pgtables: 0x0000007fffffffff/39: 0x0000000000000000 -> 0x0000007fffffffff, 1 table(s)
+domainbuilder: detail: count_pgtables: 0x000000003fffffff/30: 0x0000000000000000 -> 0x000000003fffffff, 1 table(s)
+domainbuilder: detail: count_pgtables: 0x00000000001fffff/21: 0x0000000000000000 -> 0x00000000003fffff, 2 table(s)
+domainbuilder: detail: xc_dom_pfn_to_ptr_retcount: domU mapping: pfn 0x84+0x5 at 0x7f1795d58000
+domainbuilder: detail: xc_dom_alloc_segment:   page tables  : 0x84000 -> 0x89000  (pfn 0x84 + 0x5 pages)
+domainbuilder: detail: xc_dom_alloc_page   :   boot stack   : 0x89000 (pfn 0x89)
+domainbuilder: detail: xc_dom_build_image  : virt_alloc_end : 0x8a000
+domainbuilder: detail: xc_dom_build_image  : virt_pgtab_end : 0x400000
+domainbuilder: detail: xc_dom_boot_image: called
+domainbuilder: detail: xc_dom_pfn_to_ptr_retcount: domU mapping: pfn 0x81+0x1 at 0x7f179635d000
+domainbuilder: detail: start_info_x86_64: called
+domainbuilder: detail: setup_hypercall_page: vaddr=0x2000 pfn=0x2
+domainbuilder: detail: domain builder memory footprint
+domainbuilder: detail:    allocated
+domainbuilder: detail:       malloc             : 23467 bytes
+domainbuilder: detail:       anon mmap          : 0 bytes
+domainbuilder: detail:    mapped
+domainbuilder: detail:       file mmap          : 303 kB
+domainbuilder: detail:       domU mmap          : 540 kB
+domainbuilder: detail: bootlate_pv: shared_info: pfn 0x0, mfn 0x34627
+domainbuilder: detail: shared_info_x86_64: called
+domainbuilder: detail: vcpu_x86_64: called
+domainbuilder: detail: vcpu_x86_64: cr3: pfn 0x84 mfn 0x2a9684
+domainbuilder: detail: xc_dom_set_gnttab_entry: d60 gnt[0] -> d0 0x2a9683
+domainbuilder: detail: xc_dom_set_gnttab_entry: d60 gnt[1] -> d0 0x2a9682
+domainbuilder: detail: xc_dom_release: called
+libxl: debug: libxl_event.c:812:libxl__ev_xswatch_register: watch w=0x564ef44442f0 wpath=/local/domain/60/console/tty token=3/0: register slotnum=3
+libxl: debug: libxl_create.c:2131:do_domain_create: ao 0x564ef4441930: inprogress: poller=0x564ef44409b0, flags=i
+libxl: debug: libxl_event.c:750:watchfd_callback: watch w=0x564ef44442f0 wpath=/local/domain/60/console/tty token=3/0: event epath=/local/domain/60/console/tty
+libxl: debug: libxl_event.c:750:watchfd_callback: watch w=0x564ef44442f0 wpath=/local/domain/60/console/tty token=3/0: event epath=/local/domain/60/console/tty
+libxl: debug: libxl_event.c:2413:libxl__ao_progress_report: ao 0x564ef4441930: progress report: callback queued aop=0x564ef4444320
+libxl: debug: libxl_event.c:849:libxl__ev_xswatch_deregister: watch w=0x564ef44442f0 wpath=/local/domain/60/console/tty token=3/0: deregister slotnum=3
+libxl: debug: libxl_event.c:863:libxl__ev_xswatch_deregister: watch w=0x564ef44442f0: deregister unregistered
+libxl: debug: libxl_event.c:2067:libxl__ao_complete: ao 0x564ef4441930: complete, rc=0
+libxl: debug: libxl_event.c:1598:egc_run_callbacks: ao 0x564ef4441930: progress report: callback aop=0x564ef4444320
+libxl: debug: libxl_event.c:2036:libxl__ao__destroy: ao 0x564ef4441930: destroy
+libxl: debug: libxl_domain.c:700:libxl_domain_unpause: Domain 60:ao 0x564ef443f460: create: how=(nil) callback=(nil) poller=0x564ef44409b0
+libxl: debug: libxl_event.c:2067:libxl__ao_complete: ao 0x564ef443f460: complete, rc=0
+libxl: debug: libxl_domain.c:708:libxl_domain_unpause: Domain 60:ao 0x564ef443f460: inprogress: poller=0x564ef44409b0, flags=ic
+libxl: debug: libxl_event.c:2036:libxl__ao__destroy: ao 0x564ef443f460: destroy
+Powered by
+o.   .o       _ _               __ _
+Oo   Oo  ___ (_) | __ __  __ _ ' _) :_
+oO   oO ' _ `| | |/ /  _)' _` | |_|  _)
+oOo oOO| | | | |   (| | | (_) |  _) :_
+ OoOoO ._, ._:_:_,\_._,  .__,_:_, \___)
+                    Pan 0.19.1~b6ef03c8
+Hello from Unikraft!
+xencall:buffer: debug: total allocations:104 total releases:104
+xencall:buffer: debug: current allocations:0 maximum allocations:3
+xencall:buffer: debug: cache current size:3
+xencall:buffer: debug: cache hits:92 misses:3 toobig:9
+xencall:buffer: debug: total allocations:0 total releases:0
+xencall:buffer: debug: current allocations:0 maximum allocations:0
+xencall:buffer: debug: cache current size:0
+xencall:buffer: debug: cache hits:0 misses:0 toobig:0

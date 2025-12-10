@@ -1,0 +1,2021 @@
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  RM      build
+  RM      config
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  MKDIR   lxdialog
+  MAKE    kconfig
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig -DCONFIG_=\"\"   -c fixdep.c -o /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig/fixdep.o
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig -DCONFIG_=\"\"   /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig/fixdep.o -o /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig/fixdep
+#
+# configuration written to /home/unikraft/gcarp/catalog-core/c-fs/.config
+#
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     config.h
+  GEN     libuklibid: libraries.in.new
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     libsyscall_shim: provided_syscalls.in.new
+  GEN     libuklibid: libraries.in.new
+  LN      c-fs_xen-arm64.elf.dbg.gdb.py
+  GEN     uk-gdb.py
+  CP      libsyscall_shim: provided_syscalls.in
+  AWK     libsyscall_shim: syscall_nrs.h
+  AWK     libsyscall_shim: syscall_nrs2.h
+  AWK     libsyscall_shim: syscall_map.h
+  AWK     libsyscall_shim: syscall_stubs.h
+  AWK     libsyscall_shim: uk_syscall.c
+  AWK     libsyscall_shim: uk_syscall_r.c
+  AWK     libsyscall_shim: uk_syscall6.c
+  AWK     libsyscall_shim: uk_syscall6_r.c
+  AWK     libsyscall_shim: uk_syscall6_do.c
+  AWK     libsyscall_shim: uk_syscall_name.c
+  AWK     libsyscall_shim: uk_syscall_name_p.c
+  AWK     libsyscall_shim: libc_stubs.c
+  CP      libuklibid: libraries.in
+  AWK     libsyscall_shim: syscall_provided.h
+  AWK     libsyscall_shim: syscall_gensyms.exportsyms.uk
+  AWK     libsyscall_shim: syscall_static.h
+  AWK     libsyscall_shim: syscall_r_static.h
+  AWK     libsyscall_shim: syscall_do_static.h
+  AWK     libuklibid: libid.h
+  AWK     libuklibid: namemap.c
+  AWK     libuklibid: selfids.c
+  AWK     libuklibid: exportsyms.uk
+  CC      libxenplat: hypervisor.o
+  CC      libxenplat: memory.o
+  CC      libxenplat: io.o
+  CC      libxenplat: lcpu.common.o
+  CC      libxenplat: memory.common.o
+  CC      libxenplat: tls.common.o
+  CC      libxenplat: bootinfo.common.o
+  CC      libxenplat: bootinfo_fdt.common.o
+  CC      libxenplat: cpu_native.o
+  CC      libxenplat: setup64.o
+  AS      libxenplat: entry64.o
+  CC      libxenplat: arch_events.o
+  CC      libxenplat: mm.o
+  AS      libxenplat: hypercalls64.o
+  CC      libxenplat: lcpu.arm64_common.o
+  CC      libxenplat: traps_arm64.o
+  CC      libxenplat: time.o
+  CC      libxenplat: generic_timer.o
+  CC      libxenplat: lcpu.o
+  CC      libxenplat: shutdown.o
+  CC      libxenplat: events.o
+  AS      libxenplat: libinfo.libuklibid.o
+  LDS     libxenplat: link64.lds
+  LDS     libxenplat: bootinfo.lds
+  CC      appcfs: cat.o
+  AS      appcfs: libinfo.libuklibid.o
+  CC      libfdt: fdt.o
+  CC      libfdt: fdt_addresses.o
+  CC      libfdt: fdt_empty_tree.o
+  CC      libfdt: fdt_overlay.o
+  CC      libfdt: fdt_ro.o
+  CC      libfdt: fdt_rw.o
+  CC      libfdt: fdt_strerror.o
+  CC      libfdt: fdt_sw.o
+  CC      libfdt: fdt_wip.o
+  AS      libfdt: libinfo.libuklibid.o
+  CC      libisrlib: string.isr.o
+  AS      libisrlib: libinfo.libuklibid.o
+  CC      libnolibc: errno.o
+  CC      libnolibc: stdio.o
+  CC      libnolibc: ctype.o
+  CC      libnolibc: stdlib.o
+  CC      libnolibc: string.o
+  CC      libnolibc: strsignal.o
+  CC      libnolibc: strstr.o
+  CC      libnolibc: psignal.o
+  CC      libnolibc: __month_to_secs.o
+  CC      libnolibc: __secs_to_tm.o
+  CC      libnolibc: timegm.o
+  CC      libnolibc: __tm_to_secs.o
+  CC      libnolibc: __year_to_secs.o
+  CC      libnolibc: htonl.o
+  CC      libnolibc: ntohl.o
+  CC      libnolibc: htons.o
+  CC      libnolibc: ntohs.o
+  CC      libnolibc: h_errno.o
+  CC      libnolibc: getopt.o
+  CC      libnolibc: sscanf.o
+  CC      libnolibc: scanf.o
+  CC      libnolibc: asprintf.o
+  CC      libnolibc: random.o
+  CC      libnolibc: qsort.o
+  AS      libnolibc: libinfo.libuklibid.o
+  AS      libposix_fd: libinfo.libuklibid.o
+  CC      libposix_fdtab: fdtab.o
+  AS      libposix_fdtab: libinfo.libuklibid.o
+  CC      libposix_fdio: fdio.o
+  CC      libposix_fdio: fdstat.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdtab/fdtab.c:15:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libposix_fdio: fdctl.o
+  CC      libposix_fdio: fd-shim.o
+  AS      libposix_fdio: libinfo.libuklibid.o
+  CC      libposix_pipe: pipe.o
+  AS      libposix_pipe: libinfo.libuklibid.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/fd-shim.c:17:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+  CC      libposix_poll: epoll.o
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-pipe/pipe.c:20:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libposix_poll: poll.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-poll/epoll.c:22:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libposix_poll: select.o
+  AS      libposix_poll: libinfo.libuklibid.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-poll/poll.c:12:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+  CC      libposix_tty: pseudo.o
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  AS      libposix_tty: libinfo.libuklibid.o
+  CC      libramfs: ramfs_vfsops.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-poll/select.c:11:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libramfs: ramfs_vnops.o
+  AS      libramfs: libinfo.libuklibid.o
+  CC      libsyscall_shim: uk_syscall.o
+  CC      libsyscall_shim: uk_syscall_r.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall.c:4:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: uk_syscall6.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall_r.c:4:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall6.c:4:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: uk_syscall6_r.o
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: uk_syscall6_do.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall6_r.c:5:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall6_do.c:5:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: uk_syscall_name.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall_name.c:5:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: uk_syscall_name_p.o
+  CC      libsyscall_shim: libc_stubs.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_syscall_name_p.c:5:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: uk_prsyscall.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/libc_stubs.c:5:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+  CC      libsyscall_shim: vars.o
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/uk_prsyscall.c:21:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  AS      libsyscall_shim: libinfo.libuklibid.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/vars.c:7:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  LDS     libsyscall_shim: syscall_exittab.lds
+  LDS     libsyscall_shim: syscall_entertab.lds
+  CC      libukalloc: alloc.o
+  AS      libukalloc: libinfo.libuklibid.o
+  CC      libukallocbbuddy: bbuddy.o
+  AS      libukallocbbuddy: libinfo.libuklibid.o
+  CC      libukargparse: argparse.o
+  AS      libukargparse: libinfo.libuklibid.o
+  AS      libukatomic: libinfo.libuklibid.o
+  AS      libukbitops: libinfo.libuklibid.o
+  CC      libukstreambuf: streambuf.o
+  AS      libukstreambuf: libinfo.libuklibid.o
+  CC      libukboot: boot.o
+  CC      libukboot: early_init.o
+  CC      libukboot: version.o
+  CC      libukboot: banner.o
+  AS      libukboot: libinfo.libuklibid.o
+  LDS     libukboot: earlytab.lds
+  CC      libukboot_main: weak_main.o
+  AS      libukboot_main: libinfo.libuklibid.o
+  CC      libukconsole: console.isr.o
+  AS      libukconsole: libinfo.libuklibid.o
+  CC      libukcpio: cpio.o
+  AS      libukcpio: libinfo.libuklibid.o
+  CC      libukdebug: print.o
+  CC      libukdebug: outf.o
+  CC      libukdebug: hexdump.o
+  AS      libukdebug: libinfo.libuklibid.o
+  CC      libukfile: pollqueue.o
+  CC      libukfile: file-nops.o
+  AS      libukfile: libinfo.libuklibid.o
+  CC      libuklibid: namemap.o
+  CC      libuklibid: selfids.o
+  CC      libuklibid: rtmap.o
+  AS      libuklibid: libinfo.global.o
+  AS      libuklibid: libinfo.libuklibid.o
+  CC      libukintctlr: ukintctlr.o
+  AS      libukintctlr: libinfo.libuklibid.o
+  CC      libuklibparam: parser.o
+  AS      libuklibparam: libinfo.libuklibid.o
+  LDS     libuklibparam: libparam.lds
+  CC      libuklock: semaphore.o
+  CC      libuklock: mutex.o
+  CC      libuklock: rwlock.o
+  AS      libuklock: libinfo.libuklibid.o
+  CC      libuksched: sched.o
+  CC      libuksched: thread.o
+  CC      libuksched: isrwake.isr.o
+  AS      libuksched: libinfo.libuklibid.o
+  CC      libukschedcoop: schedcoop.o
+  CC      libukschedcoop: isrwoken.isr.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/uksched/sched.c:44:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+  AS      libukschedcoop: libinfo.libuklibid.o
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libposix_time: time.o
+  CC      libposix_time: timer.o
+  AS      libposix_time: libinfo.libuklibid.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-time/time.c:43:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-time/timer.c:37:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+  CC      libuktimeconv: timeconv.o
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  AS      libuktimeconv: libinfo.libuklibid.o
+  CC      libvfscore: fd.o
+  CC      libvfscore: file.o
+  CC      libvfscore: mount.o
+  CC      libvfscore: vnode.o
+  CC      libvfscore: dentry.o
+  CC      libvfscore: syscalls.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/mount.c:55:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libvfscore: main.o
+  CC      libvfscore: task.o
+  CC      libvfscore: lookup.o
+In file included from /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_map.h:3,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:674,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/main.c:56:
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:55:2: warning: #warning Ignoring legacy system call 'dup2': No system call number available [-Wcpp]
+   55 | #warning Ignoring legacy system call 'dup2': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:385:2: warning: #warning Ignoring legacy system call 'pipe': No system call number available [-Wcpp]
+  385 | #warning Ignoring legacy system call 'pipe': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:415:2: warning: #warning Ignoring legacy system call 'poll': No system call number available [-Wcpp]
+  415 | #warning Ignoring legacy system call 'poll': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:445:2: warning: #warning Ignoring legacy system call 'select': No system call number available [-Wcpp]
+  445 | #warning Ignoring legacy system call 'select': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:475:2: warning: #warning Ignoring legacy system call 'epoll_create': No system call number available [-Wcpp]
+  475 | #warning Ignoring legacy system call 'epoll_create': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:520:2: warning: #warning Ignoring legacy system call 'epoll_wait': No system call number available [-Wcpp]
+  520 | #warning Ignoring legacy system call 'epoll_wait': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:745:2: warning: #warning Ignoring legacy system call 'time': No system call number available [-Wcpp]
+  745 | #warning Ignoring legacy system call 'time': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:850:2: warning: #warning Ignoring legacy system call 'readlink': No system call number available [-Wcpp]
+  850 | #warning Ignoring legacy system call 'readlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:880:2: warning: #warning Ignoring legacy system call 'link': No system call number available [-Wcpp]
+  880 | #warning Ignoring legacy system call 'link': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:910:2: warning: #warning Ignoring legacy system call 'access': No system call number available [-Wcpp]
+  910 | #warning Ignoring legacy system call 'access': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:970:2: warning: #warning Ignoring legacy system call 'chmod': No system call number available [-Wcpp]
+  970 | #warning Ignoring legacy system call 'chmod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:985:2: warning: #warning Ignoring legacy system call 'utime': No system call number available [-Wcpp]
+  985 | #warning Ignoring legacy system call 'utime': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1000:2: warning: #warning Ignoring legacy system call 'utimes': No system call number available [-Wcpp]
+ 1000 | #warning Ignoring legacy system call 'utimes': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1015:2: warning: #warning Ignoring legacy system call 'mknod': No system call number available [-Wcpp]
+ 1015 | #warning Ignoring legacy system call 'mknod': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1030:2: warning: #warning Ignoring legacy system call 'rmdir': No system call number available [-Wcpp]
+ 1030 | #warning Ignoring legacy system call 'rmdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1045:2: warning: #warning Ignoring legacy system call 'rename': No system call number available [-Wcpp]
+ 1045 | #warning Ignoring legacy system call 'rename': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1090:2: warning: #warning Ignoring legacy system call 'lstat': No system call number available [-Wcpp]
+ 1090 | #warning Ignoring legacy system call 'lstat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1150:2: warning: #warning Ignoring legacy system call 'futimesat': No system call number available [-Wcpp]
+ 1150 | #warning Ignoring legacy system call 'futimesat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1225:2: warning: #warning Ignoring legacy system call 'lchown': No system call number available [-Wcpp]
+ 1225 | #warning Ignoring legacy system call 'lchown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1240:2: warning: #warning Ignoring legacy system call 'chown': No system call number available [-Wcpp]
+ 1240 | #warning Ignoring legacy system call 'chown': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1255:2: warning: #warning Ignoring legacy system call 'stat': No system call number available [-Wcpp]
+ 1255 | #warning Ignoring legacy system call 'stat': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1270:2: warning: #warning Ignoring legacy system call 'mkdir': No system call number available [-Wcpp]
+ 1270 | #warning Ignoring legacy system call 'mkdir': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1315:2: warning: #warning Ignoring legacy system call 'symlink': No system call number available [-Wcpp]
+ 1315 | #warning Ignoring legacy system call 'symlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1330:2: warning: #warning Ignoring legacy system call 'unlink': No system call number available [-Wcpp]
+ 1330 | #warning Ignoring legacy system call 'unlink': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1405:2: warning: #warning Ignoring legacy system call 'open': No system call number available [-Wcpp]
+ 1405 | #warning Ignoring legacy system call 'open': No system call number available
+      |  ^~~~~~~
+/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/include/uk/bits/syscall_provided.h:1435:2: warning: #warning Ignoring legacy system call 'creat': No system call number available [-Wcpp]
+ 1435 | #warning Ignoring legacy system call 'creat': No system call number available
+      |  ^~~~~~~
+  CC      libvfscore: fops.o
+  CC      libvfscore: subr_uio.o
+  CC      libvfscore: automount.o
+  AS      libvfscore: libinfo.libuklibid.o
+  CC      libukofw: fdt.o
+  AS      libukofw: libinfo.libuklibid.o
+  CC      libukallocstack: stack.o
+  AS      libukallocstack: libinfo.libuklibid.o
+  AS      libarm64arch: libinfo.libuklibid.o
+  CC      libcontext: ctx.isr.o
+  CC      libcontext: ectx.isr.o
+  CC      libcontext: sysctx.isr.o
+  AS      libcontext: execenv.arm64.o
+  AS      libcontext: ctx.arm64.o
+  CC      libcontext: tls.arm64.o
+  AS      libcontext: libinfo.libuklibid.o
+  CC      libukintctlr_gic: ukintctlr.o
+  CC      libukintctlr_gic: gic-common.o
+  CC      libukintctlr_gic: gic-v3.o
+  AS      libukintctlr_gic: libinfo.libuklibid.o
+  CC      libxencons: console.isr.o
+  AS      libxencons: libinfo.libuklibid.o
+  LD      libxenplat.ld.o
+  LD      appcfs.ld.o
+  LD      libfdt.ld.o
+  LD      libisrlib.ld.o
+  LD      libnolibc.ld.o
+  LD      libposix_fd.ld.o
+  LD      libposix_fdtab.ld.o
+  LD      libposix_pipe.ld.o
+  LD      libposix_poll.ld.o
+  LD      libposix_tty.ld.o
+  LD      libramfs.ld.o
+  LD      libsyscall_shim.ld.o
+  LD      libukalloc.ld.o
+  LD      libukallocbbuddy.ld.o
+  LD      libukargparse.ld.o
+  LD      libukatomic.ld.o
+  LD      libukbitops.ld.o
+  LD      libukstreambuf.ld.o
+  LD      libukboot.ld.o
+  LD      libukboot_main.ld.o
+  LD      libukconsole.ld.o
+  LD      libukcpio.ld.o
+  LD      libukdebug.ld.o
+  LD      libukfile.ld.o
+  LD      libuklibid.ld.o
+  LD      libukintctlr.ld.o
+  LD      libuklibparam.ld.o
+  LD      libuklock.ld.o
+  LD      libuksched.ld.o
+  LD      libukschedcoop.ld.o
+  LD      libposix_time.ld.o
+  LD      libuktimeconv.ld.o
+  LD      libukofw.ld.o
+  LD      libukallocstack.ld.o
+  LD      libarm64arch.ld.o
+  LD      libcontext.ld.o
+  LD      libukintctlr_gic.ld.o
+  LD      libxencons.ld.o
+  OBJCOPY libxenplat.o
+  OBJCOPY appcfs.o
+  OBJCOPY libfdt.o
+  OBJCOPY libisrlib.o
+  OBJCOPY libnolibc.o
+  OBJCOPY libposix_fd.o
+  OBJCOPY libposix_fdtab.o
+  LD      libposix_fdio.ld.o
+  OBJCOPY libposix_pipe.o
+  OBJCOPY libposix_poll.o
+  OBJCOPY libposix_tty.o
+  OBJCOPY libramfs.o
+  OBJCOPY libsyscall_shim.o
+  OBJCOPY libukalloc.o
+  OBJCOPY libukallocbbuddy.o
+  OBJCOPY libukargparse.o
+  OBJCOPY libukatomic.o
+  OBJCOPY libukbitops.o
+  OBJCOPY libukstreambuf.o
+  OBJCOPY libukboot.o
+  OBJCOPY libukboot_main.o
+  OBJCOPY libukconsole.o
+  OBJCOPY libukcpio.o
+  OBJCOPY libukdebug.o
+  OBJCOPY libukfile.o
+  OBJCOPY libuklibid.o
+  OBJCOPY libukintctlr.o
+  OBJCOPY libuklibparam.o
+  OBJCOPY libuklock.o
+  OBJCOPY libuksched.o
+  OBJCOPY libukschedcoop.o
+  OBJCOPY libposix_time.o
+  OBJCOPY libuktimeconv.o
+  OBJCOPY libukofw.o
+  OBJCOPY libukallocstack.o
+  OBJCOPY libarm64arch.o
+  OBJCOPY libcontext.o
+  OBJCOPY libukintctlr_gic.o
+  OBJCOPY libxencons.o
+  OBJCOPY libposix_fdio.o
+  LD      libvfscore.ld.o
+  OBJCOPY libvfscore.o
+  LD      c-fs_xen-arm64.elf.ld.o
+/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: warning: -z relro ignored
+  OBJCOPY c-fs_xen-arm64.elf.o
+  LD      c-fs_xen-arm64.elf.dbg
+/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: warning: -z relro ignored
+  SCSTRIP c-fs_xen-arm64.elf
+  UKBI    c-fs_xen-arm64.elf.bootinfo
+  OBJCOPY c-fs_xen-arm64
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'

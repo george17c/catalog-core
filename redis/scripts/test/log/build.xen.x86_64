@@ -1,0 +1,2496 @@
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  RM      build
+  RM      config
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  MKDIR   lxdialog
+  MAKE    kconfig
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/redis/workdir/build/kconfig -DCONFIG_=\"\"   -c fixdep.c -o /home/unikraft/gcarp/catalog-core/redis/workdir/build/kconfig/fixdep.o
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/redis/workdir/build/kconfig -DCONFIG_=\"\"   /home/unikraft/gcarp/catalog-core/redis/workdir/build/kconfig/fixdep.o -o /home/unikraft/gcarp/catalog-core/redis/workdir/build/kconfig/fixdep
+#
+# configuration written to /home/unikraft/gcarp/catalog-core/redis/.config
+#
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     config.h
+  WGET    libmusl: https://www.musl-libc.org/releases/musl-1.2.3.tar.gz
+
+     0K .......... .......... .......... .......... ..........  4%  429K 2s
+    50K .......... .......... .......... .......... ..........  9%  433K 2s
+   100K .......... .......... .......... .......... .......... 14% 13.0M 1s
+   150K .......... .......... .......... .......... .......... 19% 1.45M 1s
+   200K .......... .......... .......... .......... .......... 24%  628K 1s
+   250K .......... .......... .......... .......... .......... 29% 11.7M 1s
+   300K .......... .......... .......... .......... .......... 33% 11.9M 1s
+   350K .......... .......... .......... .......... .......... 38% 1.75M 1s
+   400K .......... .......... .......... .......... .......... 43%  646K 1s
+   450K .......... .......... .......... .......... .......... 48% 14.6M 0s
+   500K .......... .......... .......... .......... .......... 53% 11.6M 0s
+   550K .......... .......... .......... .......... .......... 58% 11.1M 0s
+   600K .......... .......... .......... .......... .......... 62% 11.5M 0s
+   650K .......... .......... .......... .......... .......... 67% 11.7M 0s
+   700K .......... .......... .......... .......... .......... 72% 11.6M 0s
+   750K .......... .......... .......... .......... .......... 77% 3.66M 0s
+   800K .......... .......... .......... .......... .......... 82% 11.7M 0s
+   850K .......... .......... .......... .......... .......... 87% 11.6M 0s
+   900K .......... .......... .......... .......... .......... 91%  695K 0s
+   950K .......... .......... .......... .......... .......... 96% 11.3M 0s
+  1000K .......... .......... .......... ...                  100% 13.1M=0.6s  UNTAR   libmusl: musl-1.2.3.tar.gz
+  PATCH   libmusl: 0001-Remove-prototype-for-syscall-from-unistd.h.patch
+  PATCH   libmusl: 0002-prevent-index-redeclaration-error.patch
+  PATCH   libmusl: 0003-Avoid-reserved-__unused-in-stat.h.patch
+  PATCH   libmusl: 0004-Fix-time_h-conflicts.patch
+  PATCH   libmusl: 0005-lib-musl-Use-macros-defined-in-syscall-shim-layer.patch
+  PATCH   libmusl: 0006-lib-musl-Use-uk_syscall_r-for-do_setxid.patch
+  PATCH   libmusl: 0007-lib-musl-Use-uk_syscall_r-for-__syscall_cp_c.patch
+  PATCH   libmusl: 0008-__syscall_cp-use-syscall-shim-layer.patch
+  PATCH   libmusl: 0009-Use-uk_bits_syscall_nrs.patch
+  PATCH   libmusl: 0010-Fix-stdio_write-output.patch
+  PATCH   libmusl: 0011-add-SC_LEVEL1_DCACHE_LINESIZE-unistd_h.patch
+  PATCH   libmusl: 0012-Change-some-things-in-pthread_create.c.patch
+  PATCH   libmusl: 0013-Comment-macros-to-stop-using-VDSO.patch
+  PATCH   libmusl: 0014-include-Use-function-declaration-for-getdents64.patch
+  PATCH   libmusl: 0015-Use-uk_syscall_r_for_alt_socketcall-patch.patch
+  PATCH   libmusl: 0016-Use-ulong-in-ioctl.patch
+  PATCH   libmusl: 0017-locale-iconv-Add-character-map-option.patch
+  PATCH   libmusl: 0018-prlimit64_conflict.patch
+  PATCH   libmusl: 0019-Use-ulong-in-ioctl-definition.patch
+  PATCH   libmusl: 0020-Add-syscall-function-prototype.patch
+  CONFIGURE libmusl: alltypes.h
+  CONFIGURE libmusl: version.h
+  HOSTLN  libmusl: core: include/sys/types.h
+  HOSTLN  libmusl: core: include/sys/param.h
+  HOSTLN  libmusl: core: include/sys/time.h
+  HOSTLN  libmusl: core: include/sys/mount.h
+  HOSTLN  libmusl: core: include/sys/sysmacros.h
+  HOSTLN  libmusl: core: include/sys/file.h
+  HOSTLN  libmusl: core: include/alloca.h
+  HOSTLN  libmusl: core: include/stdbool.h
+  HOSTLN  libmusl: core: include/limits.h
+  HOSTLN  libmusl: core: include/features.h
+  HOSTLN  libmusl: core: include/assert.h
+  HOSTLN  libmusl: core: include/sysexits.h
+  HOSTLN  libmusl: mq: include/errno.h
+  HOSTLN  libmusl: mq: include/fcntl.h
+  HOSTLN  libmusl: mq: include/mqueue.h
+  HOSTLN  libmusl: mq: include/pthread.h
+  HOSTLN  libmusl: mq: include/signal.h
+  HOSTLN  libmusl: mq: include/stdarg.h
+  HOSTLN  libmusl: mq: src/internal/syscall.h
+  HOSTLN  libmusl: mq: include/sys/socket.h
+  HOSTLN  libmusl: mq: include/unistd.h
+  HOSTLN  libmusl: dirent: include/sys/stat.h
+  HOSTLN  libmusl: dirent: include/dirent.h
+  HOSTLN  libmusl: dirent: include/errno.h
+  HOSTLN  libmusl: dirent: include/fcntl.h
+  HOSTLN  libmusl: dirent: include/stddef.h
+  HOSTLN  libmusl: dirent: include/stdint.h
+  HOSTLN  libmusl: dirent: include/stdlib.h
+  HOSTLN  libmusl: dirent: include/string.h
+  HOSTLN  libmusl: dirent: include/unistd.h
+  HOSTLN  libmusl: dirent: src/dirent/__dirent.h
+  HOSTLN  libmusl: dirent: src/internal/libc.h
+  HOSTLN  libmusl: dirent: src/internal/syscall.h
+  HOSTLN  libmusl: misc: src/internal/atomic.h
+  HOSTLN  libmusl: misc: include/dirent.h
+  HOSTLN  libmusl: misc: include/endian.h
+  HOSTLN  libmusl: misc: include/errno.h
+  HOSTLN  libmusl: misc: include/fcntl.h
+  HOSTLN  libmusl: misc: include/fmtmsg.h
+  HOSTLN  libmusl: misc: src/internal/fork_impl.h
+  HOSTLN  libmusl: misc: include/ftw.h
+  HOSTLN  libmusl: misc: include/getopt.h
+  HOSTLN  libmusl: misc: include/grp.h
+  HOSTLN  libmusl: misc: src/internal/libc.h
+  HOSTLN  libmusl: misc: include/libgen.h
+  HOSTLN  libmusl: misc: include/limits.h
+  HOSTLN  libmusl: misc: src/internal/locale_impl.h
+  HOSTLN  libmusl: misc: src/internal/lock.h
+  HOSTLN  libmusl: misc: include/mntent.h
+  HOSTLN  libmusl: misc: include/pthread.h
+  HOSTLN  libmusl: misc: src/internal/pthread_impl.h
+  HOSTLN  libmusl: misc: include/pty.h
+  HOSTLN  libmusl: misc: include/signal.h
+  HOSTLN  libmusl: misc: include/stdarg.h
+  HOSTLN  libmusl: misc: include/stddef.h
+  HOSTLN  libmusl: misc: include/stdint.h
+  HOSTLN  libmusl: misc: include/stdio.h
+  HOSTLN  libmusl: misc: src/internal/stdio_impl.h
+  HOSTLN  libmusl: misc: include/stdlib.h
+  HOSTLN  libmusl: misc: include/string.h
+  HOSTLN  libmusl: misc: include/strings.h
+  HOSTLN  libmusl: misc: include/sys/auxv.h
+  HOSTLN  libmusl: misc: src/internal/syscall.h
+  HOSTLN  libmusl: misc: include/sys/ioctl.h
+  HOSTLN  libmusl: misc: include/syslog.h
+  HOSTLN  libmusl: misc: include/sys/random.h
+  HOSTLN  libmusl: misc: include/sys/resource.h
+  HOSTLN  libmusl: misc: include/sys/socket.h
+  HOSTLN  libmusl: misc: include/sys/stat.h
+  HOSTLN  libmusl: misc: include/sys/time.h
+  HOSTLN  libmusl: misc: include/sys/utsname.h
+  HOSTLN  libmusl: misc: include/sys/wait.h
+  HOSTLN  libmusl: misc: include/time.h
+  HOSTLN  libmusl: misc: include/unistd.h
+  HOSTLN  libmusl: misc: include/utmp.h
+  HOSTLN  libmusl: misc: include/wchar.h
+  HOSTLN  libmusl: misc: include/wordexp.h
+  HOSTLN  libmusl: misc: include/ar.h
+  HOSTLN  libmusl: temp: include/errno.h
+  HOSTLN  libmusl: temp: include/fcntl.h
+  HOSTLN  libmusl: temp: src/internal/libc.h
+  HOSTLN  libmusl: temp: include/stdint.h
+  HOSTLN  libmusl: temp: include/stdlib.h
+  HOSTLN  libmusl: temp: include/string.h
+  HOSTLN  libmusl: temp: include/sys/stat.h
+  HOSTLN  libmusl: temp: include/time.h
+  HOSTLN  libmusl: temp: include/unistd.h
+  HOSTLN  libmusl: multibyte: include/errno.h
+  HOSTLN  libmusl: multibyte: src/multibyte/internal.h
+  HOSTLN  libmusl: multibyte: include/stdint.h
+  HOSTLN  libmusl: multibyte: include/stdio.h
+  HOSTLN  libmusl: multibyte: include/stdlib.h
+  HOSTLN  libmusl: multibyte: include/string.h
+  HOSTLN  libmusl: multibyte: include/uchar.h
+  HOSTLN  libmusl: multibyte: include/wchar.h
+  HOSTLN  libmusl: process: src/internal/aio_impl.h
+  HOSTLN  libmusl: process: include/errno.h
+  HOSTLN  libmusl: process: include/fcntl.h
+  HOSTLN  libmusl: process: src/internal/fork_impl.h
+  HOSTLN  libmusl: process: src/internal/libc.h
+  HOSTLN  libmusl: process: include/limits.h
+  HOSTLN  libmusl: process: src/internal/lock.h
+  HOSTLN  libmusl: process: src/internal/pthread_impl.h
+  HOSTLN  libmusl: process: include/sched.h
+  HOSTLN  libmusl: process: include/signal.h
+  HOSTLN  libmusl: process: include/spawn.h
+  HOSTLN  libmusl: process: include/stdarg.h
+  HOSTLN  libmusl: process: include/stdlib.h
+  HOSTLN  libmusl: process: include/string.h
+  HOSTLN  libmusl: process: include/syscall.h
+  HOSTLN  libmusl: process: include/sys/wait.h
+  HOSTLN  libmusl: process: include/sys/ucontext.h
+  HOSTLN  libmusl: process: include/ucontext.h
+  HOSTLN  libmusl: process: include/unistd.h
+  HOSTLN  libmusl: mman: include/errno.h
+  HOSTLN  libmusl: mman: include/fcntl.h
+  HOSTLN  libmusl: mman: src/internal/libc.h
+  HOSTLN  libmusl: mman: include/limits.h
+  HOSTLN  libmusl: mman: include/pthread.h
+  HOSTLN  libmusl: mman: include/stdarg.h
+  HOSTLN  libmusl: mman: include/stdint.h
+  HOSTLN  libmusl: mman: include/string.h
+  HOSTLN  libmusl: mman: src/internal/syscall.h
+  HOSTLN  libmusl: mman: include/sys/syscall.h
+  HOSTLN  libmusl: mman: include/sys/mman.h
+  HOSTLN  libmusl: mman: include/unistd.h
+  HOSTLN  libmusl: stdlib: src/internal/atomic.h
+  HOSTLN  libmusl: stdlib: include/ctype.h
+  HOSTLN  libmusl: stdlib: src/internal/floatscan.h
+  HOSTLN  libmusl: stdlib: src/internal/intscan.h
+  HOSTLN  libmusl: stdlib: include/inttypes.h
+  HOSTLN  libmusl: stdlib: include/limits.h
+  HOSTLN  libmusl: stdlib: src/internal/shgetc.h
+  HOSTLN  libmusl: stdlib: include/stdint.h
+  HOSTLN  libmusl: stdlib: include/stdalign.h
+  HOSTLN  libmusl: stdlib: include/stdio.h
+  HOSTLN  libmusl: stdlib: src/internal/stdio_impl.h
+  HOSTLN  libmusl: stdlib: include/stdlib.h
+  HOSTLN  libmusl: stdlib: include/string.h
+  HOSTLN  libmusl: stdlib: include/wchar.h
+  HOSTLN  libmusl: stdlib: include/wctype.h
+  HOSTLN  libmusl: fcntl: include/errno.h
+  HOSTLN  libmusl: fcntl: include/fcntl.h
+  HOSTLN  libmusl: fcntl: src/internal/libc.h
+  HOSTLN  libmusl: fcntl: include/stdarg.h
+  HOSTLN  libmusl: fcntl: src/internal/syscall.h
+  HOSTLN  libmusl: stdio: src/internal/aio_impl.h
+  HOSTLN  libmusl: stdio: include/ctype.h
+  HOSTLN  libmusl: stdio: include/errno.h
+  HOSTLN  libmusl: stdio: include/fcntl.h
+  HOSTLN  libmusl: stdio: include/float.h
+  HOSTLN  libmusl: stdio: src/internal/floatscan.h
+  HOSTLN  libmusl: stdio: src/internal/fork_impl.h
+  HOSTLN  libmusl: stdio: src/internal/intscan.h
+  HOSTLN  libmusl: stdio: include/inttypes.h
+  HOSTLN  libmusl: stdio: src/internal/libc.h
+  HOSTLN  libmusl: stdio: include/limits.h
+  HOSTLN  libmusl: stdio: src/internal/locale_impl.h
+  HOSTLN  libmusl: stdio: src/internal/lock.h
+  HOSTLN  libmusl: stdio: include/math.h
+  HOSTLN  libmusl: stdio: src/internal/pthread_impl.h
+  HOSTLN  libmusl: stdio: src/internal/shgetc.h
+  HOSTLN  libmusl: stdio: include/spawn.h
+  HOSTLN  libmusl: stdio: include/stdarg.h
+  HOSTLN  libmusl: stdio: include/stddef.h
+  HOSTLN  libmusl: stdio: include/stdint.h
+  HOSTLN  libmusl: stdio: include/stdio_ext.h
+  HOSTLN  libmusl: stdio: include/stdio.h
+  HOSTLN  libmusl: stdio: src/internal/stdio_impl.h
+  HOSTLN  libmusl: stdio: include/stdlib.h
+  HOSTLN  libmusl: stdio: include/string.h
+  HOSTLN  libmusl: stdio: include/syscall.h
+  HOSTLN  libmusl: stdio: include/sys/ioctl.h
+  HOSTLN  libmusl: stdio: include/sys/stat.h
+  HOSTLN  libmusl: stdio: include/sys/uio.h
+  HOSTLN  libmusl: stdio: include/unistd.h
+  HOSTLN  libmusl: stdio: include/wchar.h
+  HOSTLN  libmusl: stdio: include/wctype.h
+  HOSTLN  libmusl: conf: include/errno.h
+  HOSTLN  libmusl: conf: src/internal/libc.h
+  HOSTLN  libmusl: conf: include/limits.h
+  HOSTLN  libmusl: conf: include/signal.h
+  HOSTLN  libmusl: conf: include/stdio.h
+  HOSTLN  libmusl: conf: src/internal/syscall.h
+  HOSTLN  libmusl: conf: include/sys/resource.h
+  HOSTLN  libmusl: conf: include/sys/sysinfo.h
+  HOSTLN  libmusl: conf: include/unistd.h
+  HOSTLN  libmusl: math: src/internal/atomic.h
+  HOSTLN  libmusl: math: include/fenv.h
+  HOSTLN  libmusl: math: include/float.h
+  HOSTLN  libmusl: math: src/math/__invtrigl.h
+  HOSTLN  libmusl: math: src/internal/libc.h
+  HOSTLN  libmusl: math: src/internal/libm.h
+  HOSTLN  libmusl: math: include/limits.h
+  HOSTLN  libmusl: math: include/math.h
+  HOSTLN  libmusl: math: include/stdint.h
+  HOSTLN  libmusl: math: include/complex.h
+  HOSTLN  libmusl: math: include/endian.h
+  HOSTLN  libmusl: aio: include/aio.h
+  HOSTLN  libmusl: aio: src/internal/atomic.h
+  HOSTLN  libmusl: aio: include/errno.h
+  HOSTLN  libmusl: aio: src/internal/libc.h
+  HOSTLN  libmusl: aio: include/limits.h
+  HOSTLN  libmusl: aio: include/pthread.h
+  HOSTLN  libmusl: aio: src/internal/pthread_impl.h
+  HOSTLN  libmusl: aio: include/semaphore.h
+  HOSTLN  libmusl: aio: include/stdlib.h
+  HOSTLN  libmusl: aio: include/string.h
+  HOSTLN  libmusl: aio: src/internal/syscall.h
+  HOSTLN  libmusl: aio: include/time.h
+  HOSTLN  libmusl: aio: include/unistd.h
+  HOSTLN  libmusl: stat: include/errno.h
+  HOSTLN  libmusl: stat: include/fcntl.h
+  HOSTLN  libmusl: stat: src/internal/libc.h
+  HOSTLN  libmusl: stat: src/internal/syscall.h
+  HOSTLN  libmusl: stat: include/sys/statfs.h
+  HOSTLN  libmusl: stat: include/sys/stat.h
+  HOSTLN  libmusl: stat: include/sys/statvfs.h
+  HOSTLN  libmusl: stat: include/sys/time.h
+  HOSTLN  libmusl: search: src/internal/libc.h
+  HOSTLN  libmusl: search: include/search.h
+  HOSTLN  libmusl: search: include/stdlib.h
+  HOSTLN  libmusl: search: include/string.h
+  HOSTLN  libmusl: crypt: include/crypt.h
+  HOSTLN  libmusl: crypt: include/ctype.h
+  HOSTLN  libmusl: crypt: src/internal/libc.h
+  HOSTLN  libmusl: crypt: include/stdint.h
+  HOSTLN  libmusl: crypt: include/stdio.h
+  HOSTLN  libmusl: crypt: include/stdlib.h
+  HOSTLN  libmusl: crypt: include/string.h
+  HOSTLN  libmusl: crypt: include/unistd.h
+  HOSTLN  libmusl: select: include/errno.h
+  HOSTLN  libmusl: select: src/internal/libc.h
+  HOSTLN  libmusl: select: include/poll.h
+  HOSTLN  libmusl: select: include/signal.h
+  HOSTLN  libmusl: select: include/stdint.h
+  HOSTLN  libmusl: select: src/internal/syscall.h
+  HOSTLN  libmusl: select: include/sys/select.h
+  HOSTLN  libmusl: select: include/time.h
+  HOSTLN  libmusl: malloc: src/internal/atomic.h
+  HOSTLN  libmusl: malloc: include/errno.h
+  HOSTLN  libmusl: malloc: src/internal/libc.h
+  HOSTLN  libmusl: malloc: include/limits.h
+  HOSTLN  libmusl: malloc: include/malloc.h
+  HOSTLN  libmusl: malloc: src/internal/pthread_impl.h
+  HOSTLN  libmusl: malloc: include/stdint.h
+  HOSTLN  libmusl: malloc: include/stdlib.h
+  HOSTLN  libmusl: malloc: include/string.h
+  HOSTLN  libmusl: malloc: src/internal/syscall.h
+  HOSTLN  libmusl: malloc: include/sys/mman.h
+  HOSTLN  libmusl: unistd: include/errno.h
+  HOSTLN  libmusl: unistd: include/fcntl.h
+  HOSTLN  libmusl: unistd: src/internal/libc.h
+  HOSTLN  libmusl: unistd: include/limits.h
+  HOSTLN  libmusl: unistd: src/internal/pthread_impl.h
+  HOSTLN  libmusl: unistd: include/signal.h
+  HOSTLN  libmusl: unistd: include/stdio.h
+  HOSTLN  libmusl: unistd: include/stdlib.h
+  HOSTLN  libmusl: unistd: include/string.h
+  HOSTLN  libmusl: unistd: src/internal/syscall.h
+  HOSTLN  libmusl: unistd: include/sys/ioctl.h
+  HOSTLN  libmusl: unistd: include/sys/resource.h
+  HOSTLN  libmusl: unistd: include/sys/stat.h
+  HOSTLN  libmusl: unistd: include/sys/time.h
+  HOSTLN  libmusl: unistd: include/sys/uio.h
+  HOSTLN  libmusl: unistd: include/sys/utsname.h
+  HOSTLN  libmusl: unistd: include/sys/wait.h
+  HOSTLN  libmusl: unistd: include/termios.h
+  HOSTLN  libmusl: unistd: include/time.h
+  HOSTLN  libmusl: unistd: include/unistd.h
+  HOSTLN  libmusl: signal: include/errno.h
+  HOSTLN  libmusl: signal: include/features.h
+  HOSTLN  libmusl: signal: src/internal/ksigaction.h
+  HOSTLN  libmusl: signal: src/internal/libc.h
+  HOSTLN  libmusl: signal: include/limits.h
+  HOSTLN  libmusl: signal: src/internal/lock.h
+  HOSTLN  libmusl: signal: src/internal/pthread_impl.h
+  HOSTLN  libmusl: signal: include/setjmp.h
+  HOSTLN  libmusl: signal: include/signal.h
+  HOSTLN  libmusl: signal: include/stdint.h
+  HOSTLN  libmusl: signal: src/internal/stdio_impl.h
+  HOSTLN  libmusl: signal: include/string.h
+  HOSTLN  libmusl: signal: include/syscall.h
+  HOSTLN  libmusl: signal: include/sys/time.h
+  HOSTLN  libmusl: signal: include/unistd.h
+  HOSTLN  libmusl: signal: arch/x86_64/bits/signal.h
+  HOSTLN  libmusl: thread: src/internal/atomic.h
+  HOSTLN  libmusl: thread: include/ctype.h
+  HOSTLN  libmusl: thread: include/dirent.h
+  HOSTLN  libmusl: thread: src/internal/dynlink.h
+  HOSTLN  libmusl: thread: include/elf.h
+  HOSTLN  libmusl: thread: include/errno.h
+  HOSTLN  libmusl: thread: include/fcntl.h
+  HOSTLN  libmusl: thread: src/internal/futex.h
+  HOSTLN  libmusl: thread: src/internal/libc.h
+  HOSTLN  libmusl: thread: include/limits.h
+  HOSTLN  libmusl: thread: include/pthread.h
+  HOSTLN  libmusl: thread: src/internal/pthread_impl.h
+  HOSTLN  libmusl: thread: include/semaphore.h
+  HOSTLN  libmusl: thread: include/signal.h
+  HOSTLN  libmusl: thread: include/stdarg.h
+  HOSTLN  libmusl: thread: include/stddef.h
+  HOSTLN  libmusl: thread: include/stdint.h
+  HOSTLN  libmusl: thread: include/stdio.h
+  HOSTLN  libmusl: thread: src/internal/stdio_impl.h
+  HOSTLN  libmusl: thread: include/stdlib.h
+  HOSTLN  libmusl: thread: include/string.h
+  HOSTLN  libmusl: thread: src/internal/syscall.h
+  HOSTLN  libmusl: thread: include/sys/mman.h
+  HOSTLN  libmusl: thread: include/sys/prctl.h
+  HOSTLN  libmusl: thread: include/sys/stat.h
+  HOSTLN  libmusl: thread: include/sys/syscall.h
+  HOSTLN  libmusl: thread: include/threads.h
+  HOSTLN  libmusl: thread: include/time.h
+  HOSTLN  libmusl: thread: include/unistd.h
+  HOSTLN  libmusl: legacy: include/err.h
+  HOSTLN  libmusl: legacy: include/errno.h
+  HOSTLN  libmusl: legacy: include/fcntl.h
+  HOSTLN  libmusl: legacy: include/ftw.h
+  HOSTLN  libmusl: legacy: src/internal/libc.h
+  HOSTLN  libmusl: legacy: include/limits.h
+  HOSTLN  libmusl: legacy: include/pwd.h
+  HOSTLN  libmusl: legacy: include/stdarg.h
+  HOSTLN  libmusl: legacy: include/stddef.h
+  HOSTLN  libmusl: legacy: include/stdio.h
+  HOSTLN  libmusl: legacy: include/stdlib.h
+  HOSTLN  libmusl: legacy: include/string.h
+  HOSTLN  libmusl: legacy: include/stropts.h
+  HOSTLN  libmusl: legacy: include/sys/resource.h
+  HOSTLN  libmusl: legacy: include/sys/stat.h
+  HOSTLN  libmusl: legacy: include/sys/sysinfo.h
+  HOSTLN  libmusl: legacy: include/sys/time.h
+  HOSTLN  libmusl: legacy: include/termios.h
+  HOSTLN  libmusl: legacy: include/ulimit.h
+  HOSTLN  libmusl: legacy: include/unistd.h
+  HOSTLN  libmusl: legacy: include/utmpx.h
+  HOSTLN  libmusl: env: src/internal/atomic.h
+  HOSTLN  libmusl: env: include/elf.h
+  HOSTLN  libmusl: env: include/errno.h
+  HOSTLN  libmusl: env: include/fcntl.h
+  HOSTLN  libmusl: env: src/internal/libc.h
+  HOSTLN  libmusl: env: include/limits.h
+  HOSTLN  libmusl: env: include/poll.h
+  HOSTLN  libmusl: env: src/internal/pthread_impl.h
+  HOSTLN  libmusl: env: include/signal.h
+  HOSTLN  libmusl: env: include/stddef.h
+  HOSTLN  libmusl: env: include/stdint.h
+  HOSTLN  libmusl: env: include/stdlib.h
+  HOSTLN  libmusl: env: src/include/string.h
+  HOSTLN  libmusl: env: include/syscall.h
+  HOSTLN  libmusl: env: include/sys/mman.h
+  HOSTLN  libmusl: env: src/include/unistd.h
+  HOSTLN  libmusl: time: src/internal/atomic.h
+  HOSTLN  libmusl: time: include/ctype.h
+  HOSTLN  libmusl: time: include/errno.h
+  HOSTLN  libmusl: time: include/fcntl.h
+  HOSTLN  libmusl: time: src/internal/fork_impl.h
+  HOSTLN  libmusl: time: include/langinfo.h
+  HOSTLN  libmusl: time: src/internal/libc.h
+  HOSTLN  libmusl: time: include/limits.h
+  HOSTLN  libmusl: time: include/locale.h
+  HOSTLN  libmusl: time: src/internal/locale_impl.h
+  HOSTLN  libmusl: time: src/internal/lock.h
+  HOSTLN  libmusl: time: include/pthread.h
+  HOSTLN  libmusl: time: src/internal/pthread_impl.h
+  HOSTLN  libmusl: time: include/setjmp.h
+  HOSTLN  libmusl: time: include/stddef.h
+  HOSTLN  libmusl: time: include/stdint.h
+  HOSTLN  libmusl: time: include/stdio.h
+  HOSTLN  libmusl: time: include/stdlib.h
+  HOSTLN  libmusl: time: include/string.h
+  HOSTLN  libmusl: time: include/strings.h
+  HOSTLN  libmusl: time: include/syscall.h
+  HOSTLN  libmusl: time: include/sys/mman.h
+  HOSTLN  libmusl: time: include/sys/stat.h
+  HOSTLN  libmusl: time: include/sys/timeb.h
+  HOSTLN  libmusl: time: include/sys/time.h
+  HOSTLN  libmusl: time: include/sys/times.h
+  HOSTLN  libmusl: time: src/include/time.h
+  HOSTLN  libmusl: time: include/unistd.h
+  HOSTLN  libmusl: time: include/utime.h
+  HOSTLN  libmusl: time: include/wchar.h
+  HOSTLN  libmusl: errno: include/errno.h
+  HOSTLN  libmusl: errno: src/internal/libc.h
+  HOSTLN  libmusl: errno: src/internal/locale_impl.h
+  HOSTLN  libmusl: errno: src/internal/pthread_impl.h
+  HOSTLN  libmusl: errno: src/errno/__strerror.h
+  HOSTLN  libmusl: errno: include/string.h
+  HOSTLN  libmusl: ipc: include/errno.h
+  HOSTLN  libmusl: ipc: src/ipc/ipc.h
+  HOSTLN  libmusl: ipc: src/internal/libc.h
+  HOSTLN  libmusl: ipc: include/limits.h
+  HOSTLN  libmusl: ipc: include/stdarg.h
+  HOSTLN  libmusl: ipc: include/stdint.h
+  HOSTLN  libmusl: ipc: src/internal/syscall.h
+  HOSTLN  libmusl: ipc: include/sys/ipc.h
+  HOSTLN  libmusl: ipc: include/sys/msg.h
+  HOSTLN  libmusl: ipc: include/sys/sem.h
+  HOSTLN  libmusl: ipc: include/sys/shm.h
+  HOSTLN  libmusl: ipc: include/sys/stat.h
+  HOSTLN  libmusl: prng: include/inttypes.h
+  HOSTLN  libmusl: prng: src/internal/libc.h
+  HOSTLN  libmusl: prng: include/stdint.h
+  HOSTLN  libmusl: prng: include/stdlib.h
+  HOSTLN  libmusl: prng: include/string.h
+  HOSTLN  libmusl: passwd: include/byteswap.h
+  HOSTLN  libmusl: passwd: include/ctype.h
+  HOSTLN  libmusl: passwd: include/errno.h
+  HOSTLN  libmusl: passwd: include/fcntl.h
+  HOSTLN  libmusl: passwd: include/grp.h
+  HOSTLN  libmusl: passwd: include/limits.h
+  HOSTLN  libmusl: passwd: src/passwd/nscd.h
+  HOSTLN  libmusl: passwd: include/pthread.h
+  HOSTLN  libmusl: passwd: include/pwd.h
+  HOSTLN  libmusl: passwd: src/passwd/pwf.h
+  HOSTLN  libmusl: passwd: include/shadow.h
+  HOSTLN  libmusl: passwd: include/stdio.h
+  HOSTLN  libmusl: passwd: include/stdlib.h
+  HOSTLN  libmusl: passwd: include/string.h
+  HOSTLN  libmusl: passwd: include/sys/socket.h
+  HOSTLN  libmusl: passwd: include/sys/stat.h
+  HOSTLN  libmusl: passwd: include/unistd.h
+  HOSTLN  libmusl: fenv: include/fenv.h
+  HOSTLN  libmusl: fenv: include/float.h
+  HOSTLN  libmusl: ctype: include/ctype.h
+  HOSTLN  libmusl: ctype: include/endian.h
+  HOSTLN  libmusl: ctype: src/internal/libc.h
+  HOSTLN  libmusl: ctype: src/internal/locale_impl.h
+  HOSTLN  libmusl: ctype: src/ctype/nonspacing.h
+  HOSTLN  libmusl: ctype: src/ctype/punct.h
+  HOSTLN  libmusl: ctype: include/stdint.h
+  HOSTLN  libmusl: ctype: include/stdlib.h
+  HOSTLN  libmusl: ctype: include/string.h
+  HOSTLN  libmusl: ctype: include/wchar.h
+  HOSTLN  libmusl: ctype: include/wctype.h
+  HOSTLN  libmusl: ctype: src/ctype/wide.h
+  HOSTLN  libmusl: linux: include/errno.h
+  HOSTLN  libmusl: linux: include/fcntl.h
+  HOSTLN  libmusl: linux: src/internal/libc.h
+  HOSTLN  libmusl: linux: include/poll.h
+  HOSTLN  libmusl: linux: src/internal/pthread_impl.h
+  HOSTLN  libmusl: linux: include/sched.h
+  HOSTLN  libmusl: linux: include/signal.h
+  HOSTLN  libmusl: linux: include/stdarg.h
+  HOSTLN  libmusl: linux: include/stdint.h
+  HOSTLN  libmusl: linux: src/internal/syscall.h
+  HOSTLN  libmusl: linux: include/sys/epoll.h
+  HOSTLN  libmusl: linux: include/sys/eventfd.h
+  HOSTLN  libmusl: linux: include/sys/fanotify.h
+  HOSTLN  libmusl: linux: include/sys/file.h
+  HOSTLN  libmusl: linux: include/sys/fsuid.h
+  HOSTLN  libmusl: linux: include/sys/inotify.h
+  HOSTLN  libmusl: linux: include/sys/io.h
+  HOSTLN  libmusl: linux: include/sys/klog.h
+  HOSTLN  libmusl: linux: include/sys/mman.h
+  HOSTLN  libmusl: linux: include/sys/mount.h
+  HOSTLN  libmusl: linux: include/sys/personality.h
+  HOSTLN  libmusl: linux: include/sys/prctl.h
+  HOSTLN  libmusl: linux: include/sys/ptrace.h
+  HOSTLN  libmusl: linux: include/sys/quota.h
+  HOSTLN  libmusl: linux: include/sys/random.h
+  HOSTLN  libmusl: linux: include/sys/reboot.h
+  HOSTLN  libmusl: linux: include/sys/resource.h
+  HOSTLN  libmusl: linux: include/sys/sendfile.h
+  HOSTLN  libmusl: linux: include/sys/signalfd.h
+  HOSTLN  libmusl: linux: include/sys/swap.h
+  HOSTLN  libmusl: linux: include/sys/sysinfo.h
+  HOSTLN  libmusl: linux: include/sys/time.h
+  HOSTLN  libmusl: linux: include/sys/timerfd.h
+  HOSTLN  libmusl: linux: include/sys/timex.h
+  HOSTLN  libmusl: linux: include/sys/uio.h
+  HOSTLN  libmusl: linux: include/sys/wait.h
+  HOSTLN  libmusl: linux: include/sys/xattr.h
+  HOSTLN  libmusl: linux: include/time.h
+  HOSTLN  libmusl: linux: include/unistd.h
+  HOSTLN  libmusl: internal: include/ctype.h
+  HOSTLN  libmusl: internal: include/elf.h
+  HOSTLN  libmusl: internal: include/errno.h
+  HOSTLN  libmusl: internal: include/features.h
+  HOSTLN  libmusl: internal: include/float.h
+  HOSTLN  libmusl: internal: src/internal/floatscan.h
+  HOSTLN  libmusl: internal: src/internal/libc.h
+  HOSTLN  libmusl: internal: include/limits.h
+  HOSTLN  libmusl: internal: include/link.h
+  HOSTLN  libmusl: internal: include/math.h
+  HOSTLN  libmusl: internal: src/internal/shgetc.h
+  HOSTLN  libmusl: internal: include/stdint.h
+  HOSTLN  libmusl: internal: include/stdio.h
+  HOSTLN  libmusl: internal: include/string.h
+  HOSTLN  libmusl: internal: include/syscall.h
+  HOSTLN  libmusl: network: include/arpa/inet.h
+  HOSTLN  libmusl: network: include/arpa/nameser.h
+  HOSTLN  libmusl: network: include/byteswap.h
+  HOSTLN  libmusl: network: include/ctype.h
+  HOSTLN  libmusl: network: include/errno.h
+  HOSTLN  libmusl: network: include/fcntl.h
+  HOSTLN  libmusl: network: include/ifaddrs.h
+  HOSTLN  libmusl: network: include/inttypes.h
+  HOSTLN  libmusl: network: src/internal/libc.h
+  HOSTLN  libmusl: network: include/limits.h
+  HOSTLN  libmusl: network: src/internal/locale_impl.h
+  HOSTLN  libmusl: network: src/network/lookup.h
+  HOSTLN  libmusl: network: include/netdb.h
+  HOSTLN  libmusl: network: include/net/ethernet.h
+  HOSTLN  libmusl: network: include/net/if.h
+  HOSTLN  libmusl: network: include/net/if_arp.h
+  HOSTLN  libmusl: network: include/netinet/ether.h
+  HOSTLN  libmusl: network: include/netinet/if_ether.h
+  HOSTLN  libmusl: network: include/netinet/in.h
+  HOSTLN  libmusl: network: include/netinet/tcp.h
+  HOSTLN  libmusl: network: src/network/netlink.h
+  HOSTLN  libmusl: network: include/poll.h
+  HOSTLN  libmusl: network: include/pthread.h
+  HOSTLN  libmusl: network: include/resolv.h
+  HOSTLN  libmusl: network: include/stddef.h
+  HOSTLN  libmusl: network: include/stdint.h
+  HOSTLN  libmusl: network: include/stdio.h
+  HOSTLN  libmusl: network: src/internal/stdio_impl.h
+  HOSTLN  libmusl: network: include/stdlib.h
+  HOSTLN  libmusl: network: include/string.h
+  HOSTLN  libmusl: network: src/internal/syscall.h
+  HOSTLN  libmusl: network: include/sys/ioctl.h
+  HOSTLN  libmusl: network: include/sys/un.h
+  HOSTLN  libmusl: network: include/time.h
+  HOSTLN  libmusl: network: include/unistd.h
+  HOSTLN  libmusl: network: include/sys/socket.h
+  HOSTLN  libmusl: sched: src/internal/atomic.h
+  HOSTLN  libmusl: sched: include/errno.h
+  HOSTLN  libmusl: sched: include/sys/membarrier.h
+  HOSTLN  libmusl: sched: src/internal/pthread_impl.h
+  HOSTLN  libmusl: sched: include/sched.h
+  HOSTLN  libmusl: sched: include/string.h
+  HOSTLN  libmusl: sched: src/internal/syscall.h
+  HOSTLN  libmusl: string: include/ctype.h
+  HOSTLN  libmusl: string: include/endian.h
+  HOSTLN  libmusl: string: include/errno.h
+  HOSTLN  libmusl: string: src/internal/libc.h
+  HOSTLN  libmusl: string: include/limits.h
+  HOSTLN  libmusl: string: src/internal/locale_impl.h
+  HOSTLN  libmusl: string: include/memory.h
+  HOSTLN  libmusl: string: include/signal.h
+  HOSTLN  libmusl: string: include/stdint.h
+  HOSTLN  libmusl: string: include/stdlib.h
+  HOSTLN  libmusl: string: include/string.h
+  HOSTLN  libmusl: string: include/strings.h
+  HOSTLN  libmusl: string: include/unistd.h
+  HOSTLN  libmusl: string: include/wchar.h
+  HOSTLN  libmusl: string: include/wctype.h
+  HOSTLN  libmusl: regex: include/assert.h
+  HOSTLN  libmusl: regex: include/ctype.h
+  HOSTLN  libmusl: regex: include/dirent.h
+  HOSTLN  libmusl: regex: include/errno.h
+  HOSTLN  libmusl: regex: include/fnmatch.h
+  HOSTLN  libmusl: regex: include/glob.h
+  HOSTLN  libmusl: regex: src/internal/libc.h
+  HOSTLN  libmusl: regex: include/limits.h
+  HOSTLN  libmusl: regex: src/internal/locale_impl.h
+  HOSTLN  libmusl: regex: include/regex.h
+  HOSTLN  libmusl: regex: include/stddef.h
+  HOSTLN  libmusl: regex: include/stdint.h
+  HOSTLN  libmusl: regex: include/stdio.h
+  HOSTLN  libmusl: regex: include/stdlib.h
+  HOSTLN  libmusl: regex: include/string.h
+  HOSTLN  libmusl: regex: include/sys/stat.h
+  HOSTLN  libmusl: regex: src/regex/tre.h
+  HOSTLN  libmusl: regex: include/wchar.h
+  HOSTLN  libmusl: regex: include/wctype.h
+  HOSTLN  libmusl: termios: include/errno.h
+  HOSTLN  libmusl: termios: src/internal/libc.h
+  HOSTLN  libmusl: termios: src/internal/syscall.h
+  HOSTLN  libmusl: termios: include/sys/ioctl.h
+  HOSTLN  libmusl: termios: include/termios.h
+  HOSTLN  libmusl: exit: src/internal/atomic.h
+  HOSTLN  libmusl: exit: src/internal/fork_impl.h
+  HOSTLN  libmusl: exit: src/internal/ksigaction.h
+  HOSTLN  libmusl: exit: src/internal/libc.h
+  HOSTLN  libmusl: exit: src/internal/lock.h
+  HOSTLN  libmusl: exit: src/internal/pthread_impl.h
+  HOSTLN  libmusl: exit: include/signal.h
+  HOSTLN  libmusl: exit: include/stdint.h
+  HOSTLN  libmusl: exit: include/stdio.h
+  HOSTLN  libmusl: exit: include/stdlib.h
+  HOSTLN  libmusl: exit: include/syscall.h
+  HOSTLN  libmusl: locale: src/internal/atomic.h
+  HOSTLN  libmusl: locale: include/ctype.h
+  HOSTLN  libmusl: locale: include/endian.h
+  HOSTLN  libmusl: locale: include/errno.h
+  HOSTLN  libmusl: locale: src/internal/fork_impl.h
+  HOSTLN  libmusl: locale: include/iconv.h
+  HOSTLN  libmusl: locale: include/langinfo.h
+  HOSTLN  libmusl: locale: src/internal/libc.h
+  HOSTLN  libmusl: locale: include/libintl.h
+  HOSTLN  libmusl: locale: include/limits.h
+  HOSTLN  libmusl: locale: include/locale.h
+  HOSTLN  libmusl: locale: src/internal/locale_impl.h
+  HOSTLN  libmusl: locale: src/internal/lock.h
+  HOSTLN  libmusl: locale: include/monetary.h
+  HOSTLN  libmusl: locale: include/nl_types.h
+  HOSTLN  libmusl: locale: include/pthread.h
+  HOSTLN  libmusl: locale: src/internal/pthread_impl.h
+  HOSTLN  libmusl: locale: include/stdarg.h
+  HOSTLN  libmusl: locale: include/stdint.h
+  HOSTLN  libmusl: locale: include/stdio.h
+  HOSTLN  libmusl: locale: include/stdlib.h
+  HOSTLN  libmusl: locale: include/string.h
+  HOSTLN  libmusl: locale: include/strings.h
+  HOSTLN  libmusl: locale: include/sys/mman.h
+  HOSTLN  libmusl: locale: include/sys/stat.h
+  HOSTLN  libmusl: locale: include/wchar.h
+  GEN     libuklibid: libraries.in.new
+  WGET    libredis: https://github.com/redis/redis/archive/7.0.11.zip
+
+     0K .......... .......... .......... .......... ..........  1%  954K 4s
+    50K .......... .......... .......... .......... ..........  2% 1.85M 3s
+   100K .......... .......... .......... .......... ..........  4% 11.9M 2s
+   150K .......... .......... .......... .......... ..........  5% 2.29M 2s
+   200K .......... .......... .......... .......... ..........  6% 11.2M 1s
+   250K .......... .......... .......... .......... ..........  8% 11.3M 1s
+   300K .......... .......... .......... .......... ..........  9% 11.5M 1s
+   350K .......... .......... .......... .......... .......... 11% 10.7M 1s
+   400K .......... .......... .......... .......... .......... 12% 3.94M 1s
+   450K .......... .......... .......... .......... .......... 13% 11.4M 1s
+   500K .......... .......... .......... .......... .......... 15% 10.6M 1s
+   550K .......... .......... .......... .......... .......... 16% 11.3M 1s
+   600K .......... .......... .......... .......... .......... 18% 10.8M 1s
+   650K .......... .......... .......... .......... .......... 19% 11.0M 1s
+   700K .......... .......... .......... .......... .......... 20% 10.9M 1s
+   750K .......... .......... .......... .......... .......... 22% 11.4M 1s
+   800K .......... .......... .......... .......... .......... 23% 10.9M 1s
+   850K .......... .......... .......... .......... .......... 24% 11.5M 1s
+   900K .......... .......... .......... .......... .......... 26% 11.1M 0s
+   950K .......... .......... .......... .......... .......... 27% 10.4M 0s
+  1000K .......... .......... .......... .......... .......... 29% 11.1M 0s
+  1050K .......... .......... .......... .......... .......... 30% 11.2M 0s
+  1100K .......... .......... .......... .......... .......... 31% 10.7M 0s
+  1150K .......... .......... .......... .......... .......... 33% 11.1M 0s
+  1200K .......... .......... .......... .......... .......... 34% 11.1M 0s
+  1250K .......... .......... .......... .......... .......... 36% 11.2M 0s
+  1300K .......... .......... .......... .......... .......... 37% 10.5M 0s
+  1350K .......... .......... .......... .......... .......... 38% 11.6M 0s
+  1400K .......... .......... .......... .......... .......... 40% 11.0M 0s
+  1450K .......... .......... .......... .......... .......... 41% 10.5M 0s
+  1500K .......... .......... .......... .......... .......... 43% 11.0M 0s
+  1550K .......... .......... .......... .......... .......... 44% 11.7M 0s
+  1600K .......... .......... .......... .......... .......... 45% 10.6M 0s
+  1650K .......... .......... .......... .......... .......... 47% 10.8M 0s
+  1700K .......... .......... .......... .......... .......... 48% 11.2M 0s
+  1750K .......... .......... .......... .......... .......... 49% 11.0M 0s
+  1800K .......... .......... .......... .......... .......... 51% 11.1M 0s
+  1850K .......... .......... .......... .......... .......... 52% 10.7M 0s
+  1900K .......... .......... .......... .......... .......... 54% 11.1M 0s
+  1950K .......... .......... .......... .......... .......... 55% 11.1M 0s
+  2000K .......... .......... .......... .......... .......... 56% 11.1M 0s
+  2050K .......... .......... .......... .......... .......... 58% 11.1M 0s
+  2100K .......... .......... .......... .......... .......... 59% 11.0M 0s
+  2150K .......... .......... .......... .......... .......... 61% 10.7M 0s
+  2200K .......... .......... .......... .......... .......... 62% 11.1M 0s
+  2250K .......... .......... .......... .......... .......... 63% 10.9M 0s
+  2300K .......... .......... .......... .......... .......... 65% 11.5M 0s
+  2350K .......... .......... .......... .......... .......... 66% 10.7M 0s
+  2400K .......... .......... .......... .......... .......... 68% 10.8M 0s
+  2450K .......... .......... .......... .......... .......... 69% 11.6M 0s
+  2500K .......... .......... .......... .......... .......... 70% 11.0M 0s
+  2550K .......... .......... .......... .......... .......... 72% 10.6M 0s
+  2600K .......... .......... .......... .......... .......... 73% 11.1M 0s
+  2650K .......... .......... .......... .......... .......... 74% 11.7M 0s
+  2700K .......... .......... .......... .......... .......... 76% 10.4M 0s
+  2750K .......... .......... .......... .......... .......... 77% 11.2M 0s
+  2800K .......... .......... .......... .......... .......... 79% 11.2M 0s
+  2850K .......... .......... .......... .......... .......... 80% 10.4M 0s
+  2900K .......... .......... .......... .......... .......... 81% 11.5M 0s
+  2950K .......... .......... .......... .......... .......... 83% 11.0M 0s
+  3000K .......... .......... .......... .......... .......... 84% 10.6M 0s
+  3050K .......... .......... .......... .......... .......... 86% 11.1M 0s
+  3100K .......... .......... .......... .......... .......... 87% 11.1M 0s
+  3150K .......... .......... .......... .......... .......... 88% 11.1M 0s
+  3200K .......... .......... .......... .......... .......... 90% 11.0M 0s
+  3250K .......... .......... .......... .......... .......... 91% 10.7M 0s
+  3300K .......... .......... .......... .......... .......... 92% 11.7M 0s
+  3350K .......... .......... .......... .......... .......... 94% 10.5M 0s
+  3400K .......... .......... .......... .......... .......... 95% 11.1M 0s
+  3450K .......... .......... .......... .......... .......... 97% 11.1M 0s
+  3500K .......... .......... .......... .......... .......... 98% 11.1M 0s
+  3550K .......... .......... .......... .......... .......... 99% 11.1M 0s
+  3600K ..                                                    100% 5.43M=0.4s  UNZIP   libredis: 7.0.11.zip
+  PATCH   libredis: 0001-src-Ensure-no-redefinition-of-un-likely.patch
+  PATCH   libredis: 0002-Make-bytesToHuman-definitions-static.patch
+  PATCH   libredis: 0003-src-Ensure-no-redefinition-of-stringify.patch
+  PATCH   libredis: 0004-deps-hdr_histogram-Change-to-proper-header-name.patch
+  PATCH   libredis: 0005-src-Disable-unused-cpu-affinity-setting.patch
+  PATCH   libredis: 0006-remove-unnecessary-header.patch
+  WGET    liblwip: https://github.com/unikraft/fork-lwip/archive/refs/heads/UNIKRAFT-2_1_x.zip
+
+     0K .......... .......... .......... .......... ..........  3%  944K 1s
+    50K .......... .......... .......... .......... ..........  6% 1.87M 1s
+   100K .......... .......... .......... .......... .......... 10% 11.1M 1s
+   150K .......... .......... .......... .......... .......... 13% 2.30M 1s
+   200K .......... .......... .......... .......... .......... 17% 10.4M 1s
+   250K .......... .......... .......... .......... .......... 20% 11.6M 0s
+   300K .......... .......... .......... .......... .......... 23% 10.5M 0s
+   350K .......... .......... .......... .......... .......... 27% 11.5M 0s
+   400K .......... .......... .......... .......... .......... 30% 3.89M 0s
+   450K .......... .......... .......... .......... .......... 34% 10.9M 0s
+   500K .......... .......... .......... .......... .......... 37% 11.3M 0s
+   550K .......... .......... .......... .......... .......... 40% 10.6M 0s
+   600K .......... .......... .......... .......... .......... 44% 11.3M 0s
+   650K .......... .......... .......... .......... .......... 47% 11.4M 0s
+   700K .......... .......... .......... .......... .......... 51% 10.7M 0s
+   750K .......... .......... .......... .......... .......... 54% 11.5M 0s
+   800K .......... .......... .......... .......... .......... 58% 10.3M 0s
+   850K .......... .......... .......... .......... .......... 61% 11.2M 0s
+   900K .......... .......... .......... .......... .......... 64% 11.3M 0s
+   950K .......... .......... .......... .......... .......... 68% 10.9M 0s
+  1000K .......... .......... .......... .......... .......... 71% 10.9M 0s
+  1050K .......... .......... .......... .......... .......... 75% 11.0M 0s
+  1100K .......... .......... .......... .......... .......... 78% 10.7M 0s
+  1150K .......... .......... .......... .......... .......... 81% 11.0M 0s
+  1200K .......... .......... .......... .......... .......... 85% 11.6M 0s
+  1250K .......... .......... .......... .......... .......... 88% 10.9M 0s
+  1300K .......... .......... .......... .......... .......... 92% 10.7M 0s
+  1350K .......... .......... .......... .......... .......... 95% 11.3M 0s
+  1400K .......... .......... .......... .......... .......... 99% 11.0M 0s
+  1450K .......... ....                                       100% 9.75M=0.2s  UNZIP   liblwip: UNIKRAFT-2_1_x.zip
+  PATCH   liblwip: 0001-timeval-for-socket-c.patch
+  PATCH   liblwip: 0002-Don-t-provide-file-status-flags-when-we-have-a-libc.patch
+  PATCH   liblwip: 0003-Declare-mem_-functions-only-for-lwip-internal-use.patch
+  PATCH   liblwip: 0004-src-include-lwip-sockets.h-Add-ipi_spec_dst-field-to.patch
+  PATCH   liblwip: 0005-patches-Add-more-fields-to-struct-ifreq.patch
+  PATCH   liblwip: 0006-eventpoll.patch
+  PATCH   liblwip: 0007-src-include-Make-lwip-sockets.h-compatible-with-Musl.patch
+  PATCH   liblwip: 0008-src-include-Make-lwip-inet.h-compatible-with-Musl.patch
+  PATCH   liblwip: 0009-src-api-Make-netdb.c-compatible-with-Musl.patch
+  PATCH   liblwip: 0010-src-api-Make-sockets.c-compatible-with-Musl.patch
+  PATCH   liblwip: 0011-src-include-Make-lwip-sockets.h-compatible-with-Linux-kernel.h
+  PATCH   liblwip: 0012-src-api-Add-checks-for-address-structure-length-argu.patch
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     libsyscall_shim: provided_syscalls.in.new
+  GEN     libuklibid: libraries.in.new
+  LN      redis_xen-x86_64.dbg.gdb.py
+  GEN     uk-gdb.py
+  CP      libsyscall_shim: provided_syscalls.in
+  AWK     libsyscall_shim: syscall_nrs.h
+  AWK     libsyscall_shim: syscall_nrs2.h
+  AWK     libsyscall_shim: syscall_map.h
+  AWK     libsyscall_shim: syscall_stubs.h
+  AWK     libsyscall_shim: uk_syscall.c
+  AWK     libsyscall_shim: uk_syscall_r.c
+  AWK     libsyscall_shim: uk_syscall6.c
+  AWK     libsyscall_shim: uk_syscall6_r.c
+  AWK     libsyscall_shim: uk_syscall6_do.c
+  AWK     libsyscall_shim: uk_syscall_name.c
+  AWK     libsyscall_shim: uk_syscall_name_p.c
+  AWK     libsyscall_shim: libc_stubs.c
+  CP      libuklibid: libraries.in
+  AWK     libsyscall_shim: syscall_provided.h
+  AWK     libsyscall_shim: syscall_gensyms.exportsyms.uk
+  AWK     libsyscall_shim: syscall_static.h
+  AWK     libsyscall_shim: syscall_r_static.h
+  AWK     libsyscall_shim: syscall_do_static.h
+  AWK     libuklibid: libid.h
+  AWK     libuklibid: namemap.c
+  AWK     libuklibid: selfids.c
+  AWK     libuklibid: exportsyms.uk
+  CC      libxenplat: hypervisor.o
+  CC      libxenplat: memory.o
+  CC      libxenplat: io.o
+  CC      libxenplat: lcpu.common.o
+  CC      libxenplat: memory.common.o
+  CC      libxenplat: tls.common.o
+  CC      libxenplat: bootinfo.common.o
+  CC      libxenplat: trace.common.o
+  CC      libxenplat: traps.common.o
+  CC      libxenplat: setup.o
+  CC      libxenplat: traps.o
+  AS      libxenplat: entry64.o
+  CC      libxenplat: mm.o
+  CC      libxenplat: arch_events.o
+  CC      libxenplat: arch_time.o
+  CC      libxenplat: cpu_pv.o
+  CC      libxenplat: lcpu.o
+  CC      libxenplat: shutdown.o
+  CC      libxenplat: events.o
+  AS      libxenplat: libinfo.libuklibid.o
+  LDS     libxenplat: link64.lds
+  LDS     libxenplat: bootinfo.lds
+  CC      libdevfs: device.o
+  CC      libdevfs: devfs_vnops.o
+  CC      libdevfs: null.o
+In file included from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/include/core/include/sys/param.h:33,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukbitops/include/uk/bitops/bitmap.h:35,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/plat/xen/events.c:43:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/include/core/include/limits.h:97: warning: "PAGE_SIZE" redefined
+   97 | #define PAGE_SIZE PAGESIZE
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/paging.h:42,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/plat/memory.h:40,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/plat/xen/include/xen-x86/hypercall64.h:40,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/plat/xen/include/xen-x86/hypercall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/plat/xen/include/common/hypervisor.h:42,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/plat/xen/events.c:37:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/paging.h:85: note: this is the location of the previous definition
+   85 | #define PAGE_SIZE                       0x1000UL
+      | 
+  CC      libdevfs: stdout.o
+  AS      libdevfs: libinfo.libuklibid.o
+  CC      libisrlib: string.isr.o
+  AS      libisrlib: libinfo.libuklibid.o
+  CC      libposix_environ: setenv.o
+  CC      libposix_environ: unsetenv.o
+  CC      libposix_environ: clearenv.o
+  CC      libposix_environ: putenv.o
+  CC      libposix_environ: getenv.o
+  CC      libposix_environ: environ.o
+  AS      libposix_environ: libinfo.libuklibid.o
+  AS      libposix_fd: libinfo.libuklibid.o
+  CC      libposix_fdtab: fdtab.o
+  AS      libposix_fdtab: libinfo.libuklibid.o
+  CC      libposix_fdio: fdio.o
+  CC      libposix_fdio: fdstat.o
+  CC      libposix_fdio: fdctl.o
+  CC      libposix_fdio: fd-shim.o
+  AS      libposix_fdio: libinfo.libuklibid.o
+  CC      libposix_eventfd: eventfd.o
+  AS      libposix_eventfd: libinfo.libuklibid.o
+  CC      libposix_libdl: stubs.o
+  AS      libposix_libdl: libinfo.libuklibid.o
+  CC      libposix_pipe: pipe.o
+  AS      libposix_pipe: libinfo.libuklibid.o
+  CC      libposix_poll: epoll.o
+  CC      libposix_poll: poll.o
+  CC      libposix_poll: select.o
+  AS      libposix_poll: libinfo.libuklibid.o
+  CC      libposix_process: deprecated.o
+  CC      libposix_process: exit.o
+  CC      libposix_process: process.o
+  CC      libposix_process: shutdown.o
+  CC      libposix_process: wait.o
+  CC      libposix_process: alarm.o
+  CC      libposix_process: pause.o
+  CC      libposix_process: sigaltstack.o
+  CC      libposix_process: rt_sigpending.o
+  CC      libposix_process: rt_sigprocmask.o
+  CC      libposix_process: rt_sigsuspend.o
+  CC      libposix_process: rt_sigaction.o
+  CC      libposix_process: rt_sigqueueinfo.o
+  CC      libposix_process: rt_tgsigqueueinfo.o
+  CC      libposix_process: rt_sigtimedwait.o
+  CC      libposix_process: kill.o
+  CC      libposix_process: tgkill.o
+  CC      libposix_process: tkill.o
+  CC      libposix_process: clone.signal.o
+  CC      libposix_process: clone.o
+  CC      libposix_process: clone.x86_64.o
+  AS      libposix_process: clone.arch.o
+  AS      libposix_process: libinfo.libuklibid.o
+  CC      libposix_socket: driver.o
+  CC      libposix_socket: socket.o
+  AS      libposix_socket: libinfo.libuklibid.o
+  CC      libposix_sysinfo: sysinfo.o
+  AS      libposix_sysinfo: libinfo.libuklibid.o
+  CC      libposix_futex: futex.o
+  AS      libposix_futex: libinfo.libuklibid.o
+  CC      libposix_tty: pseudo.o
+  CC      libposix_tty: tty.o
+  CC      libposix_tty: serial.o
+  AS      libposix_tty: libinfo.libuklibid.o
+  CC      libramfs: ramfs_vfsops.o
+  CC      libramfs: ramfs_vnops.o
+  AS      libramfs: libinfo.libuklibid.o
+  CC      libsyscall_shim: uk_syscall.o
+  CC      libsyscall_shim: uk_syscall_r.o
+  CC      libsyscall_shim: uk_syscall6.o
+  CC      libsyscall_shim: uk_syscall6_r.o
+  CC      libsyscall_shim: uk_syscall6_do.o
+  CC      libsyscall_shim: uk_syscall_name.o
+  CC      libsyscall_shim: uk_syscall_name_p.o
+  CC      libsyscall_shim: libc_stubs.o
+  CC      libsyscall_shim: uk_prsyscall.o
+  CC      libsyscall_shim: vars.o
+  AS      libsyscall_shim: libinfo.libuklibid.o
+  LDS     libsyscall_shim: syscall_exittab.lds
+  LDS     libsyscall_shim: syscall_entertab.lds
+  CC      libukalloc: alloc.o
+  AS      libukalloc: libinfo.libuklibid.o
+  CC      libukallocbbuddy: bbuddy.o
+  AS      libukallocbbuddy: libinfo.libuklibid.o
+  CC      libukargparse: argparse.o
+  AS      libukargparse: libinfo.libuklibid.o
+  AS      libukatomic: libinfo.libuklibid.o
+  AS      libukbitops: libinfo.libuklibid.o
+  CC      libukstreambuf: streambuf.o
+  AS      libukstreambuf: libinfo.libuklibid.o
+  CC      libukboot: boot.o
+  CC      libukboot: early_init.o
+  CC      libukboot: version.o
+  CC      libukboot: banner.o
+  AS      libukboot: libinfo.libuklibid.o
+  LDS     libukboot: earlytab.lds
+  CC      libukboot_main: weak_main.o
+  AS      libukboot_main: libinfo.libuklibid.o
+  CC      libukbus: bus.o
+  AS      libukbus: libinfo.libuklibid.o
+  CC      libukconsole: console.isr.o
+  AS      libukconsole: libinfo.libuklibid.o
+  CC      libukcpio: cpio.o
+  AS      libukcpio: libinfo.libuklibid.o
+  CC      libukdebug: print.o
+  CC      libukdebug: snprintf.o
+  CC      libukdebug: outf.o
+  CC      libukdebug: hexdump.o
+  AS      libukdebug: libinfo.libuklibid.o
+  CC      libukfile: pollqueue.o
+  CC      libukfile: file-nops.o
+  AS      libukfile: libinfo.libuklibid.o
+  CC      libuklibid: namemap.o
+  CC      libuklibid: selfids.o
+  CC      libuklibid: rtmap.o
+  AS      libuklibid: libinfo.global.o
+  AS      libuklibid: libinfo.libuklibid.o
+  CC      libuklibparam: parser.o
+  AS      libuklibparam: libinfo.libuklibid.o
+  LDS     libuklibparam: libparam.lds
+  CC      libuklock: semaphore.o
+  CC      libuklock: mutex.o
+  CC      libuklock: rwlock.o
+  AS      libuklock: libinfo.libuklibid.o
+  CC      libukmmap: mmap.o
+  AS      libukmmap: libinfo.libuklibid.o
+  CC      libukmpi: mbox.o
+  CC      libukmpi: mbox_isr.isr.o
+  AS      libukmpi: libinfo.libuklibid.o
+  CC      libuknetdev: netbuf.o
+  CC      libuknetdev: netdev.o
+  AS      libuknetdev: libinfo.libuklibid.o
+  CC      libuksched: sched.o
+  CC      libuksched: thread.o
+  CC      libuksched: isrwake.isr.o
+  AS      libuksched: libinfo.libuklibid.o
+  CC      libukschedcoop: schedcoop.o
+  CC      libukschedcoop: isrwoken.isr.o
+  AS      libukschedcoop: libinfo.libuklibid.o
+  CC      libukrandom: dev.o
+  CC      libukrandom: chacha.o
+  CC      libukrandom: random.o
+  AS      libukrandom: libinfo.libuklibid.o
+  CC      libposix_time: time.o
+  CC      libposix_time: timer.o
+  AS      libposix_time: libinfo.libuklibid.o
+  CC      libuktimeconv: timeconv.o
+  AS      libuktimeconv: libinfo.libuklibid.o
+  CC      libvfscore: fd.o
+  CC      libvfscore: file.o
+  CC      libvfscore: mount.o
+  CC      libvfscore: vnode.o
+  CC      libvfscore: dentry.o
+  CC      libvfscore: syscalls.o
+  CC      libvfscore: main.o
+  CC      libvfscore: task.o
+  CC      libvfscore: lookup.o
+  CC      libvfscore: fops.o
+  CC      libvfscore: subr_uio.o
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/main.c:2050:43: warning: argument 2 of type ‘const struct timeval *’ declared as a pointer [-Warray-parameter=]
+ 2050 | int futimes(int fd, const struct timeval *times)
+      |                     ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/vfs.h:42,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/main.c:45:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/include/core/include/sys/time.h:31:18: note: previously declared as an array ‘const struct timeval[2]’
+   31 | int futimes(int, const struct timeval [2]);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/main.c:2188:57: warning: argument 2 of type ‘const struct timeval *’ declared as a pointer [-Warray-parameter=]
+ 2188 | int lutimes(const char *pathname, const struct timeval *times)
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/vfs.h:42,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/main.c:45:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/include/core/include/sys/time.h:33:27: note: previously declared as an array ‘const struct timeval[2]’
+   33 | int lutimes(const char *, const struct timeval [2]);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC      libvfscore: automount.o
+  AS      libvfscore: libinfo.libuklibid.o
+  CC      libukallocstack: stack.o
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/include/vfscore/mount.h:37,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/automount.c:57:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/include/core/include/limits.h:97: warning: "PAGE_SIZE" redefined
+   97 | #define PAGE_SIZE PAGESIZE
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/paging.h:42,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/plat/memory.h:40,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/vfscore/automount.c:55:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/paging.h:85: note: this is the location of the previous definition
+   85 | #define PAGE_SIZE                       0x1000UL
+      | 
+  AS      libukallocstack: libinfo.libuklibid.o
+  CC      libmusl: mq_close.o
+  CC      libmusl: mq_getattr.o
+  CC      libmusl: mq_notify.o
+  CC      libmusl: mq_open.o
+  CC      libmusl: mq_receive.o
+  CC      libmusl: mq_send.o
+  CC      libmusl: mq_setattr.o
+  CC      libmusl: mq_timedreceive.o
+  CC      libmusl: mq_timedsend.o
+  CC      libmusl: mq_unlink.o
+  CC      libmusl: alphasort.o
+  CC      libmusl: versionsort.o
+  CC      libmusl: a64l.o
+  CC      libmusl: basename.o
+  CC      libmusl: dirname.o
+  CC      libmusl: ffs.o
+  CC      libmusl: ffsl.o
+  CC      libmusl: ffsll.o
+  CC      libmusl: fmtmsg.o
+  CC      libmusl: getauxval.o
+  CC      libmusl: get_current_dir_name.o
+  CC      libmusl: getdomainname.o
+  CC      libmusl: getentropy.o
+  CC      libmusl: gethostid.o
+  CC      libmusl: getopt.o
+  CC      libmusl: getopt_long.o
+  CC      libmusl: getpriority.o
+  CC      libmusl: getrlimit.o
+  CC      libmusl: getrusage.o
+  CC      libmusl: getsubopt.o
+  CC      libmusl: initgroups.o
+  CC      libmusl: issetugid.o
+  CC      libmusl: getresgid.o
+  CC      libmusl: getresuid.o
+  CC      libmusl: ioctl.o
+  CC      libmusl: lockf.o
+  CC      libmusl: login_tty.o
+  CC      libmusl: mntent.o
+  CC      libmusl: nftw.o
+  CC      libmusl: openpty.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/ioctl.c:54:9: warning: missing initializer for field ‘offsets’ of ‘const struct ioctl_compat_map’ [-Wmissing-field-initializers]
+   54 |         { _IOWR('A', 0x23, char[136]), _IOWR('A', 0x23, char[132]), 0, WR, 1, 0 },
+      |         ^
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/ioctl.c:21:23: note: ‘offsets’ declared here
+   21 |         unsigned char offsets[8];
+      |                       ^~~~~~~
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/ioctl.c:55:9: warning: missing initializer for field ‘offsets’ of ‘const struct ioctl_compat_map’ [-Wmissing-field-initializers]
+   55 |         { 0, 0, 4, WR, 1, 0 }, /* snd_pcm_sync_ptr (flags only) */
+      |         ^
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/ioctl.c:21:23: note: ‘offsets’ declared here
+   21 |         unsigned char offsets[8];
+      |                       ^~~~~~~
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/ioctl.c:57:9: warning: missing initializer for field ‘offsets’ of ‘const struct ioctl_compat_map’ [-Wmissing-field-initializers]
+   57 |         { 0, 0, 4, WR, 1, 0 }, /* snd_pcm_mmap_control (each member) */
+      |         ^
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/ioctl.c:21:23: note: ‘offsets’ declared here
+   21 |         unsigned char offsets[8];
+      |                       ^~~~~~~
+  CC      libmusl: ptsname.o
+  CC      libmusl: pty.o
+  CC      libmusl: realpath.o
+  CC      libmusl: setdomainname.o
+  CC      libmusl: setpriority.o
+  CC      libmusl: setrlimit.o
+  CC      libmusl: syslog.o
+  CC      libmusl: uname.o
+  CC      libmusl: __randname.o
+  CC      libmusl: mkdtemp.o
+  CC      libmusl: mkostemp.o
+  CC      libmusl: mkostemps.o
+  CC      libmusl: mkstemp.o
+  CC      libmusl: mkstemps.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/setrlimit.c:6: warning: "MIN" redefined
+    6 | #define MIN(a, b) ((a)<(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/misc/setrlimit.c:3:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:89: note: this is the location of the previous definition
+   89 | #define MIN(a, b)                                                              \
+      | 
+  CC      libmusl: mktemp.o
+  CC      libmusl: btowc.o
+  CC      libmusl: c16rtomb.o
+  CC      libmusl: c32rtomb.o
+  CC      libmusl: internal.o
+  CC      libmusl: mblen.o
+  CC      libmusl: mbrlen.o
+  CC      libmusl: mbrtoc16.o
+  CC      libmusl: mbrtoc32.o
+  CC      libmusl: mbrtowc.o
+  CC      libmusl: mbsinit.o
+  CC      libmusl: mbsnrtowcs.o
+  CC      libmusl: mbsrtowcs.o
+  CC      libmusl: mbstowcs.o
+  CC      libmusl: mbtowc.o
+  CC      libmusl: wcrtomb.o
+  CC      libmusl: wcsnrtombs.o
+  CC      libmusl: wcsrtombs.o
+  CC      libmusl: wcstombs.o
+  CC      libmusl: wctob.o
+  CC      libmusl: wctomb.o
+  CC      libmusl: execve.o
+  CC      libmusl: fork.o
+  CC      libmusl: _Fork.o
+  CC      libmusl: posix_spawnattr_destroy.o
+  CC      libmusl: posix_spawnattr_getflags.o
+  CC      libmusl: posix_spawnattr_getpgroup.o
+  CC      libmusl: posix_spawnattr_getsigdefault.o
+  CC      libmusl: posix_spawnattr_getsigmask.o
+  CC      libmusl: posix_spawnattr_init.o
+  CC      libmusl: posix_spawnattr_sched.o
+  CC      libmusl: posix_spawnattr_setflags.o
+  CC      libmusl: posix_spawnattr_setpgroup.o
+  CC      libmusl: posix_spawnattr_setsigdefault.o
+  CC      libmusl: posix_spawnattr_setsigmask.o
+  CC      libmusl: posix_spawn.o
+  CC      libmusl: posix_spawn_file_actions_addchdir.o
+  CC      libmusl: posix_spawn_file_actions_addclose.o
+  CC      libmusl: posix_spawn_file_actions_adddup2.o
+  CC      libmusl: posix_spawn_file_actions_addfchdir.o
+  CC      libmusl: posix_spawn_file_actions_addopen.o
+  CC      libmusl: posix_spawn_file_actions_destroy.o
+  CC      libmusl: posix_spawn_file_actions_init.o
+  CC      libmusl: wait.o
+  CC      libmusl: waitid.o
+  CC      libmusl: waitpid.o
+  CC      libmusl: madvise.o
+  CC      libmusl: mincore.o
+  CC      libmusl: mlock.o
+  CC      libmusl: mlockall.o
+  CC      libmusl: mmap.o
+  CC      libmusl: mprotect.o
+  CC      libmusl: mremap.o
+  CC      libmusl: msync.o
+  CC      libmusl: munlock.o
+  CC      libmusl: munlockall.o
+  CC      libmusl: munmap.o
+  CC      libmusl: posix_madvise.o
+  CC      libmusl: shm_open.o
+  CC      libmusl: abs.o
+  CC      libmusl: atof.o
+  CC      libmusl: atoi.o
+  CC      libmusl: atol.o
+  CC      libmusl: atoll.o
+  CC      libmusl: bsearch.o
+  CC      libmusl: div.o
+  CC      libmusl: ecvt.o
+  CC      libmusl: fcvt.o
+  CC      libmusl: gcvt.o
+  CC      libmusl: imaxabs.o
+  CC      libmusl: imaxdiv.o
+  CC      libmusl: labs.o
+  CC      libmusl: ldiv.o
+  CC      libmusl: llabs.o
+  CC      libmusl: lldiv.o
+  CC      libmusl: qsort.o
+  CC      libmusl: qsort_nr.o
+  CC      libmusl: strtod.o
+  CC      libmusl: strtol.o
+  CC      libmusl: wcstod.o
+  CC      libmusl: wcstol.o
+  CC      libmusl: creat.o
+  CC      libmusl: fcntl.o
+  CC      libmusl: open.o
+  CC      libmusl: openat.o
+  CC      libmusl: posix_fadvise.o
+  CC      libmusl: posix_fallocate.o
+  CC      libmusl: asprintf.o
+  CC      libmusl: clearerr.o
+  CC      libmusl: dprintf.o
+  CC      libmusl: ext2.o
+  CC      libmusl: ext.o
+  CC      libmusl: fclose.o
+  CC      libmusl: __fclose_ca.o
+  CC      libmusl: __fdopen.o
+  CC      libmusl: feof.o
+  CC      libmusl: ferror.o
+  CC      libmusl: fflush.o
+  CC      libmusl: fgetc.o
+  CC      libmusl: fgetln.o
+  CC      libmusl: fgetpos.o
+  CC      libmusl: fgets.o
+  CC      libmusl: fgetwc.o
+  CC      libmusl: fgetws.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/fgets.c:4: warning: "MIN" redefined
+    4 | #define MIN(a,b) ((a)<(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/stdio_impl.h:5,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/fgets.c:1:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:89: note: this is the location of the previous definition
+   89 | #define MIN(a, b)                                                              \
+      | 
+  CC      libmusl: fileno.o
+  CC      libmusl: flockfile.o
+  CC      libmusl: fmemopen.o
+  CC      libmusl: __fmodeflags.o
+  CC      libmusl: fopen.o
+  CC      libmusl: fopencookie.o
+  CC      libmusl: __fopen_rb_ca.o
+  CC      libmusl: fprintf.o
+  CC      libmusl: fputc.o
+  CC      libmusl: fputs.o
+  CC      libmusl: fputwc.o
+  CC      libmusl: fputws.o
+  CC      libmusl: fread.o
+  CC      libmusl: freopen.o
+  CC      libmusl: fscanf.o
+  CC      libmusl: fseek.o
+  CC      libmusl: fsetpos.o
+  CC      libmusl: ftell.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/fread.c:4: warning: "MIN" redefined
+    4 | #define MIN(a,b) ((a)<(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/stdio_impl.h:5,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/fread.c:1:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:89: note: this is the location of the previous definition
+   89 | #define MIN(a, b)                                                              \
+      | 
+  CC      libmusl: ftrylockfile.o
+  CC      libmusl: funlockfile.o
+  CC      libmusl: fwide.o
+  CC      libmusl: fwprintf.o
+  CC      libmusl: fwrite.o
+  CC      libmusl: fwscanf.o
+  CC      libmusl: getc.o
+  CC      libmusl: getchar.o
+  CC      libmusl: getchar_unlocked.o
+  CC      libmusl: getc_unlocked.o
+  CC      libmusl: getdelim.o
+  CC      libmusl: getline.o
+  CC      libmusl: gets.o
+  CC      libmusl: getw.o
+  CC      libmusl: getwc.o
+  CC      libmusl: getwchar.o
+  CC      libmusl: __lockfile.o
+  CC      libmusl: ofl_add.o
+  CC      libmusl: ofl.o
+  CC      libmusl: open_memstream.o
+  CC      libmusl: open_wmemstream.o
+  CC      libmusl: __overflow.o
+  CC      libmusl: perror.o
+  CC      libmusl: printf.o
+  CC      libmusl: putc.o
+  CC      libmusl: putchar.o
+  CC      libmusl: putchar_unlocked.o
+  CC      libmusl: putc_unlocked.o
+  CC      libmusl: puts.o
+  CC      libmusl: putw.o
+  CC      libmusl: putwc.o
+  CC      libmusl: putwchar.o
+  CC      libmusl: remove.o
+  CC      libmusl: rename.o
+  CC      libmusl: rewind.o
+  CC      libmusl: scanf.o
+  CC      libmusl: setbuf.o
+  CC      libmusl: setbuffer.o
+  CC      libmusl: setlinebuf.o
+  CC      libmusl: setvbuf.o
+  CC      libmusl: snprintf.o
+  CC      libmusl: sprintf.o
+  CC      libmusl: sscanf.o
+  CC      libmusl: stderr.o
+  CC      libmusl: stdin.o
+  CC      libmusl: __stdio_close.o
+  CC      libmusl: __stdio_exit.o
+  CC      libmusl: __stdio_read.o
+  CC      libmusl: __stdio_seek.o
+  CC      libmusl: __stdio_write.o
+  CC      libmusl: stdout.o
+  CC      libmusl: __stdout_write.o
+  CC      libmusl: swprintf.o
+  CC      libmusl: swscanf.o
+  CC      libmusl: tempnam.o
+  CC      libmusl: tmpfile.o
+  CC      libmusl: tmpnam.o
+  CC      libmusl: __toread.o
+  CC      libmusl: __towrite.o
+  CC      libmusl: __uflow.o
+  CC      libmusl: ungetc.o
+  CC      libmusl: ungetwc.o
+  CC      libmusl: vasprintf.o
+  CC      libmusl: vdprintf.o
+  CC      libmusl: vfprintf.o
+  CC      libmusl: vfscanf.o
+  CC      libmusl: vfwprintf.o
+  CC      libmusl: vfwscanf.o
+  CC      libmusl: vprintf.o
+  CC      libmusl: vscanf.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/vfprintf.c:16: warning: "MAX" redefined
+   16 | #define MAX(a,b) ((a)>(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/stdio_impl.h:5,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/vfprintf.c:1:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:104: note: this is the location of the previous definition
+  104 | #define MAX(a, b)                                                              \
+      | 
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/vfprintf.c:17: warning: "MIN" redefined
+   17 | #define MIN(a,b) ((a)<(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/stdio_impl.h:5,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/vfprintf.c:1:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:89: note: this is the location of the previous definition
+   89 | #define MIN(a, b)                                                              \
+      | 
+  CC      libmusl: vsnprintf.o
+  CC      libmusl: vsprintf.o
+  CC      libmusl: vsscanf.o
+  CC      libmusl: vswprintf.o
+  CC      libmusl: vswscanf.o
+  CC      libmusl: vwprintf.o
+  CC      libmusl: vwscanf.o
+  CC      libmusl: wprintf.o
+  CC      libmusl: wscanf.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/vsnprintf.c:12: warning: "MIN" redefined
+   12 | #define MIN(a, b) ((a) < (b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/stdio_impl.h:5,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/stdio/vsnprintf.c:1:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:89: note: this is the location of the previous definition
+   89 | #define MIN(a, b)                                                              \
+      | 
+  CC      libmusl: acos.o
+  CC      libmusl: acosf.o
+  CC      libmusl: acosh.o
+  CC      libmusl: acoshf.o
+  CC      libmusl: acoshl.o
+  CC      libmusl: asin.o
+  CC      libmusl: asinf.o
+  CC      libmusl: asinh.o
+  CC      libmusl: asinhf.o
+  CC      libmusl: asinhl.o
+  CC      libmusl: atan2.o
+  CC      libmusl: atan2f.o
+  CC      libmusl: atan.o
+  CC      libmusl: atanf.o
+  CC      libmusl: atanh.o
+  CC      libmusl: atanhf.o
+  CC      libmusl: atanhl.o
+  CC      libmusl: cbrt.o
+  CC      libmusl: cbrtf.o
+  CC      libmusl: cbrtl.o
+  CC      libmusl: ceil.o
+  CC      libmusl: ceilf.o
+  CC      libmusl: copysign.o
+  CC      libmusl: copysignf.o
+  CC      libmusl: copysignl.o
+  CC      libmusl: __cos.o
+  CC      libmusl: cos.o
+  CC      libmusl: __cosdf.o
+  CC      libmusl: cosf.o
+  CC      libmusl: cosh.o
+  CC      libmusl: coshf.o
+  CC      libmusl: coshl.o
+  CC      libmusl: __cosl.o
+  CC      libmusl: cosl.o
+  CC      libmusl: erf.o
+  CC      libmusl: erff.o
+  CC      libmusl: erfl.o
+  CC      libmusl: exp10.o
+  CC      libmusl: exp10f.o
+  CC      libmusl: exp10l.o
+  CC      libmusl: exp2.o
+  CC      libmusl: exp2f.o
+  CC      libmusl: exp2f_data.o
+  CC      libmusl: exp.o
+  CC      libmusl: exp_data.o
+  CC      libmusl: expf.o
+  CC      libmusl: expm1.o
+  CC      libmusl: expm1f.o
+  CC      libmusl: __expo2.o
+  CC      libmusl: __expo2f.o
+  CC      libmusl: fdim.o
+  CC      libmusl: fdimf.o
+  CC      libmusl: fdiml.o
+  CC      libmusl: finite.o
+  CC      libmusl: finitef.o
+  CC      libmusl: floor.o
+  CC      libmusl: floorf.o
+  CC      libmusl: fmal.o
+  CC      libmusl: fmax.o
+  CC      libmusl: fmaxf.o
+  CC      libmusl: fmaxl.o
+  CC      libmusl: fmin.o
+  CC      libmusl: fminf.o
+  CC      libmusl: fminl.o
+  CC      libmusl: fmod.o
+  CC      libmusl: fmodf.o
+  CC      libmusl: __fpclassify.o
+  CC      libmusl: __fpclassifyf.o
+  CC      libmusl: __fpclassifyl.o
+  CC      libmusl: frexp.o
+  CC      libmusl: frexpf.o
+  CC      libmusl: frexpl.o
+  CC      libmusl: hypot.o
+  CC      libmusl: hypotf.o
+  CC      libmusl: hypotl.o
+  CC      libmusl: ilogb.o
+  CC      libmusl: ilogbf.o
+  CC      libmusl: ilogbl.o
+  CC      libmusl: j0.o
+  CC      libmusl: j0f.o
+  CC      libmusl: j1.o
+  CC      libmusl: j1f.o
+  CC      libmusl: jn.o
+  CC      libmusl: jnf.o
+  CC      libmusl: ldexp.o
+  CC      libmusl: ldexpf.o
+  CC      libmusl: ldexpl.o
+  CC      libmusl: lgamma.o
+  CC      libmusl: lgammaf.o
+  CC      libmusl: lgammaf_r.o
+  CC      libmusl: lgammal.o
+  CC      libmusl: lgamma_r.o
+  CC      libmusl: llround.o
+  CC      libmusl: llroundf.o
+  CC      libmusl: llroundl.o
+  CC      libmusl: log10.o
+  CC      libmusl: log10f.o
+  CC      libmusl: log1p.o
+  CC      libmusl: log1pf.o
+  CC      libmusl: log2.o
+  CC      libmusl: log2_data.o
+  CC      libmusl: log2f.o
+  CC      libmusl: log2f_data.o
+  CC      libmusl: logb.o
+  CC      libmusl: logbf.o
+  CC      libmusl: logbl.o
+  CC      libmusl: log.o
+  CC      libmusl: log_data.o
+  CC      libmusl: logf.o
+  CC      libmusl: logf_data.o
+  CC      libmusl: lround.o
+  CC      libmusl: lroundf.o
+  CC      libmusl: lroundl.o
+  CC      libmusl: __math_divzero.o
+  CC      libmusl: __math_divzerof.o
+  CC      libmusl: __math_invalid.o
+  CC      libmusl: __math_invalidf.o
+  CC      libmusl: __math_invalidl.o
+  CC      libmusl: __math_oflow.o
+  CC      libmusl: __math_oflowf.o
+  CC      libmusl: __math_uflow.o
+  CC      libmusl: __math_uflowf.o
+  CC      libmusl: __math_xflow.o
+  CC      libmusl: __math_xflowf.o
+  CC      libmusl: modf.o
+  CC      libmusl: modff.o
+  CC      libmusl: modfl.o
+  CC      libmusl: nan.o
+  CC      libmusl: nanf.o
+  CC      libmusl: nanl.o
+  CC      libmusl: nearbyint.o
+  CC      libmusl: nearbyintf.o
+  CC      libmusl: nearbyintl.o
+  CC      libmusl: nextafter.o
+  CC      libmusl: nextafterf.o
+  CC      libmusl: nextafterl.o
+  CC      libmusl: nexttoward.o
+  CC      libmusl: nexttowardf.o
+  CC      libmusl: nexttowardl.o
+  CC      libmusl: __polevll.o
+  CC      libmusl: pow.o
+  CC      libmusl: pow_data.o
+  CC      libmusl: powf.o
+  CC      libmusl: powf_data.o
+  CC      libmusl: powl.o
+  CC      libmusl: remainder.o
+  CC      libmusl: remainderf.o
+  CC      libmusl: __rem_pio2.o
+  CC      libmusl: __rem_pio2f.o
+  CC      libmusl: __rem_pio2_large.o
+  CC      libmusl: __rem_pio2l.o
+  CC      libmusl: remquo.o
+  CC      libmusl: remquof.o
+  CC      libmusl: rint.o
+  CC      libmusl: rintf.o
+  CC      libmusl: round.o
+  CC      libmusl: roundf.o
+  CC      libmusl: roundl.o
+  CC      libmusl: scalb.o
+  CC      libmusl: scalbf.o
+  CC      libmusl: scalbln.o
+  CC      libmusl: scalblnf.o
+  CC      libmusl: scalblnl.o
+  CC      libmusl: scalbn.o
+  CC      libmusl: scalbnf.o
+  CC      libmusl: scalbnl.o
+  CC      libmusl: __signbit.o
+  CC      libmusl: __signbitf.o
+  CC      libmusl: __signbitl.o
+  CC      libmusl: signgam.o
+  CC      libmusl: significand.o
+  CC      libmusl: significandf.o
+  CC      libmusl: __sin.o
+  CC      libmusl: sin.o
+  CC      libmusl: sincos.o
+  CC      libmusl: sincosf.o
+  CC      libmusl: sincosl.o
+  CC      libmusl: __sindf.o
+  CC      libmusl: sinf.o
+  CC      libmusl: sinh.o
+  CC      libmusl: sinhf.o
+  CC      libmusl: sinhl.o
+  CC      libmusl: __sinl.o
+  CC      libmusl: sinl.o
+  CC      libmusl: sqrt_data.o
+  CC      libmusl: __tan.o
+  CC      libmusl: tan.o
+  CC      libmusl: __tandf.o
+  CC      libmusl: tanf.o
+  CC      libmusl: tanh.o
+  CC      libmusl: tanhf.o
+  CC      libmusl: tanhl.o
+  CC      libmusl: __tanl.o
+  CC      libmusl: tanl.o
+  CC      libmusl: tgamma.o
+  CC      libmusl: tgammaf.o
+  CC      libmusl: tgammal.o
+  CC      libmusl: trunc.o
+  CC      libmusl: truncf.o
+  AS      libmusl: acosl.x86_64.o
+  AS      libmusl: asinl.x86_64.o
+  AS      libmusl: atan2l.x86_64.o
+  AS      libmusl: atanl.x86_64.o
+  AS      libmusl: ceill.x86_64.o
+  AS      libmusl: exp2l.x86_64.o
+  AS      libmusl: expl.x86_64.o
+  AS      libmusl: expm1l.x86_64.o
+  CC      libmusl: fabs.x86_64.o
+  CC      libmusl: fabsf.x86_64.o
+  CC      libmusl: fabsl.x86_64.o
+  AS      libmusl: floorl.x86_64.o
+  CC      libmusl: fma.x86_64.o
+  CC      libmusl: fmaf.x86_64.o
+  CC      libmusl: fmodl.x86_64.o
+  AS      libmusl: __invtrigl.x86_64.o
+  CC      libmusl: llrint.x86_64.o
+  CC      libmusl: llrintf.x86_64.o
+  CC      libmusl: llrintl.x86_64.o
+  AS      libmusl: log10l.x86_64.o
+  AS      libmusl: log1pl.x86_64.o
+  AS      libmusl: log2l.x86_64.o
+  AS      libmusl: logl.x86_64.o
+  CC      libmusl: lrint.x86_64.o
+  CC      libmusl: lrintf.x86_64.o
+  CC      libmusl: lrintl.x86_64.o
+  CC      libmusl: remainderl.x86_64.o
+  CC      libmusl: remquol.x86_64.o
+  CC      libmusl: rintl.x86_64.o
+  CC      libmusl: sqrt.x86_64.o
+  CC      libmusl: sqrtf.x86_64.o
+  CC      libmusl: sqrtl.x86_64.o
+  AS      libmusl: truncl.x86_64.o
+  CC      libmusl: aio.o
+  CC      libmusl: aio_suspend.o
+  CC      libmusl: lio_listio.o
+  CC      libmusl: __xstat.o
+  CC      libmusl: chmod.o
+  CC      libmusl: fchmod.o
+  CC      libmusl: fchmodat.o
+  CC      libmusl: fstat.o
+  CC      libmusl: fstatat.o
+  CC      libmusl: futimens.o
+  CC      libmusl: futimesat.o
+  CC      libmusl: lchmod.o
+  CC      libmusl: lstat.o
+  CC      libmusl: mkdir.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/aio/aio.c:81: warning: "MAX" redefined
+   81 | #define MAX(a,b) ((a)>(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/aio/aio.c:9:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:104: note: this is the location of the previous definition
+  104 | #define MAX(a, b)                                                              \
+      | 
+  CC      libmusl: mkdirat.o
+  CC      libmusl: mkfifo.o
+  CC      libmusl: mkfifoat.o
+  CC      libmusl: mknod.o
+  CC      libmusl: mknodat.o
+  CC      libmusl: stat.o
+  CC      libmusl: statvfs.o
+  CC      libmusl: umask.o
+  CC      libmusl: utimensat.o
+  CC      libmusl: hsearch.o
+  CC      libmusl: insque.o
+  CC      libmusl: lsearch.o
+  CC      libmusl: tdelete.o
+  CC      libmusl: tdestroy.o
+  CC      libmusl: tfind.o
+  CC      libmusl: tsearch.o
+  CC      libmusl: twalk.o
+  CC      libmusl: crypt.o
+  CC      libmusl: crypt_blowfish.o
+  CC      libmusl: crypt_des.o
+  CC      libmusl: crypt_md5.o
+  CC      libmusl: crypt_r.o
+  CC      libmusl: crypt_sha256.o
+  CC      libmusl: crypt_sha512.o
+  CC      libmusl: encrypt.o
+  CC      libmusl: poll.o
+  CC      libmusl: pselect.o
+  CC      libmusl: select.o
+  CC      libmusl: _exit.o
+  CC      libmusl: access.o
+  CC      libmusl: acct.o
+  CC      libmusl: alarm.o
+  CC      libmusl: chdir.o
+  CC      libmusl: chown.o
+  CC      libmusl: close.o
+  CC      libmusl: ctermid.o
+  CC      libmusl: dup.o
+  CC      libmusl: dup2.o
+  CC      libmusl: dup3.o
+  CC      libmusl: faccessat.o
+  CC      libmusl: fchdir.o
+  CC      libmusl: fchown.o
+  CC      libmusl: fchownat.o
+  CC      libmusl: fdatasync.o
+  CC      libmusl: fsync.o
+  CC      libmusl: ftruncate.o
+  CC      libmusl: getcwd.o
+  CC      libmusl: getegid.o
+  CC      libmusl: geteuid.o
+  CC      libmusl: getgid.o
+  CC      libmusl: getgroups.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/unistd/getcwd.c: In function ‘getcwd’:
+cc1: warning: function may return address of local variable [-Wreturn-local-addr]
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/unistd/getcwd.c:9:14: note: declared here
+    9 |         char tmp[buf ? 1 : PATH_MAX];
+      |              ^~~
+  CC      libmusl: getuid.o
+  CC      libmusl: getlogin.o
+  CC      libmusl: getlogin_r.o
+  CC      libmusl: getpgid.o
+  CC      libmusl: getpgrp.o
+  CC      libmusl: getpid.o
+  CC      libmusl: getppid.o
+  CC      libmusl: getsid.o
+  CC      libmusl: isatty.o
+  CC      libmusl: lchown.o
+  CC      libmusl: link.o
+  CC      libmusl: linkat.o
+  CC      libmusl: lseek.o
+  CC      libmusl: nice.o
+  CC      libmusl: pause.o
+  CC      libmusl: pipe.o
+  CC      libmusl: pipe2.o
+  CC      libmusl: posix_close.o
+  CC      libmusl: pread.o
+  CC      libmusl: preadv.o
+  CC      libmusl: pwrite.o
+  CC      libmusl: pwritev.o
+  CC      libmusl: read.o
+  CC      libmusl: readlink.o
+  CC      libmusl: readlinkat.o
+  CC      libmusl: readv.o
+  CC      libmusl: renameat.o
+  CC      libmusl: rmdir.o
+  CC      libmusl: setgid.o
+  CC      libmusl: setregid.o
+  CC      libmusl: setresgid.o
+  CC      libmusl: setresuid.o
+  CC      libmusl: setreuid.o
+  CC      libmusl: setuid.o
+  CC      libmusl: setegid.o
+  CC      libmusl: seteuid.o
+  CC      libmusl: setpgid.o
+  CC      libmusl: setpgrp.o
+  CC      libmusl: setsid.o
+  CC      libmusl: setxid.o
+  CC      libmusl: sleep.o
+  CC      libmusl: symlink.o
+  CC      libmusl: symlinkat.o
+  CC      libmusl: sync.o
+  CC      libmusl: tcgetpgrp.o
+  CC      libmusl: tcsetpgrp.o
+  CC      libmusl: truncate.o
+  CC      libmusl: ttyname.o
+  CC      libmusl: ttyname_r.o
+  CC      libmusl: ualarm.o
+  CC      libmusl: unlink.o
+  CC      libmusl: unlinkat.o
+  CC      libmusl: usleep.o
+  CC      libmusl: write.o
+  CC      libmusl: writev.o
+  CC      libmusl: block.o
+  CC      libmusl: getitimer.o
+  CC      libmusl: kill.o
+  CC      libmusl: killpg.o
+  CC      libmusl: psiginfo.o
+  CC      libmusl: psignal.o
+  CC      libmusl: raise.o
+  CC      libmusl: setitimer.o
+  CC      libmusl: sigaction.o
+  CC      libmusl: sigaddset.o
+  CC      libmusl: sigaltstack.o
+  CC      libmusl: sigandset.o
+  CC      libmusl: sigdelset.o
+  CC      libmusl: sigemptyset.o
+  CC      libmusl: sigfillset.o
+  CC      libmusl: sighold.o
+  CC      libmusl: sigignore.o
+  CC      libmusl: siginterrupt.o
+  CC      libmusl: sigisemptyset.o
+  CC      libmusl: sigismember.o
+  CC      libmusl: siglongjmp.o
+  CC      libmusl: signal.o
+  CC      libmusl: sigorset.o
+  CC      libmusl: sigpause.o
+  CC      libmusl: sigpending.o
+  CC      libmusl: sigprocmask.o
+  CC      libmusl: sigqueue.o
+  CC      libmusl: sigrelse.o
+  CC      libmusl: sigrtmax.o
+  CC      libmusl: sigrtmin.o
+  CC      libmusl: sigset.o
+  CC      libmusl: sigsetjmp_tail.o
+  CC      libmusl: sigsuspend.o
+  CC      libmusl: sigtimedwait.o
+  CC      libmusl: sigwait.o
+  CC      libmusl: sigwaitinfo.o
+  AS      libmusl: restore.x86_64.o
+  AS      libmusl: sigsetjmp.x86_64.o
+  CC      libmusl: call_once.o
+  CC      libmusl: cnd_broadcast.o
+  CC      libmusl: cnd_destroy.o
+  CC      libmusl: cnd_init.o
+  CC      libmusl: cnd_signal.o
+  CC      libmusl: cnd_timedwait.o
+  CC      libmusl: cnd_wait.o
+  CC      libmusl: default_attr.o
+  CC      libmusl: __lock.o
+  CC      libmusl: lock_ptc.o
+  CC      libmusl: mtx_destroy.o
+  CC      libmusl: mtx_init.o
+  CC      libmusl: mtx_lock.o
+  CC      libmusl: mtx_timedlock.o
+  CC      libmusl: mtx_trylock.o
+  CC      libmusl: mtx_unlock.o
+  CC      libmusl: pthread_atfork.o
+  CC      libmusl: pthread_attr_destroy.o
+  CC      libmusl: pthread_attr_get.o
+  CC      libmusl: pthread_attr_init.o
+  CC      libmusl: pthread_attr_setdetachstate.o
+  CC      libmusl: pthread_attr_setguardsize.o
+  CC      libmusl: pthread_attr_setinheritsched.o
+  CC      libmusl: pthread_attr_setschedparam.o
+  CC      libmusl: pthread_attr_setschedpolicy.o
+  CC      libmusl: pthread_attr_setscope.o
+  CC      libmusl: pthread_attr_setstack.o
+  CC      libmusl: pthread_attr_setstacksize.o
+  CC      libmusl: pthread_barrierattr_destroy.o
+  CC      libmusl: pthread_barrierattr_init.o
+  CC      libmusl: pthread_barrierattr_setpshared.o
+  CC      libmusl: pthread_barrier_destroy.o
+  CC      libmusl: pthread_barrier_init.o
+  CC      libmusl: pthread_barrier_wait.o
+  CC      libmusl: pthread_cancel.o
+  CC      libmusl: pthread_cleanup_push.o
+  CC      libmusl: pthread_condattr_destroy.o
+  CC      libmusl: pthread_condattr_init.o
+  CC      libmusl: pthread_condattr_setclock.o
+  CC      libmusl: pthread_condattr_setpshared.o
+  CC      libmusl: pthread_cond_broadcast.o
+  CC      libmusl: pthread_cond_destroy.o
+  CC      libmusl: pthread_cond_init.o
+  CC      libmusl: pthread_cond_signal.o
+  CC      libmusl: pthread_cond_timedwait.o
+  CC      libmusl: pthread_cond_wait.o
+  CC      libmusl: pthread_create.o
+  CC      libmusl: pthread_detach.o
+  CC      libmusl: pthread_equal.o
+  CC      libmusl: pthread_getattr_np.o
+  CC      libmusl: pthread_getconcurrency.o
+  CC      libmusl: pthread_getcpuclockid.o
+  CC      libmusl: pthread_getname_np.o
+  CC      libmusl: pthread_getschedparam.o
+  CC      libmusl: pthread_getspecific.o
+  CC      libmusl: pthread_join.o
+  CC      libmusl: pthread_key_create.o
+  CC      libmusl: pthread_kill.o
+  CC      libmusl: pthread_mutexattr_destroy.o
+  CC      libmusl: pthread_mutexattr_init.o
+  CC      libmusl: pthread_mutexattr_setprotocol.o
+  CC      libmusl: pthread_mutexattr_setpshared.o
+  CC      libmusl: pthread_mutexattr_setrobust.o
+  CC      libmusl: pthread_mutexattr_settype.o
+  CC      libmusl: pthread_mutex_consistent.o
+  CC      libmusl: pthread_mutex_destroy.o
+  CC      libmusl: pthread_mutex_getprioceiling.o
+  CC      libmusl: pthread_mutex_init.o
+  CC      libmusl: pthread_mutex_lock.o
+  CC      libmusl: pthread_mutex_setprioceiling.o
+  CC      libmusl: pthread_mutex_timedlock.o
+  CC      libmusl: pthread_mutex_trylock.o
+  CC      libmusl: pthread_mutex_unlock.o
+  CC      libmusl: pthread_once.o
+  CC      libmusl: pthread_rwlockattr_destroy.o
+  CC      libmusl: pthread_rwlockattr_init.o
+  CC      libmusl: pthread_rwlockattr_setpshared.o
+  CC      libmusl: pthread_rwlock_destroy.o
+  CC      libmusl: pthread_rwlock_init.o
+  CC      libmusl: pthread_rwlock_rdlock.o
+  CC      libmusl: pthread_rwlock_timedrdlock.o
+  CC      libmusl: pthread_rwlock_timedwrlock.o
+  CC      libmusl: pthread_rwlock_tryrdlock.o
+  CC      libmusl: pthread_rwlock_trywrlock.o
+  CC      libmusl: pthread_rwlock_unlock.o
+  CC      libmusl: pthread_rwlock_wrlock.o
+  CC      libmusl: pthread_self.o
+  CC      libmusl: pthread_setattr_default_np.o
+  CC      libmusl: pthread_setcancelstate.o
+  CC      libmusl: pthread_setcanceltype.o
+  CC      libmusl: pthread_setconcurrency.o
+  CC      libmusl: pthread_setname_np.o
+  CC      libmusl: pthread_setschedparam.o
+  CC      libmusl: pthread_setschedprio.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/thread/pthread_setattr_default_np.c:5: warning: "MIN" redefined
+    5 | #define MIN(a,b) ((a)<(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/pthread_impl.h:10,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/thread/pthread_setattr_default_np.c:2:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:89: note: this is the location of the previous definition
+   89 | #define MIN(a, b)                                                              \
+      | 
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/thread/pthread_setattr_default_np.c:6: warning: "MAX" redefined
+    6 | #define MAX(a,b) ((a)>(b) ? (a) : (b))
+      | 
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/arch/x86/x86_64/include/uk/asm/sysctx.h:15,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/arch/ctx.h:41,
+                 from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/syscall_shim/include/uk/syscall.h:38,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:8,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/pthread_impl.h:10,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/thread/pthread_setattr_default_np.c:2:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/include/uk/essentials.h:104: note: this is the location of the previous definition
+  104 | #define MAX(a, b)                                                              \
+      | 
+  CC      libmusl: pthread_setspecific.o
+  CC      libmusl: pthread_sigmask.o
+  CC      libmusl: pthread_spin_destroy.o
+  CC      libmusl: pthread_spin_init.o
+  CC      libmusl: pthread_spin_lock.o
+  CC      libmusl: pthread_spin_trylock.o
+  CC      libmusl: pthread_spin_unlock.o
+  CC      libmusl: pthread_testcancel.o
+  CC      libmusl: sem_destroy.o
+  CC      libmusl: sem_getvalue.o
+  CC      libmusl: sem_init.o
+  CC      libmusl: sem_open.o
+  CC      libmusl: sem_post.o
+  CC      libmusl: sem_timedwait.o
+  CC      libmusl: sem_trywait.o
+  CC      libmusl: sem_unlink.o
+  CC      libmusl: sem_wait.o
+  CC      libmusl: synccall.o
+  CC      libmusl: __syscall_cp.o
+  CC      libmusl: thrd_create.o
+  CC      libmusl: thrd_exit.o
+  CC      libmusl: thrd_join.o
+  CC      libmusl: thrd_sleep.o
+  CC      libmusl: thrd_yield.o
+  CC      libmusl: __timedwait.o
+  CC      libmusl: tls.o
+  CC      libmusl: __tls_get_addr.o
+  CC      libmusl: tss_create.o
+  CC      libmusl: tss_delete.o
+  CC      libmusl: tss_set.o
+  CC      libmusl: vmlock.o
+  CC      libmusl: __wait.o
+  AS      libmusl: syscall_cp.x86_64.o
+  CC      libmusl: cuserid.o
+  CC      libmusl: err.o
+  CC      libmusl: ftw.o
+  CC      libmusl: getdtablesize.o
+  CC      libmusl: getloadavg.o
+  CC      libmusl: getpass.o
+  CC      libmusl: getusershell.o
+  CC      libmusl: isastream.o
+  CC      libmusl: ulimit.o
+  CC      libmusl: utmpx.o
+  CC      libmusl: valloc.o
+  CC      libmusl: __init_tls.o
+  CC      libmusl: __libc_start_main.o
+  CC      libmusl: __reset_tls.o
+  CC      libmusl: __stack_chk_fail.o
+  CC      libmusl: asctime.o
+  CC      libmusl: asctime_r.o
+  CC      libmusl: clock.o
+  CC      libmusl: clock_getcpuclockid.o
+  CC      libmusl: clock_getres.o
+  CC      libmusl: clock_gettime.o
+  CC      libmusl: clock_nanosleep.o
+  CC      libmusl: clock_settime.o
+  CC      libmusl: ctime.o
+  CC      libmusl: ctime_r.o
+  CC      libmusl: difftime.o
+  CC      libmusl: ftime.o
+  CC      libmusl: getdate.o
+  CC      libmusl: gettimeofday.o
+  CC      libmusl: gmtime.o
+  CC      libmusl: gmtime_r.o
+  CC      libmusl: localtime.o
+  CC      libmusl: localtime_r.o
+  CC      libmusl: __map_file.o
+  CC      libmusl: mktime.o
+  CC      libmusl: __month_to_secs.o
+  CC      libmusl: nanosleep.o
+  CC      libmusl: __secs_to_tm.o
+  CC      libmusl: strftime.o
+  CC      libmusl: strptime.o
+  CC      libmusl: time.o
+  CC      libmusl: timegm.o
+  CC      libmusl: timer_create.o
+  CC      libmusl: timer_delete.o
+  CC      libmusl: timer_getoverrun.o
+  CC      libmusl: timer_gettime.o
+  CC      libmusl: timer_settime.o
+  CC      libmusl: times.o
+  CC      libmusl: timespec_get.o
+  CC      libmusl: __tm_to_secs.o
+  CC      libmusl: __tz.o
+  CC      libmusl: utime.o
+  CC      libmusl: wcsftime.o
+  CC      libmusl: __year_to_secs.o
+  CC      libmusl: __errno_location.o
+  CC      libmusl: strerror.o
+  CC      libmusl: ftok.o
+  CC      libmusl: msgctl.o
+  CC      libmusl: msgget.o
+  CC      libmusl: msgrcv.o
+  CC      libmusl: msgsnd.o
+  CC      libmusl: semctl.o
+  CC      libmusl: semget.o
+  CC      libmusl: semop.o
+  CC      libmusl: semtimedop.o
+  CC      libmusl: shmat.o
+  CC      libmusl: shmctl.o
+  CC      libmusl: shmdt.o
+  CC      libmusl: shmget.o
+  CC      libmusl: __rand48_step.o
+  CC      libmusl: __seed48.o
+  CC      libmusl: drand48.o
+  CC      libmusl: lcong48.o
+  CC      libmusl: lrand48.o
+  CC      libmusl: mrand48.o
+  CC      libmusl: rand.o
+  CC      libmusl: rand_r.o
+  CC      libmusl: random.o
+  CC      libmusl: seed48.o
+  CC      libmusl: srand48.o
+  CC      libmusl: fgetgrent.o
+  CC      libmusl: fgetpwent.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/prng/seed48.c:5:40: warning: argument 1 of type ‘short unsigned int *’ declared as a pointer [-Warray-parameter=]
+    5 | unsigned short *seed48(unsigned short *s)
+      |                        ~~~~~~~~~~~~~~~~^
+In file included from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/include/stdlib.h:4,
+                 from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/prng/seed48.c:1:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/include/../../include/stdlib.h:135:25: note: previously declared as an array ‘short unsigned int[3]’
+  135 | unsigned short *seed48 (unsigned short [3]);
+      |                         ^~~~~~~~~~~~~~~~~~
+  CC      libmusl: fgetspent.o
+  CC      libmusl: getgr_a.o
+  CC      libmusl: getgr_r.o
+  CC      libmusl: getgrent.o
+  CC      libmusl: getgrent_a.o
+  CC      libmusl: getpw_a.o
+  CC      libmusl: getpw_r.o
+  CC      libmusl: getpwent.o
+  CC      libmusl: getpwent_a.o
+  CC      libmusl: getgrouplist.o
+  CC      libmusl: getspent.o
+  CC      libmusl: getspnam.o
+  CC      libmusl: getspnam_r.o
+  CC      libmusl: lckpwdf.o
+  CC      libmusl: nscd_query.o
+  CC      libmusl: putgrent.o
+  CC      libmusl: putpwent.o
+  CC      libmusl: putspent.o
+  CC      libmusl: __flt_rounds.o
+  CC      libmusl: fegetexceptflag.o
+  CC      libmusl: feholdexcept.o
+  CC      libmusl: fesetexceptflag.o
+  CC      libmusl: fesetround.o
+  CC      libmusl: feupdateenv.o
+  AS      libmusl: fenv.x86_64.o
+  CC      libmusl: __ctype_b_loc.o
+  CC      libmusl: __ctype_get_mb_cur_max.o
+  CC      libmusl: __ctype_tolower_loc.o
+  CC      libmusl: __ctype_toupper_loc.o
+  CC      libmusl: isalnum.o
+  CC      libmusl: isalpha.o
+  CC      libmusl: isascii.o
+  CC      libmusl: isblank.o
+  CC      libmusl: iscntrl.o
+  CC      libmusl: isdigit.o
+  CC      libmusl: isgraph.o
+  CC      libmusl: islower.o
+  CC      libmusl: isprint.o
+  CC      libmusl: ispunct.o
+  CC      libmusl: isspace.o
+  CC      libmusl: isupper.o
+  CC      libmusl: iswalnum.o
+  CC      libmusl: iswalpha.o
+  CC      libmusl: iswblank.o
+  CC      libmusl: iswcntrl.o
+  CC      libmusl: iswctype.o
+  CC      libmusl: iswdigit.o
+  CC      libmusl: iswgraph.o
+  CC      libmusl: iswlower.o
+  CC      libmusl: iswprint.o
+  CC      libmusl: iswpunct.o
+  CC      libmusl: iswspace.o
+  CC      libmusl: iswupper.o
+  CC      libmusl: iswxdigit.o
+  CC      libmusl: isxdigit.o
+  CC      libmusl: toascii.o
+  CC      libmusl: tolower.o
+  CC      libmusl: toupper.o
+  CC      libmusl: towctrans.o
+  CC      libmusl: wcswidth.o
+  CC      libmusl: wctrans.o
+  CC      libmusl: wcwidth.o
+  CC      libmusl: adjtime.o
+  CC      libmusl: adjtimex.o
+  CC      libmusl: arch_prctl.o
+  CC      libmusl: brk.o
+  CC      libmusl: cache.o
+  CC      libmusl: cap.o
+  CC      libmusl: chroot.o
+  CC      libmusl: clock_adjtime.o
+  CC      libmusl: clone.linux.o
+  CC      libmusl: epoll.o
+  CC      libmusl: eventfd.o
+  CC      libmusl: fallocate.o
+  CC      libmusl: fanotify.o
+  CC      libmusl: flock.o
+  CC      libmusl: getrandom.o
+  CC      libmusl: getdents.o
+  CC      libmusl: gettid.o
+  CC      libmusl: inotify.o
+  CC      libmusl: ioperm.o
+  CC      libmusl: iopl.o
+  CC      libmusl: klogctl.o
+  CC      libmusl: module.o
+  CC      libmusl: mount.o
+  CC      libmusl: personality.o
+  CC      libmusl: pivot_root.o
+  CC      libmusl: ppoll.o
+  CC      libmusl: prctl.o
+  CC      libmusl: prlimit.o
+  CC      libmusl: process_vm.o
+  CC      libmusl: ptrace.o
+  CC      libmusl: quotactl.o
+  CC      libmusl: readahead.o
+  CC      libmusl: reboot.o
+  CC      libmusl: remap_file_pages.o
+  CC      libmusl: sbrk.o
+  CC      libmusl: setfsgid.o
+  CC      libmusl: setfsuid.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/linux/sbrk.c: In function ‘sbrk’:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/linux/sbrk.c:10:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   10 |         return (void *)__syscall(SYS_brk, 0);
+      |                ^
+  CC      libmusl: setgroups.o
+  CC      libmusl: sethostname.o
+  CC      libmusl: setns.o
+  CC      libmusl: settimeofday.o
+  CC      libmusl: signalfd.o
+  CC      libmusl: splice.o
+  CC      libmusl: stime.o
+  CC      libmusl: swap.o
+  CC      libmusl: sync_file_range.o
+  CC      libmusl: syncfs.o
+  CC      libmusl: sysinfo.o
+  CC      libmusl: tee.o
+  CC      libmusl: timerfd.o
+  CC      libmusl: unshare.o
+  CC      libmusl: utimes.o
+  CC      libmusl: vhangup.o
+  CC      libmusl: vmsplice.o
+  CC      libmusl: wait3.o
+  CC      libmusl: wait4.o
+  CC      libmusl: xattr.o
+  CC      libmusl: defsysinfo.o
+  CC      libmusl: floatscan.o
+  CC      libmusl: intscan.o
+  CC      libmusl: libc.o
+  CC      libmusl: procfdname.o
+  CC      libmusl: shgetc.o
+  CC      libmusl: syscall_ret.o
+  CC      libmusl: vdso.o
+  CC      libmusl: version.o
+  CC      libmusl: socket.o
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/procfdname.c:3:25: warning: argument 1 of type ‘char *’ declared as a pointer [-Warray-parameter=]
+    3 | void __procfdname(char *buf, unsigned fd)
+      |                   ~~~~~~^~~
+In file included from /home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/procfdname.c:1:
+/home/unikraft/gcarp/catalog-core/redis/workdir/build/libmusl/origin/musl-1.2.3//src/internal/syscall.h:379:31: note: previously declared as an array ‘char[static 27]’
+  379 | hidden void __procfdname(char __buf[static 15+3*sizeof(int)], unsigned);
+      |                          ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC      libmusl: accept.o
+  CC      libmusl: accept4.o
+  CC      libmusl: bind.o
+  CC      libmusl: shutdown.o
+  CC      libmusl: getpeername.o
+  CC      libmusl: getsockname.o
+  CC      libmusl: getsockopt.o
+  CC      libmusl: setsockopt.o
+  CC      libmusl: connect.o
+  CC      libmusl: listen.o
+  CC      libmusl: recv.o
+  CC      libmusl: recvfrom.o
+  CC      libmusl: recvmsg.o
+  CC      libmusl: send.o
+  CC      libmusl: sendmsg.o
+  CC      libmusl: sendto.o
+  CC      libmusl: socketpair.o
+  CC      libmusl: dn_comp.o
+  CC      libmusl: dn_expand.o
+  CC      libmusl: dn_skipname.o
+  CC      libmusl: dns_parse.o
+  CC      libmusl: ent.o
+  CC      libmusl: ether.o
+  CC      libmusl: gai_strerror.o
+  CC      libmusl: getaddrinfo.o
+  CC      libmusl: freeaddrinfo.o
+  CC      libmusl: getnameinfo.o
+  CC      libmusl: gethostbyname.o
+  CC      libmusl: gethostbyname2.o
+  CC      libmusl: gethostbyname2_r.o
+  CC      libmusl: gethostbyname_r.o
+  CC      libmusl: gethostbyaddr.o
+  CC      libmusl: gethostbyaddr_r.o
+  CC      libmusl: getifaddrs.o
+  CC      libmusl: getservbyname.o
+  CC      libmusl: getservbyname_r.o
+  CC      libmusl: getservbyport.o
+  CC      libmusl: getservbyport_r.o
+  CC      libmusl: h_errno.o
+  CC      libmusl: herror.o
+  CC      libmusl: hstrerror.o
+  CC      libmusl: htonl.o
+  CC      libmusl: htons.o
+  CC      libmusl: if_freenameindex.o
+  CC      libmusl: if_indextoname.o
+  CC      libmusl: if_nameindex.o
+  CC      libmusl: if_nametoindex.o
+  CC      libmusl: in6addr_any.o
+  CC      libmusl: in6addr_loopback.o
+  CC      libmusl: inet_addr.o
+  CC      libmusl: inet_aton.o
+  CC      libmusl: inet_legacy.o
+  CC      libmusl: inet_ntoa.o
+  CC      libmusl: inet_ntop.o
+  CC      libmusl: inet_pton.o
+  CC      libmusl: lookup_ipliteral.o
+  CC      libmusl: lookup_name.o
+  CC      libmusl: lookup_serv.o
+  CC      libmusl: netlink.o
+  CC      libmusl: netname.o
+  CC      libmusl: ns_parse.o
+  CC      libmusl: ntohl.o
+  CC      libmusl: ntohs.o
+  CC      libmusl: proto.o
+  CC      libmusl: res_init.o
+  CC      libmusl: res_mkquery.o
+  CC      libmusl: res_msend.o
+  CC      libmusl: res_query.o
+  CC      libmusl: res_querydomain.o
+  CC      libmusl: res_send.o
+  CC      libmusl: res_state.o
+  CC      libmusl: resolvconf.o
+  CC      libmusl: serv.o
+  CC      libmusl: sockatmark.o
+  CC      libmusl: affinity.o
+  CC      libmusl: sched_cpucount.o
+  CC      libmusl: sched_get_priority_max.o
+  CC      libmusl: sched_getcpu.o
+  CC      libmusl: sched_getparam.o
+  CC      libmusl: sched_getscheduler.o
+  CC      libmusl: sched_rr_get_interval.o
+  CC      libmusl: sched_setparam.o
+  CC      libmusl: sched_setscheduler.o
+  CC      libmusl: sched_yield.o
+  CC      libmusl: bcmp.o
+  CC      libmusl: bcopy.o
+  CC      libmusl: bzero.o
+  CC      libmusl: explicit_bzero.o
+  CC      libmusl: index.o
+  CC      libmusl: memccpy.o
+  CC      libmusl: memchr.o
+  CC      libmusl: memcmp.o
+  CC      libmusl: memmem.o
+  CC      libmusl: mempcpy.o
+  CC      libmusl: memrchr.o
+  CC      libmusl: rindex.o
+  CC      libmusl: stpcpy.o
+  CC      libmusl: stpncpy.o
+  CC      libmusl: strcasecmp.o
+  CC      libmusl: strcasestr.o
+  CC      libmusl: strcat.o
+  CC      libmusl: strchr.o
+  CC      libmusl: strchrnul.o
+  CC      libmusl: strcmp.o
+  CC      libmusl: strcpy.o
+  CC      libmusl: strcspn.o
+  CC      libmusl: strdup.o
+  CC      libmusl: strerror_r.o
+  CC      libmusl: strlcat.o
+  CC      libmusl: strlcpy.o
+  CC      libmusl: strlen.o
+  CC      libmusl: strncasecmp.o
+  CC      libmusl: strncat.o
+  CC      libmusl: strncmp.o
+  CC      libmusl: strncpy.o
+  CC      libmusl: strndup.o
+  CC      libmusl: strnlen.o
+  CC      libmusl: strpbrk.o
+  CC      libmusl: strrchr.o
+  CC      libmusl: strsep.o
+  CC      libmusl: strsignal.o
+  CC      libmusl: strspn.o
+  CC      libmusl: strstr.o
+  CC      libmusl: strtok.o
+  CC      libmusl: strtok_r.o
+  CC      libmusl: strverscmp.o
+  CC      libmusl: swab.o
+  CC      libmusl: wcpcpy.o
+  CC      libmusl: wcpncpy.o
+  CC      libmusl: wcscasecmp.o
+  CC      libmusl: wcscasecmp_l.o
+  CC      libmusl: wcscat.o
+  CC      libmusl: wcschr.o
+  CC      libmusl: wcscmp.o
+  CC      libmusl: wcscpy.o
+  CC      libmusl: wcscspn.o
+  CC      libmusl: wcsdup.o
+  CC      libmusl: wcslen.o
+  CC      libmusl: wcsncasecmp.o
+  CC      libmusl: wcsncasecmp_l.o
+  CC      libmusl: wcsncat.o
+  CC      libmusl: wcsncmp.o
+  CC      libmusl: wcsncpy.o
+  CC      libmusl: wcsnlen.o
+  CC      libmusl: wcspbrk.o
+  CC      libmusl: wcsrchr.o
+  CC      libmusl: wcsspn.o
+  CC      libmusl: wcsstr.o
+  CC      libmusl: wcstok.o
+  CC      libmusl: wcswcs.o
+  CC      libmusl: wmemchr.o
+  CC      libmusl: wmemcmp.o
+  CC      libmusl: wmemcpy.o
+  CC      libmusl: wmemmove.o
+  CC      libmusl: wmemset.o
+  AS      libmusl: memcpy.x86_64.o
+  AS      libmusl: memmove.x86_64.o
+  AS      libmusl: memset.x86_64.o
+  CC      libmusl: fnmatch.o
+  CC      libmusl: glob.o
+  CC      libmusl: regcomp.o
+  CC      libmusl: regerror.o
+  CC      libmusl: regexec.o
+  CC      libmusl: tre-mem.o
+  CC      libmusl: cfgetospeed.o
+  CC      libmusl: cfmakeraw.o
+  CC      libmusl: cfsetospeed.o
+  CC      libmusl: tcdrain.o
+  CC      libmusl: tcflow.o
+  CC      libmusl: tcflush.o
+  CC      libmusl: tcgetattr.o
+  CC      libmusl: tcgetsid.o
+  CC      libmusl: tcsendbreak.o
+  CC      libmusl: tcsetattr.o
+  CC      libmusl: abort.o
+  CC      libmusl: abort_lock.o
+  CC      libmusl: assert.o
+  CC      libmusl: atexit.o
+  CC      libmusl: at_quick_exit.o
+  CC      libmusl: exit.o
+  CC      libmusl: _Exit.exit.o
+  CC      libmusl: quick_exit.o
+  CC      libmusl: setjmp.o
+  CC      libmusl: longjmp.o
+  AS      libmusl: longjmp.x86_64.o
+  AS      libmusl: setjmp.x86_64.o
+  CC      libmusl: bind_textdomain_codeset.o
+  CC      libmusl: catclose.o
+  CC      libmusl: catgets.o
+  CC      libmusl: catopen.o
+  CC      libmusl: c_locale.o
+  CC      libmusl: dcngettext.o
+  CC      libmusl: duplocale.o
+  CC      libmusl: freelocale.o
+  CC      libmusl: iconv.o
+  CC      libmusl: iconv_close.o
+  CC      libmusl: langinfo.o
+  CC      libmusl: __lctrans.o
+  CC      libmusl: localeconv.o
+  CC      libmusl: locale_map.o
+  CC      libmusl: __mo_lookup.o
+  CC      libmusl: newlocale.o
+  CC      libmusl: pleval.o
+  CC      libmusl: setlocale.o
+  CC      libmusl: strcoll.o
+  CC      libmusl: strfmon.o
+  CC      libmusl: strtod_l.o
+  CC      libmusl: strxfrm.o
+  CC      libmusl: textdomain.o
+  CC      libmusl: uselocale.o
+  CC      libmusl: wcscoll.o
+  CC      libmusl: wcsxfrm.o
+  AS      libmusl: libinfo.libuklibid.o
+  CC      libmuslglue: mem.o
+  CC      libmuslglue: __uk_init_tls.o
+  CC      libmuslglue: __uk_unmapself.o
+  CC      libmuslglue: __set_thread_area.o
+  AS      libmuslglue: __clone.o
+  AS      libmuslglue: libinfo.libuklibid.o
+  CC      libredis: acl.o
+  CC      libredis: adlist.o
+  CC      libredis: ae.o
+  CC      libredis: anet.o
+  CC      libredis: aof.o
+  CC      libredis: bio.o
+  CC      libredis: bitops.o
+  CC      libredis: blocked.o
+  CC      libredis: call_reply.o
+  CC      libredis: childinfo.o
+  CC      libredis: cluster.o
+  CC      libredis: commands.o
+  CC      libredis: config.o
+  CC      libredis: connection.o
+  CC      libredis: crc16.o
+  CC      libredis: crc64.o
+  CC      libredis: crcspeed.o
+  CC      libredis: db.o
+  CC      libredis: debug.o
+  CC      libredis: defrag.o
+  CC      libredis: dict.o
+  CC      libredis: endianconv.o
+  CC      libredis: eval.o
+  CC      libredis: evict.o
+  CC      libredis: expire.o
+  CC      libredis: function_lua.o
+  CC      libredis: functions.o
+  CC      libredis: geo.o
+  CC      libredis: geohash.o
+  CC      libredis: geohash_helper.o
+  CC      libredis: hyperloglog.o
+  CC      libredis: intset.o
+  CC      libredis: latency.o
+  CC      libredis: lazyfree.o
+  CC      libredis: listpack.o
+  CC      libredis: localtime.o
+  CC      libredis: lolwut5.o
+  CC      libredis: lolwut6.o
+  CC      libredis: lolwut.o
+  CC      libredis: lzf_c.o
+  CC      libredis: lzf_d.o
+  CC      libredis: memtest.o
+  CC      libredis: module.o
+  CC      libredis: monotonic.o
+  CC      libredis: mt19937-64.o
+  CC      libredis: multi.o
+  CC      libredis: networking.o
+  CC      libredis: notify.o
+  CC      libredis: object.o
+  CC      libredis: pqsort.o
+  CC      libredis: pubsub.o
+  CC      libredis: quicklist.o
+  CC      libredis: rand.o
+  CC      libredis: rax.o
+  CC      libredis: rdb.o
+  CC      libredis: redis-check-aof.o
+  CC      libredis: redis-check-rdb.o
+  CC      libredis: release.o
+  CC      libredis: replication.o
+  CC      libredis: resp_parser.o
+  CC      libredis: rio.o
+  CC      libredis: script.o
+  CC      libredis: script_lua.o
+  CC      libredis: sds.o
+  CC      libredis: sentinel.o
+  CC      libredis: setcpuaffinity.o
+  CC      libredis: setproctitle.o
+  CC      libredis: sha1.o
+  CC      libredis: sha256.o
+  CC      libredis: siphash.o
+  CC      libredis: slowlog.o
+  CC      libredis: sort.o
+  CC      libredis: sparkline.o
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/rdb.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/cluster.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/module.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/replication.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/sds.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/sentinel.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/sha1.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/slowlog.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/sort.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/sparkline.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/script_lua.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/redis/workdir/build/libredis/networking.o] Interrupt
+make[2]: *** [Makefile:1175: sub-make] Interrupt
+make[1]: *** [Makefile:41: _all] Interrupt
+make: *** [Makefile:10: all] Interrupt

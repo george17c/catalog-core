@@ -1,0 +1,11 @@
+Host and port unspecified.
+Using as remote 172.44.0.2:8080
+setsid: failed to execute ./scripts/run/fc.arm64: No such file or directory
+Host and port unspecified.
+Using as remote 172.44.0.2:8080
+PING 172.44.0.2 (172.44.0.2) 56(84) bytes of data.
+
+--- 172.44.0.2 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+Cannot ping 172.44.0.2

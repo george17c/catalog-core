@@ -1,0 +1,17 @@
+Host and port unspecified.
+Using as remote 172.44.0.2:8080
+libxl: error: libxl_utils.c:818:libxl_cpu_bitmap_alloc: failed to retrieve the maximum number of cpus
+libxl: error: libxl_utils.c:818:libxl_cpu_bitmap_alloc: failed to retrieve the maximum number of cpus
+libxl: error: libxl_utils.c:818:libxl_cpu_bitmap_alloc: failed to retrieve the maximum number of cpus
+Parsing config from xen.x86_64.cfg
+libxl: error: libxl.c:361:libxl_get_physinfo: getting physinfo: Permission denied
+libxl_get_physinfo failed
+Host and port unspecified.
+Using as remote 172.44.0.2:8080
+PING 172.44.0.2 (172.44.0.2) 56(84) bytes of data.
+From 172.44.0.1 icmp_seq=1 Destination Host Unreachable
+
+--- 172.44.0.2 ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+
+Cannot ping 172.44.0.2

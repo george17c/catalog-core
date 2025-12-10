@@ -1,0 +1,446 @@
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  RM      build
+  RM      config
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  MKDIR   lxdialog
+  MAKE    kconfig
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-http/workdir/build/kconfig -DCONFIG_=\"\"   -c fixdep.c -o /home/unikraft/gcarp/catalog-core/c-http/workdir/build/kconfig/fixdep.o
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-http/workdir/build/kconfig -DCONFIG_=\"\"   /home/unikraft/gcarp/catalog-core/c-http/workdir/build/kconfig/fixdep.o -o /home/unikraft/gcarp/catalog-core/c-http/workdir/build/kconfig/fixdep
+#
+# configuration written to /home/unikraft/gcarp/catalog-core/c-http/.config
+#
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     config.h
+  GEN     libuklibid: libraries.in.new
+  WGET    liblwip: https://github.com/unikraft/fork-lwip/archive/refs/heads/UNIKRAFT-2_1_x.zip
+
+     0K .......... .......... .......... .......... ..........  3%  925K 2s
+    50K .......... .......... .......... .......... ..........  6% 1.83M 1s
+   100K .......... .......... .......... .......... .......... 10% 11.2M 1s
+   150K .......... .......... .......... .......... .......... 13% 2.24M 1s
+   200K .......... .......... .......... .......... .......... 17% 11.1M 1s
+   250K .......... .......... .......... .......... .......... 20% 10.7M 0s
+   300K .......... .......... .......... .......... .......... 23% 11.2M 0s
+   350K .......... .......... .......... .......... .......... 27% 11.1M 0s
+   400K .......... .......... .......... .......... .......... 30% 3.83M 0s
+   450K .......... .......... .......... .......... .......... 34% 10.8M 0s
+   500K .......... .......... .......... .......... .......... 37% 11.1M 0s
+   550K .......... .......... .......... .......... .......... 40% 11.0M 0s
+   600K .......... .......... .......... .......... .......... 44% 10.8M 0s
+   650K .......... .......... .......... .......... .......... 47% 11.5M 0s
+   700K .......... .......... .......... .......... .......... 51% 10.9M 0s
+   750K .......... .......... .......... .......... .......... 54% 10.7M 0s
+   800K .......... .......... .......... .......... .......... 58% 11.1M 0s
+   850K .......... .......... .......... .......... .......... 61% 11.5M 0s
+   900K .......... .......... .......... .......... .......... 64% 10.5M 0s
+   950K .......... .......... .......... .......... .......... 68% 11.0M 0s
+  1000K .......... .......... .......... .......... .......... 71% 11.5M 0s
+  1050K .......... .......... .......... .......... .......... 75% 10.5M 0s
+  1100K .......... .......... .......... .......... .......... 78% 11.3M 0s
+  1150K .......... .......... .......... .......... .......... 81% 11.0M 0s
+  1200K .......... .......... .......... .......... .......... 85% 11.2M 0s
+  1250K .......... .......... .......... .......... .......... 88% 10.8M 0s
+  1300K .......... .......... .......... .......... .......... 92% 11.0M 0s
+  1350K .......... .......... .......... .......... .......... 95% 11.2M 0s
+  1400K .......... .......... .......... .......... .......... 99% 11.1M 0s
+  1450K .......... ....                                       100% 10.5M=0.2s  UNZIP   liblwip: UNIKRAFT-2_1_x.zip
+  PATCH   liblwip: 0001-timeval-for-socket-c.patch
+  PATCH   liblwip: 0002-Don-t-provide-file-status-flags-when-we-have-a-libc.patch
+  PATCH   liblwip: 0003-Declare-mem_-functions-only-for-lwip-internal-use.patch
+  PATCH   liblwip: 0004-src-include-lwip-sockets.h-Add-ipi_spec_dst-field-to.patch
+  PATCH   liblwip: 0005-patches-Add-more-fields-to-struct-ifreq.patch
+  PATCH   liblwip: 0006-eventpoll.patch
+  PATCH   liblwip: 0007-src-include-Make-lwip-sockets.h-compatible-with-Musl.patch
+  PATCH   liblwip: 0008-src-include-Make-lwip-inet.h-compatible-with-Musl.patch
+  PATCH   liblwip: 0009-src-api-Make-netdb.c-compatible-with-Musl.patch
+  PATCH   liblwip: 0010-src-api-Make-sockets.c-compatible-with-Musl.patch
+  PATCH   liblwip: 0011-src-include-Make-lwip-sockets.h-compatible-with-Linux-kernel.h
+  PATCH   liblwip: 0012-src-api-Add-checks-for-address-structure-length-argu.patch
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     libuklibid: libraries.in.new
+  LN      c-http_qemu-arm64.dbg.gdb.py
+  GEN     uk-gdb.py
+  CP      libuklibid: libraries.in
+  AWK     libuklibid: libid.h
+  AWK     libuklibid: namemap.c
+  AWK     libuklibid: selfids.c
+  AWK     libuklibid: exportsyms.uk
+  CC      libkvmplat: cpu_native.common.o
+  AS      libkvmplat: cache64.common.o
+  CC      libkvmplat: smccc.common.o
+  AS      libkvmplat: smccc_invoke.common.o
+  CC      libkvmplat: time.common.o
+  CC      libkvmplat: generic_timer.common.o
+  CC      libkvmplat: lcpu.arm64_common.o
+  CC      libkvmplat: traps_arm64.isr.o
+  CC      libkvmplat: tls.common.o
+  AS      libkvmplat: qemu_bpt64.arm.o
+  AS      libkvmplat: entry64.isr.o
+  AS      libkvmplat: exceptions.isr.o
+  AS      libkvmplat: pagetable64.isr.o
+  CC      libkvmplat: setup.o
+  CC      libkvmplat: lcpu.o
+  CC      libkvmplat: shutdown.o
+  CC      libkvmplat: memory.o
+  CC      libkvmplat: io.o
+  CC      libkvmplat: lcpu.common.o
+  CC      libkvmplat: memory.common.o
+  CC      libkvmplat: bootinfo.common.o
+  CC      libkvmplat: bootinfo_fdt.common.o
+  AS      libkvmplat: libinfo.libuklibid.o
+  LDS     libkvmplat: link64.lds
+  LDS     libkvmplat: bootinfo.lds
+  CC      appchttp: server.o
+  AS      appchttp: libinfo.libuklibid.o
+  CC      libfdt: fdt.o
+  CC      libfdt: fdt_addresses.o
+  CC      libfdt: fdt_empty_tree.o
+  CC      libfdt: fdt_overlay.o
+  CC      libfdt: fdt_ro.o
+  CC      libfdt: fdt_rw.o
+  CC      libfdt: fdt_strerror.o
+  CC      libfdt: fdt_sw.o
+  CC      libfdt: fdt_wip.o
+  AS      libfdt: libinfo.libuklibid.o
+  CC      libisrlib: string.isr.o
+  AS      libisrlib: libinfo.libuklibid.o
+  CC      libnolibc: errno.o
+  CC      libnolibc: stdio.o
+  CC      libnolibc: ctype.o
+  CC      libnolibc: stdlib.o
+  CC      libnolibc: string.o
+  CC      libnolibc: strsignal.o
+  CC      libnolibc: strstr.o
+  CC      libnolibc: psignal.o
+  CC      libnolibc: __month_to_secs.o
+  CC      libnolibc: __secs_to_tm.o
+  CC      libnolibc: timegm.o
+  CC      libnolibc: __tm_to_secs.o
+  CC      libnolibc: __year_to_secs.o
+  CC      libnolibc: htonl.o
+  CC      libnolibc: ntohl.o
+  CC      libnolibc: htons.o
+  CC      libnolibc: ntohs.o
+  CC      libnolibc: h_errno.o
+  CC      libnolibc: getopt.o
+  CC      libnolibc: sscanf.o
+  CC      libnolibc: scanf.o
+  CC      libnolibc: asprintf.o
+  CC      libnolibc: random.o
+  CC      libnolibc: qsort.o
+  AS      libnolibc: libinfo.libuklibid.o
+  AS      libposix_fd: libinfo.libuklibid.o
+  CC      libposix_fdtab: fdtab.o
+  AS      libposix_fdtab: libinfo.libuklibid.o
+  CC      libposix_fdio: fdio.o
+  CC      libposix_fdio: fdstat.o
+  CC      libposix_fdio: fdctl.o
+  CC      libposix_fdio: fd-shim.o
+  AS      libposix_fdio: libinfo.libuklibid.o
+  CC      libposix_socket: driver.o
+  CC      libposix_socket: socket.o
+  AS      libposix_socket: libinfo.libuklibid.o
+  CC      libukalloc: alloc.o
+  AS      libukalloc: libinfo.libuklibid.o
+  CC      libukallocbbuddy: bbuddy.o
+  AS      libukallocbbuddy: libinfo.libuklibid.o
+  CC      libukargparse: argparse.o
+  AS      libukargparse: libinfo.libuklibid.o
+  AS      libukatomic: libinfo.libuklibid.o
+  AS      libukbitops: libinfo.libuklibid.o
+  CC      libukboot: boot.o
+  CC      libukboot: early_init.o
+  CC      libukboot: version.o
+  CC      libukboot: banner.o
+  AS      libukboot: libinfo.libuklibid.o
+  LDS     libukboot: earlytab.lds
+  CC      libukboot_main: weak_main.o
+  AS      libukboot_main: libinfo.libuklibid.o
+  CC      libukbus: bus.o
+  AS      libukbus: libinfo.libuklibid.o
+  CC      libukconsole: console.isr.o
+  AS      libukconsole: libinfo.libuklibid.o
+  CC      libukdebug: print.o
+  CC      libukdebug: outf.o
+  CC      libukdebug: hexdump.o
+  AS      libukdebug: libinfo.libuklibid.o
+  CC      libukfile: pollqueue.o
+  CC      libukfile: file-nops.o
+  AS      libukfile: libinfo.libuklibid.o
+  CC      libuklibid: namemap.o
+  CC      libuklibid: selfids.o
+  CC      libuklibid: rtmap.o
+  AS      libuklibid: libinfo.global.o
+  AS      libuklibid: libinfo.libuklibid.o
+  CC      libukintctlr: ukintctlr.o
+  AS      libukintctlr: libinfo.libuklibid.o
+  CC      libuklibparam: parser.o
+  AS      libuklibparam: libinfo.libuklibid.o
+  LDS     libuklibparam: libparam.lds
+  CC      libuklock: semaphore.o
+  CC      libuklock: mutex.o
+  CC      libuklock: rwlock.o
+  AS      libuklock: libinfo.libuklibid.o
+  CC      libukmpi: mbox.o
+  CC      libukmpi: mbox_isr.isr.o
+  AS      libukmpi: libinfo.libuklibid.o
+  CC      libuknetdev: netbuf.o
+  CC      libuknetdev: netdev.o
+  AS      libuknetdev: libinfo.libuklibid.o
+  CC      libuksched: sched.o
+  CC      libuksched: thread.o
+  CC      libuksched: isrwake.isr.o
+  AS      libuksched: libinfo.libuklibid.o
+  CC      libukschedcoop: schedcoop.o
+  CC      libukschedcoop: isrwoken.isr.o
+  AS      libukschedcoop: libinfo.libuklibid.o
+  CC      libuksglist: sglist.o
+  AS      libuksglist: libinfo.libuklibid.o
+  CC      libukrandom: chacha.o
+  CC      libukrandom: random.o
+  AS      libukrandom: libinfo.libuklibid.o
+  CC      libposix_time: time.o
+  CC      libposix_time: timer.o
+  AS      libposix_time: libinfo.libuklibid.o
+  CC      libuktimeconv: timeconv.o
+  AS      libuktimeconv: libinfo.libuklibid.o
+  CC      libukofw: fdt.o
+  AS      libukofw: libinfo.libuklibid.o
+  CC      libukallocstack: stack.o
+  AS      libukallocstack: libinfo.libuklibid.o
+  CC      liblwip: alloc.unikraft.o
+  CC      liblwip: mutex.unikraft.o
+  CC      liblwip: semaphore.unikraft.o
+  CC      liblwip: mailbox.unikraft.o
+  CC      liblwip: threads.unikraft.o
+  CC      liblwip: init.unikraft.o
+  CC      liblwip: time.unikraft.o
+  CC      liblwip: sendfile.unikraft.o
+  CC      liblwip: sockets.unikraft.o
+  CC      liblwip: init.o
+  CC      liblwip: def.o
+  CC      liblwip: inet_chksum.o
+  CC      liblwip: ip.o
+  CC      liblwip: mem.o
+  CC      liblwip: memp.o
+  CC      liblwip: netif.o
+  CC      liblwip: pbuf.o
+  CC      liblwip: raw.o
+  CC      liblwip: stats.o
+  CC      liblwip: sys.o
+  CC      liblwip: timeouts.o
+  CC      liblwip: dns.o
+  CC      liblwip: tcp.o
+  CC      liblwip: tcp_in.o
+  CC      liblwip: tcp_out.o
+  CC      liblwip: udp.o
+In file included from /home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/include/lwip/arch.h:48,
+                 from /home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/include/lwip/debug.h:40,
+                 from /home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/include/lwip/opt.h:52,
+                 from /home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c:87:
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c: In function ‘dns_create_txid’:
+/home/unikraft/gcarp/catalog-core/repos/libs/lwip/include/arch/cc.h:64:9: warning: ignoring return value of ‘uk_random_fill_buffer’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   64 |         uk_random_fill_buffer(&x, sizeof(x));   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c:103:23: note: in expansion of macro ‘LWIP_RAND’
+  103 | #define DNS_RAND_TXID LWIP_RAND
+      |                       ^~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c:1006:17: note: in expansion of macro ‘DNS_RAND_TXID’
+ 1006 |   txid = (u16_t)DNS_RAND_TXID();
+      |                 ^~~~~~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c: In function ‘dns_alloc_random_port’:
+/home/unikraft/gcarp/catalog-core/repos/libs/lwip/include/arch/cc.h:64:9: warning: ignoring return value of ‘uk_random_fill_buffer’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   64 |         uk_random_fill_buffer(&x, sizeof(x));   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c:103:23: note: in expansion of macro ‘LWIP_RAND’
+  103 | #define DNS_RAND_TXID LWIP_RAND
+      |                       ^~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/dns.c:877:25: note: in expansion of macro ‘DNS_RAND_TXID’
+  877 |     u16_t port = (u16_t)DNS_RAND_TXID();
+      |                         ^~~~~~~~~~~~~
+  CC      liblwip: api_lib.o
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/tcp.c: In function ‘tcp_init’:
+/home/unikraft/gcarp/catalog-core/repos/libs/lwip/include/arch/cc.h:64:9: warning: ignoring return value of ‘uk_random_fill_buffer’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   64 |         uk_random_fill_buffer(&x, sizeof(x));   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/tcp.c:126:54: note: in definition of macro ‘TCP_ENSURE_LOCAL_PORT_RANGE’
+  126 | #define TCP_ENSURE_LOCAL_PORT_RANGE(port) ((u16_t)(((port) & (u16_t)~TCP_LOCAL_PORT_RANGE_START) + TCP_LOCAL_PORT_RANGE_START))
+      |                                                      ^~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/tcp.c:204:42: note: in expansion of macro ‘LWIP_RAND’
+  204 |   tcp_port = TCP_ENSURE_LOCAL_PORT_RANGE(LWIP_RAND());
+      |                                          ^~~~~~~~~
+  CC      liblwip: api_msg.o
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/udp.c: In function ‘udp_init’:
+/home/unikraft/gcarp/catalog-core/repos/libs/lwip/include/arch/cc.h:64:9: warning: ignoring return value of ‘uk_random_fill_buffer’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   64 |         uk_random_fill_buffer(&x, sizeof(x));   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/udp.c:73:54: note: in definition of macro ‘UDP_ENSURE_LOCAL_PORT_RANGE’
+   73 | #define UDP_ENSURE_LOCAL_PORT_RANGE(port) ((u16_t)(((port) & (u16_t)~UDP_LOCAL_PORT_RANGE_START) + UDP_LOCAL_PORT_RANGE_START))
+      |                                                      ^~~~
+/home/unikraft/gcarp/catalog-core/c-http/workdir/build/liblwip/origin/fork-lwip-UNIKRAFT-2_1_x/src/core/udp.c:90:42: note: in expansion of macro ‘LWIP_RAND’
+   90 |   udp_port = UDP_ENSURE_LOCAL_PORT_RANGE(LWIP_RAND());
+      |                                          ^~~~~~~~~
+  CC      liblwip: err.o
+  CC      liblwip: netbuf.o
+  CC      liblwip: netdb.o
+  CC      liblwip: netifapi.o
+  CC      liblwip: tcpip.o
+  CC      liblwip: if_api.o
+  CC      liblwip: sockets.o
+  CC      liblwip: ethernet.o
+  CC      liblwip: netbuf.unikraft.o
+  CC      liblwip: uknetdev.unikraft.o
+  CC      liblwip: etharp.o
+  CC      liblwip: ip4_frag.o
+  CC      liblwip: ip4.o
+  CC      liblwip: ip4_addr.o
+  CC      liblwip: icmp.o
+  AS      liblwip: libinfo.libuklibid.o
+  AS      libarm64arch: libinfo.libuklibid.o
+  CC      libcontext: ctx.isr.o
+  CC      libcontext: ectx.isr.o
+  CC      libcontext: sysctx.isr.o
+  AS      libcontext: execenv.arm64.o
+  AS      libcontext: ctx.arm64.o
+  CC      libcontext: tls.arm64.o
+  AS      libcontext: libinfo.libuklibid.o
+  CC      libukbus_pci: pci_bus.o
+  CC      libukbus_pci: pci_ecam.o
+  CC      libukbus_pci: pci_bus.arm64.o
+  AS      libukbus_pci: libinfo.libuklibid.o
+  CC      libukbus_platform: platform_bus.o
+  AS      libukbus_platform: libinfo.libuklibid.o
+  CC      libpl011: pl011.isr.o
+  AS      libpl011: libinfo.libuklibid.o
+  CC      libukintctlr_gic: ukintctlr.o
+  CC      libukintctlr_gic: gic-common.o
+  CC      libukintctlr_gic: gic-v2.o
+  AS      libukintctlr_gic: libinfo.libuklibid.o
+  CC      libukrandom_lcpu: init.o
+  CC      libukrandom_lcpu: random.o
+  AS      libukrandom_lcpu: libinfo.libuklibid.o
+  CC      libukrtc_pl031: pl031.o
+  CC      libukrtc_pl031: rtc.o
+  AS      libukrtc_pl031: libinfo.libuklibid.o
+  CC      libvirtio_bus: virtio_bus.o
+  AS      libvirtio_bus: libinfo.libuklibid.o
+  CC      libvirtio_mmio: virtio_mmio.o
+  CC      libvirtio_mmio: virtio_mmio_cmdl.o
+  AS      libvirtio_mmio: libinfo.libuklibid.o
+  CC      libvirtio_net: virtio_net.o
+  AS      libvirtio_net: libinfo.libuklibid.o
+  CC      libvirtio_pci: virtio_pci.o
+  AS      libvirtio_pci: libinfo.libuklibid.o
+  CC      libvirtio_ring: virtio_ring.o
+  AS      libvirtio_ring: libinfo.libuklibid.o
+  LD      libkvmplat.ld.o
+  LD      appchttp.ld.o
+  LD      libfdt.ld.o
+  LD      libisrlib.ld.o
+  LD      libnolibc.ld.o
+  LD      libposix_fd.ld.o
+  LD      libposix_fdtab.ld.o
+  LD      libposix_fdio.ld.o
+  LD      libposix_socket.ld.o
+  LD      libukalloc.ld.o
+  LD      libukallocbbuddy.ld.o
+  LD      libukargparse.ld.o
+  LD      libukatomic.ld.o
+  LD      libukbitops.ld.o
+  LD      libukboot.ld.o
+  LD      libukboot_main.ld.o
+  LD      libukbus.ld.o
+  LD      libukconsole.ld.o
+  LD      libukdebug.ld.o
+  LD      libukfile.ld.o
+  LD      libuklibid.ld.o
+  LD      libukintctlr.ld.o
+  LD      libuklibparam.ld.o
+  LD      libuklock.ld.o
+  LD      libukmpi.ld.o
+  LD      libuknetdev.ld.o
+  LD      libuksched.ld.o
+  LD      libukschedcoop.ld.o
+  LD      libuksglist.ld.o
+  LD      libukrandom.ld.o
+  LD      libposix_time.ld.o
+  LD      libuktimeconv.ld.o
+  LD      libukofw.ld.o
+  LD      libukallocstack.ld.o
+  LD      libarm64arch.ld.o
+  LD      libcontext.ld.o
+  LD      libukbus_pci.ld.o
+  LD      libukbus_platform.ld.o
+  LD      libpl011.ld.o
+  LD      libukintctlr_gic.ld.o
+  LD      libukrandom_lcpu.ld.o
+  LD      libukrtc_pl031.ld.o
+  LD      libvirtio_bus.ld.o
+  LD      libvirtio_pci.ld.o
+  LD      libvirtio_ring.ld.o
+  OBJCOPY libkvmplat.o
+  OBJCOPY appchttp.o
+  OBJCOPY libfdt.o
+  OBJCOPY libisrlib.o
+  OBJCOPY libnolibc.o
+  OBJCOPY libposix_fd.o
+  OBJCOPY libposix_fdtab.o
+  OBJCOPY libposix_fdio.o
+  OBJCOPY libposix_socket.o
+  OBJCOPY libukalloc.o
+  OBJCOPY libukallocbbuddy.o
+  OBJCOPY libukargparse.o
+  OBJCOPY libukatomic.o
+  OBJCOPY libukbitops.o
+  OBJCOPY libukboot.o
+  OBJCOPY libukboot_main.o
+  OBJCOPY libukbus.o
+  OBJCOPY libukconsole.o
+  OBJCOPY libukdebug.o
+  OBJCOPY libukfile.o
+  OBJCOPY libuklibid.o
+  OBJCOPY libukintctlr.o
+  OBJCOPY libuklibparam.o
+  OBJCOPY libuklock.o
+  OBJCOPY libukmpi.o
+  OBJCOPY libuknetdev.o
+  OBJCOPY libuksched.o
+  OBJCOPY libukschedcoop.o
+  OBJCOPY libuksglist.o
+  OBJCOPY libukrandom.o
+  OBJCOPY libposix_time.o
+  OBJCOPY libuktimeconv.o
+  OBJCOPY libukofw.o
+  OBJCOPY libukallocstack.o
+  LD      liblwip.ld.o
+  OBJCOPY libarm64arch.o
+  OBJCOPY libcontext.o
+  OBJCOPY libukbus_pci.o
+  OBJCOPY libukbus_platform.o
+  OBJCOPY libpl011.o
+  OBJCOPY libukintctlr_gic.o
+  OBJCOPY libukrandom_lcpu.o
+  OBJCOPY libukrtc_pl031.o
+  OBJCOPY libvirtio_bus.o
+  LD      libvirtio_mmio.ld.o
+  LD      libvirtio_net.ld.o
+  OBJCOPY libvirtio_pci.o
+  OBJCOPY libvirtio_ring.o
+  OBJCOPY libvirtio_net.o
+  OBJCOPY liblwip.o
+  OBJCOPY libvirtio_mmio.o
+  LD      c-http_qemu-arm64.dbg
+/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: warning: -z relro ignored
+  SCSTRIP c-http_qemu-arm64
+  UKBI    c-http_qemu-arm64.bootinfo
+  OBJCOPY c-http_qemu-arm64.bin
+  MKLINUX c-http_qemu-arm64.img
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'

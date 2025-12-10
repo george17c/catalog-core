@@ -1,0 +1,207 @@
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  RM      build
+  RM      config
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  MKDIR   lxdialog
+  MAKE    kconfig
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig -DCONFIG_=\"\"   -c fixdep.c -o /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig/fixdep.o
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig -DCONFIG_=\"\"   /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig/fixdep.o -o /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/kconfig/fixdep
+#
+# configuration written to /home/unikraft/gcarp/catalog-core/c-fs/.config
+#
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     config.h
+  GEN     libuklibid: libraries.in.new
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     libsyscall_shim: provided_syscalls.in.new
+  GEN     libuklibid: libraries.in.new
+  LN      c-fs_qemu-x86_64.dbg.gdb.py
+  GEN     uk-gdb.py
+  CP      libsyscall_shim: provided_syscalls.in
+  AWK     libsyscall_shim: syscall_nrs.h
+  AWK     libsyscall_shim: syscall_nrs2.h
+  AWK     libsyscall_shim: syscall_map.h
+  AWK     libsyscall_shim: syscall_stubs.h
+  AWK     libsyscall_shim: uk_syscall.c
+  AWK     libsyscall_shim: uk_syscall_r.c
+  AWK     libsyscall_shim: uk_syscall6.c
+  AWK     libsyscall_shim: uk_syscall6_r.c
+  AWK     libsyscall_shim: uk_syscall6_do.c
+  AWK     libsyscall_shim: uk_syscall_name.c
+  AWK     libsyscall_shim: uk_syscall_name_p.c
+  AWK     libsyscall_shim: libc_stubs.c
+  CP      libuklibid: libraries.in
+  AWK     libsyscall_shim: syscall_provided.h
+  AWK     libsyscall_shim: syscall_gensyms.exportsyms.uk
+  AWK     libsyscall_shim: syscall_static.h
+  AWK     libsyscall_shim: syscall_r_static.h
+  AWK     libsyscall_shim: syscall_do_static.h
+  AWK     libuklibid: libid.h
+  AWK     libuklibid: namemap.c
+  AWK     libuklibid: selfids.c
+  AWK     libuklibid: exportsyms.uk
+  CC      libkvmplat: trace.common.o
+  CC      libkvmplat: traps.isr.o
+  CC      libkvmplat: cpu_native.common.o
+  CC      libkvmplat: lcpu.x86_common.o
+  CC      libkvmplat: tls.common.o
+  AS      libkvmplat: multiboot.x86.o
+  CC      libkvmplat: multiboot.o
+  AS      libkvmplat: pagetable64.o
+  CC      libkvmplat: traps.o
+  AS      libkvmplat: cpu_vectors_x86_64.o
+  CC      libkvmplat: setup.o
+  CC      libkvmplat: lcpu.o
+  AS      libkvmplat: lcpu_start.o
+  CC      libkvmplat: tscclock.o
+  CC      libkvmplat: time.o
+  CC      libkvmplat: shutdown.o
+  CC      libkvmplat: memory.o
+  CC      libkvmplat: io.o
+  CC      libkvmplat: lcpu.common.o
+  CC      libkvmplat: memory.common.o
+  CC      libkvmplat: bootinfo.common.o
+  AS      libkvmplat: libinfo.libuklibid.o
+  LDS     libkvmplat: link64.lds
+  LDS     libkvmplat: bootinfo.lds
+  CC      appcfs: cat.o
+  AS      appcfs: libinfo.libuklibid.o
+  CC      libisrlib: string.isr.o
+  AS      libisrlib: libinfo.libuklibid.o
+  CC      libnolibc: errno.o
+  CC      libnolibc: stdio.o
+  CC      libnolibc: ctype.o
+  CC      libnolibc: stdlib.o
+  CC      libnolibc: string.o
+  CC      libnolibc: strsignal.o
+  CC      libnolibc: strstr.o
+  CC      libnolibc: psignal.o
+  CC      libnolibc: __month_to_secs.o
+  CC      libnolibc: __secs_to_tm.o
+  CC      libnolibc: timegm.o
+  CC      libnolibc: __tm_to_secs.o
+  CC      libnolibc: __year_to_secs.o
+  CC      libnolibc: htonl.o
+  CC      libnolibc: ntohl.o
+  CC      libnolibc: htons.o
+  CC      libnolibc: ntohs.o
+  CC      libnolibc: h_errno.o
+  CC      libnolibc: getopt.o
+  CC      libnolibc: sscanf.o
+  CC      libnolibc: scanf.o
+  CC      libnolibc: asprintf.o
+  CC      libnolibc: random.o
+  CC      libnolibc: qsort.o
+  AS      libnolibc: libinfo.libuklibid.o
+  AS      libposix_fd: libinfo.libuklibid.o
+  CC      libposix_fdtab: fdtab.o
+  AS      libposix_fdtab: libinfo.libuklibid.o
+  CC      libposix_fdio: fdio.o
+  CC      libposix_fdio: fdstat.o
+  CC      libposix_fdio: fdctl.o
+  CC      libposix_fdio: fd-shim.o
+  CC      libposix_fdio: sendfile-shim.o
+  AS      libposix_fdio: libinfo.libuklibid.o
+  CC      libposix_pipe: pipe.o
+  AS      libposix_pipe: libinfo.libuklibid.o
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c:11:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c: In function ‘shim_combo_of’:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukdebug/include/uk/assert.h:52:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   52 |                 if (unlikely(!(x))) {                                   \
+      |                    ^
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukdebug/include/uk/assert.h:79:9: note: in expansion of macro ‘UK_ASSERT’
+   79 |         UK_ASSERT(!(x))
+      |         ^~~~~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukdebug/include/uk/assert.h:82:9: note: in expansion of macro ‘UK_BUGON’
+   82 |         UK_BUGON(1)
+      |         ^~~~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c:88:25: note: in expansion of macro ‘UK_BUG’
+   88 |                         UK_BUG(); /* Do validation before */
+      |                         ^~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c:90:9: note: here
+   90 |         case UK_SHIM_LEGACY:
+      |         ^~~~
+In file included from /home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c:11:
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukdebug/include/uk/assert.h:52:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   52 |                 if (unlikely(!(x))) {                                   \
+      |                    ^
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukdebug/include/uk/assert.h:79:9: note: in expansion of macro ‘UK_ASSERT’
+   79 |         UK_ASSERT(!(x))
+      |         ^~~~~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/ukdebug/include/uk/assert.h:82:9: note: in expansion of macro ‘UK_BUGON’
+   82 |         UK_BUGON(1)
+      |         ^~~~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c:97:25: note: in expansion of macro ‘UK_BUG’
+   97 |                         UK_BUG(); /* Do validation before */
+      |                         ^~~~~~
+/home/unikraft/gcarp/catalog-core/repos/unikraft/lib/posix-fdio/sendfile-shim.c:99:9: note: here
+   99 |         default:
+      |         ^~~~~~~
+  CC      libposix_poll: epoll.o
+  CC      libposix_poll: poll.o
+  CC      libposix_poll: select.o
+  AS      libposix_poll: libinfo.libuklibid.o
+  AS      libposix_tty: libinfo.libuklibid.o
+  CC      libramfs: ramfs_vfsops.o
+  CC      libramfs: ramfs_vnops.o
+  AS      libramfs: libinfo.libuklibid.o
+  CC      libsyscall_shim: uk_syscall.o
+  CC      libsyscall_shim: uk_syscall_r.o
+  CC      libsyscall_shim: uk_syscall6.o
+  CC      libsyscall_shim: uk_syscall6_r.o
+  CC      libsyscall_shim: uk_syscall6_do.o
+  CC      libsyscall_shim: uk_syscall_name.o
+  CC      libsyscall_shim: uk_syscall_name_p.o
+  CC      libsyscall_shim: libc_stubs.o
+  CC      libsyscall_shim: uk_prsyscall.o
+  CC      libsyscall_shim: vars.o
+  AS      libsyscall_shim: libinfo.libuklibid.o
+  LDS     libsyscall_shim: syscall_exittab.lds
+  LDS     libsyscall_shim: syscall_entertab.lds
+  CC      libukalloc: alloc.o
+  AS      libukalloc: libinfo.libuklibid.o
+  CC      libukallocbbuddy: bbuddy.o
+  AS      libukallocbbuddy: libinfo.libuklibid.o
+  CC      libukallocregion: region.o
+  AS      libukallocregion: libinfo.libuklibid.o
+  CC      libukargparse: argparse.o
+  AS      libukargparse: libinfo.libuklibid.o
+  AS      libukatomic: libinfo.libuklibid.o
+  AS      libukbitops: libinfo.libuklibid.o
+  CC      libukstreambuf: streambuf.o
+  AS      libukstreambuf: libinfo.libuklibid.o
+  CC      libukboot: boot.o
+  CC      libukboot: early_init.o
+  CC      libukboot: version.o
+  CC      libukboot: banner.o
+  AS      libukboot: libinfo.libuklibid.o
+  LDS     libukboot: earlytab.lds
+  CC      libukboot_main: weak_main.o
+  AS      libukboot_main: libinfo.libuklibid.o
+  CC      libukconsole: console.isr.o
+  AS      libukconsole: libinfo.libuklibid.o
+  CC      libukcpio: cpio.o
+  AS      libukcpio: libinfo.libuklibid.o
+  CC      libukdebug: print.o
+make[3]: *** Deleting file '/home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukboot_main/libinfo.libuklibid.o'
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libsyscall_shim/uk_prsyscall.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukcpio/libinfo.libuklibid.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libposix_fdio/fd-shim.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukboot/boot.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukboot_main/weak_main.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukconsole/console.isr.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukcpio/cpio.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:49: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libkvmplat/traps.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukdebug/print.o] Interrupt
+make[3]: *** [/home/unikraft/gcarp/catalog-core/repos/unikraft/support/build/Makefile.build:27: /home/unikraft/gcarp/catalog-core/c-fs/workdir/build/libukconsole/libinfo.libuklibid.o] Interrupt
+make[2]: *** [Makefile:1175: sub-make] Interrupt
+make[1]: *** [Makefile:41: _all] Interrupt
+make: *** [Makefile:10: all] Interrupt

@@ -1,0 +1,205 @@
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  RM      build
+  RM      config
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  MKDIR   lxdialog
+  MAKE    kconfig
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig -DCONFIG_=\"\"   -c fixdep.c -o /home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig/fixdep.o
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig -DCONFIG_=\"\"   /home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig/fixdep.o -o /home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig/fixdep
+#
+# configuration written to /home/unikraft/gcarp/catalog-core/c-hello/.config
+#
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     config.h
+  GEN     libuklibid: libraries.in.new
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     libuklibid: libraries.in.new
+  LN      c-hello_xen-arm64.elf.dbg.gdb.py
+  GEN     uk-gdb.py
+  CP      libuklibid: libraries.in
+  AWK     libuklibid: libid.h
+  AWK     libuklibid: namemap.c
+  AWK     libuklibid: selfids.c
+  AWK     libuklibid: exportsyms.uk
+  CC      libxenplat: hypervisor.o
+  CC      libxenplat: memory.o
+  CC      libxenplat: io.o
+  CC      libxenplat: lcpu.common.o
+  CC      libxenplat: memory.common.o
+  CC      libxenplat: tls.common.o
+  CC      libxenplat: bootinfo.common.o
+  CC      libxenplat: bootinfo_fdt.common.o
+  CC      libxenplat: cpu_native.o
+  CC      libxenplat: setup64.o
+  AS      libxenplat: entry64.o
+  CC      libxenplat: arch_events.o
+  CC      libxenplat: mm.o
+  AS      libxenplat: hypercalls64.o
+  CC      libxenplat: lcpu.arm64_common.o
+  CC      libxenplat: traps_arm64.o
+  CC      libxenplat: time.o
+  CC      libxenplat: generic_timer.o
+  CC      libxenplat: lcpu.o
+  CC      libxenplat: shutdown.o
+  CC      libxenplat: events.o
+  AS      libxenplat: libinfo.libuklibid.o
+  LDS     libxenplat: link64.lds
+  LDS     libxenplat: bootinfo.lds
+  CC      appchello: hello.o
+  AS      appchello: libinfo.libuklibid.o
+  CC      libfdt: fdt.o
+  CC      libfdt: fdt_addresses.o
+  CC      libfdt: fdt_empty_tree.o
+  CC      libfdt: fdt_overlay.o
+  CC      libfdt: fdt_ro.o
+  CC      libfdt: fdt_rw.o
+  CC      libfdt: fdt_strerror.o
+  CC      libfdt: fdt_sw.o
+  CC      libfdt: fdt_wip.o
+  AS      libfdt: libinfo.libuklibid.o
+  CC      libisrlib: string.isr.o
+  AS      libisrlib: libinfo.libuklibid.o
+  CC      libnolibc: errno.o
+  CC      libnolibc: stdio.o
+  CC      libnolibc: ctype.o
+  CC      libnolibc: stdlib.o
+  CC      libnolibc: string.o
+  CC      libnolibc: strsignal.o
+  CC      libnolibc: strstr.o
+  CC      libnolibc: psignal.o
+  CC      libnolibc: __month_to_secs.o
+  CC      libnolibc: __secs_to_tm.o
+  CC      libnolibc: timegm.o
+  CC      libnolibc: __tm_to_secs.o
+  CC      libnolibc: __year_to_secs.o
+  CC      libnolibc: htonl.o
+  CC      libnolibc: ntohl.o
+  CC      libnolibc: htons.o
+  CC      libnolibc: ntohs.o
+  CC      libnolibc: h_errno.o
+  CC      libnolibc: getopt.o
+  CC      libnolibc: sscanf.o
+  CC      libnolibc: scanf.o
+  CC      libnolibc: asprintf.o
+  CC      libnolibc: random.o
+  CC      libnolibc: qsort.o
+  AS      libnolibc: libinfo.libuklibid.o
+  CC      libukalloc: alloc.o
+  AS      libukalloc: libinfo.libuklibid.o
+  CC      libukallocbbuddy: bbuddy.o
+  AS      libukallocbbuddy: libinfo.libuklibid.o
+  CC      libukargparse: argparse.o
+  AS      libukargparse: libinfo.libuklibid.o
+  AS      libukatomic: libinfo.libuklibid.o
+  AS      libukbitops: libinfo.libuklibid.o
+  CC      libukboot: boot.o
+  CC      libukboot: early_init.o
+  CC      libukboot: version.o
+  CC      libukboot: banner.o
+  AS      libukboot: libinfo.libuklibid.o
+  LDS     libukboot: earlytab.lds
+  CC      libukboot_main: weak_main.o
+  AS      libukboot_main: libinfo.libuklibid.o
+  CC      libukconsole: console.isr.o
+  AS      libukconsole: libinfo.libuklibid.o
+  CC      libukdebug: print.o
+  CC      libukdebug: outf.o
+  CC      libukdebug: hexdump.o
+  AS      libukdebug: libinfo.libuklibid.o
+  CC      libuklibid: namemap.o
+  CC      libuklibid: selfids.o
+  CC      libuklibid: rtmap.o
+  AS      libuklibid: libinfo.global.o
+  AS      libuklibid: libinfo.libuklibid.o
+  CC      libukintctlr: ukintctlr.o
+  AS      libukintctlr: libinfo.libuklibid.o
+  CC      libuksched: sched.o
+  CC      libuksched: thread.o
+  CC      libuksched: isrwake.isr.o
+  AS      libuksched: libinfo.libuklibid.o
+  CC      libukschedcoop: schedcoop.o
+  CC      libukschedcoop: isrwoken.isr.o
+  AS      libukschedcoop: libinfo.libuklibid.o
+  CC      libukofw: fdt.o
+  AS      libukofw: libinfo.libuklibid.o
+  CC      libukallocstack: stack.o
+  AS      libukallocstack: libinfo.libuklibid.o
+  AS      libarm64arch: libinfo.libuklibid.o
+  CC      libcontext: ctx.isr.o
+  CC      libcontext: ectx.isr.o
+  CC      libcontext: sysctx.isr.o
+  AS      libcontext: execenv.arm64.o
+  AS      libcontext: ctx.arm64.o
+  CC      libcontext: tls.arm64.o
+  AS      libcontext: libinfo.libuklibid.o
+  CC      libukintctlr_gic: ukintctlr.o
+  CC      libukintctlr_gic: gic-common.o
+  CC      libukintctlr_gic: gic-v3.o
+  AS      libukintctlr_gic: libinfo.libuklibid.o
+  CC      libxencons: console.isr.o
+  AS      libxencons: libinfo.libuklibid.o
+  LD      libxenplat.ld.o
+  LD      appchello.ld.o
+  LD      libfdt.ld.o
+  LD      libisrlib.ld.o
+  LD      libnolibc.ld.o
+  LD      libukalloc.ld.o
+  LD      libukallocbbuddy.ld.o
+  LD      libukargparse.ld.o
+  LD      libukatomic.ld.o
+  LD      libukbitops.ld.o
+  LD      libukboot.ld.o
+  LD      libukboot_main.ld.o
+  LD      libukconsole.ld.o
+  LD      libukdebug.ld.o
+  LD      libuklibid.ld.o
+  LD      libukintctlr.ld.o
+  LD      libukschedcoop.ld.o
+  LD      libukofw.ld.o
+  LD      libukallocstack.ld.o
+  LD      libarm64arch.ld.o
+  LD      libcontext.ld.o
+  OBJCOPY libxenplat.o
+  OBJCOPY appchello.o
+  OBJCOPY libfdt.o
+  OBJCOPY libisrlib.o
+  OBJCOPY libnolibc.o
+  OBJCOPY libukalloc.o
+  OBJCOPY libukallocbbuddy.o
+  OBJCOPY libukargparse.o
+  OBJCOPY libukatomic.o
+  OBJCOPY libukbitops.o
+  OBJCOPY libukboot.o
+  OBJCOPY libukboot_main.o
+  OBJCOPY libukconsole.o
+  OBJCOPY libukdebug.o
+  OBJCOPY libuklibid.o
+  OBJCOPY libukintctlr.o
+  OBJCOPY libukschedcoop.o
+  OBJCOPY libukofw.o
+  OBJCOPY libukallocstack.o
+  OBJCOPY libarm64arch.o
+  OBJCOPY libcontext.o
+  LD      libukintctlr_gic.ld.o
+  LD      libxencons.ld.o
+  LD      libuksched.ld.o
+  OBJCOPY libxencons.o
+  OBJCOPY libukintctlr_gic.o
+  OBJCOPY libuksched.o
+  LD      c-hello_xen-arm64.elf.ld.o
+/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: warning: -z relro ignored
+  OBJCOPY c-hello_xen-arm64.elf.o
+  LD      c-hello_xen-arm64.elf.dbg
+/usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: warning: -z relro ignored
+  SCSTRIP c-hello_xen-arm64.elf
+  UKBI    c-hello_xen-arm64.elf.bootinfo
+  OBJCOPY c-hello_xen-arm64
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'

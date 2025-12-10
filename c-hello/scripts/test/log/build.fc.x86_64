@@ -1,0 +1,197 @@
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  RM      build
+  RM      config
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  MKDIR   lxdialog
+  MAKE    kconfig
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig -DCONFIG_=\"\"   -c fixdep.c -o /home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig/fixdep.o
+/usr/bin/gcc -ldl -I. -I/home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig -DCONFIG_=\"\"   /home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig/fixdep.o -o /home/unikraft/gcarp/catalog-core/c-hello/workdir/build/kconfig/fixdep
+#
+# configuration written to /home/unikraft/gcarp/catalog-core/c-hello/.config
+#
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     config.h
+  GEN     libuklibid: libraries.in.new
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+make[1]: Entering directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'
+  LN      Makefile
+  CP      config
+  GEN     libuklibid: libraries.in.new
+  LN      c-hello_fc-x86_64.dbg.gdb.py
+  GEN     uk-gdb.py
+  CP      libuklibid: libraries.in
+  AWK     libuklibid: libid.h
+  AWK     libuklibid: namemap.c
+  AWK     libuklibid: selfids.c
+  AWK     libuklibid: exportsyms.uk
+  CC      libkvmplat: trace.common.o
+  CC      libkvmplat: traps.isr.o
+  CC      libkvmplat: cpu_native.common.o
+  CC      libkvmplat: lcpu.x86_common.o
+  CC      libkvmplat: tls.common.o
+  AS      libkvmplat: lxboot.x86.o
+  CC      libkvmplat: lxboot.o
+  AS      libkvmplat: pagetable64.o
+  CC      libkvmplat: traps.o
+  AS      libkvmplat: cpu_vectors_x86_64.o
+  CC      libkvmplat: setup.o
+  CC      libkvmplat: lcpu.o
+  AS      libkvmplat: lcpu_start.o
+  CC      libkvmplat: tscclock.o
+  CC      libkvmplat: time.o
+  CC      libkvmplat: shutdown.o
+  CC      libkvmplat: memory.o
+  CC      libkvmplat: io.o
+  CC      libkvmplat: lcpu.common.o
+  CC      libkvmplat: memory.common.o
+  CC      libkvmplat: bootinfo.common.o
+  AS      libkvmplat: libinfo.libuklibid.o
+  LDS     libkvmplat: link64.lds
+  LDS     libkvmplat: bootinfo.lds
+  CC      appchello: hello.o
+  AS      appchello: libinfo.libuklibid.o
+  CC      libisrlib: string.isr.o
+  AS      libisrlib: libinfo.libuklibid.o
+  CC      libnolibc: errno.o
+  CC      libnolibc: stdio.o
+  CC      libnolibc: ctype.o
+  CC      libnolibc: stdlib.o
+  CC      libnolibc: string.o
+  CC      libnolibc: strsignal.o
+  CC      libnolibc: strstr.o
+  CC      libnolibc: psignal.o
+  CC      libnolibc: __month_to_secs.o
+  CC      libnolibc: __secs_to_tm.o
+  CC      libnolibc: timegm.o
+  CC      libnolibc: __tm_to_secs.o
+  CC      libnolibc: __year_to_secs.o
+  CC      libnolibc: htonl.o
+  CC      libnolibc: ntohl.o
+  CC      libnolibc: htons.o
+  CC      libnolibc: ntohs.o
+  CC      libnolibc: h_errno.o
+  CC      libnolibc: getopt.o
+  CC      libnolibc: sscanf.o
+  CC      libnolibc: scanf.o
+  CC      libnolibc: asprintf.o
+  CC      libnolibc: random.o
+  CC      libnolibc: qsort.o
+  AS      libnolibc: libinfo.libuklibid.o
+  CC      libukalloc: alloc.o
+  AS      libukalloc: libinfo.libuklibid.o
+  CC      libukallocbbuddy: bbuddy.o
+  AS      libukallocbbuddy: libinfo.libuklibid.o
+  CC      libukargparse: argparse.o
+  AS      libukargparse: libinfo.libuklibid.o
+  AS      libukatomic: libinfo.libuklibid.o
+  AS      libukbitops: libinfo.libuklibid.o
+  CC      libukboot: boot.o
+  CC      libukboot: early_init.o
+  CC      libukboot: version.o
+  CC      libukboot: banner.o
+  CC      libukboot: shutdown_req.o
+  CC      libukboot: shutdown_req.isr.o
+  AS      libukboot: libinfo.libuklibid.o
+  LDS     libukboot: earlytab.lds
+  CC      libukboot_main: weak_main.o
+  AS      libukboot_main: libinfo.libuklibid.o
+  CC      libukconsole: console.isr.o
+  AS      libukconsole: libinfo.libuklibid.o
+  CC      libukdebug: print.o
+  CC      libukdebug: outf.o
+  CC      libukdebug: hexdump.o
+  AS      libukdebug: libinfo.libuklibid.o
+  CC      libuklibid: namemap.o
+  CC      libuklibid: selfids.o
+  CC      libuklibid: rtmap.o
+  AS      libuklibid: libinfo.global.o
+  AS      libuklibid: libinfo.libuklibid.o
+  CC      libukintctlr: ukintctlr.o
+  AS      libukintctlr: libinfo.libuklibid.o
+  CC      libuklock: semaphore.o
+  CC      libuklock: mutex.o
+  CC      libuklock: rwlock.o
+  AS      libuklock: libinfo.libuklibid.o
+  CC      libuksched: sched.o
+  CC      libuksched: thread.o
+  CC      libuksched: isrwake.isr.o
+  AS      libuksched: libinfo.libuklibid.o
+  CC      libukschedcoop: schedcoop.o
+  CC      libukschedcoop: isrwoken.isr.o
+  AS      libukschedcoop: libinfo.libuklibid.o
+  CC      libuktimeconv: timeconv.o
+  AS      libuktimeconv: libinfo.libuklibid.o
+  CC      libukallocstack: stack.o
+  AS      libukallocstack: libinfo.libuklibid.o
+  CC      libcontext: ctx.isr.o
+  CC      libcontext: ectx.isr.o
+  CC      libcontext: sysctx.isr.o
+  AS      libcontext: execenv.x86_64.o
+  AS      libcontext: ctx.x86_64.o
+  CC      libcontext: tls.x86_64.o
+  CC      libcontext: fsgsbase.x86_64.o
+  AS      libcontext: libinfo.libuklibid.o
+  CC      libns16550: com.isr.o
+  AS      libns16550: libinfo.libuklibid.o
+  CC      libukintctlr_xpic: pic.o
+  CC      libukintctlr_xpic: ukintctlr.o
+  AS      libukintctlr_xpic: libinfo.libuklibid.o
+  CC      libukps2_kbd: dumbkbd.isr.o
+  AS      libukps2_kbd: libinfo.libuklibid.o
+  LD      appchello.ld.o
+  LD      libisrlib.ld.o
+  LD      libnolibc.ld.o
+  LD      libukalloc.ld.o
+  LD      libukargparse.ld.o
+  LD      libukatomic.ld.o
+  LD      libukbitops.ld.o
+  LD      libukboot.ld.o
+  LD      libukboot_main.ld.o
+  LD      libukallocbbuddy.ld.o
+  LD      libukconsole.ld.o
+  LD      libukdebug.ld.o
+  LD      libuklibid.ld.o
+  LD      libukintctlr.ld.o
+  LD      libuklock.ld.o
+  LD      libukschedcoop.ld.o
+  LD      libuktimeconv.ld.o
+  LD      libukallocstack.ld.o
+  LD      libcontext.ld.o
+  LD      libns16550.ld.o
+  LD      libukintctlr_xpic.ld.o
+  LD      libukps2_kbd.ld.o
+  OBJCOPY appchello.o
+  OBJCOPY libisrlib.o
+  OBJCOPY libnolibc.o
+  OBJCOPY libukalloc.o
+  OBJCOPY libukallocbbuddy.o
+  OBJCOPY libukargparse.o
+  OBJCOPY libukatomic.o
+  OBJCOPY libukbitops.o
+  OBJCOPY libukboot.o
+  OBJCOPY libukboot_main.o
+  OBJCOPY libukconsole.o
+  OBJCOPY libukdebug.o
+  OBJCOPY libuklibid.o
+  OBJCOPY libukintctlr.o
+  OBJCOPY libuklock.o
+  LD      libuksched.ld.o
+  OBJCOPY libukschedcoop.o
+  OBJCOPY libuktimeconv.o
+  OBJCOPY libukallocstack.o
+  OBJCOPY libcontext.o
+  OBJCOPY libns16550.o
+  OBJCOPY libukintctlr_xpic.o
+  OBJCOPY libukps2_kbd.o
+  OBJCOPY libuksched.o
+  LD      libkvmplat.ld.o
+  OBJCOPY libkvmplat.o
+  LD      c-hello_fc-x86_64.dbg
+  SCSTRIP c-hello_fc-x86_64
+  UKBI    c-hello_fc-x86_64.bootinfo
+make[1]: Leaving directory '/home/unikraft/gcarp/catalog-core/repos/unikraft'

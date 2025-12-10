@@ -1,0 +1,1 @@
+./scripts/test/all.sh: 17: ./scripts/build/fc.arm64: not found
